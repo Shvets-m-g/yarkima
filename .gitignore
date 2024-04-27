@@ -1,0 +1,6 @@
+.DS_Store
+.vscode
+.nuxt/
+/node_modules
+.output/
+dist/
