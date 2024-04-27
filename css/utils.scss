@@ -1,0 +1,17 @@
+@import "mixins";
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+$STEP: 8px;
+
+@include generate-padding-classes("p", (1, 2, 3, 4, 5, 6));
+@include generate-margin-classes("m", (1, 2, 3, 4, 5, 6, 7, 8));
+
+@include generate-display-classes(none);
+@include generate-display-classes(flex);
+@include generate-display-classes(block);
+// @include generate-display-classes(inline);

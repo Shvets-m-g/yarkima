@@ -1,0 +1,14 @@
+{
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.autoSave": "onFocusChange",
+  "html.format.wrapAttributes": "force-aligned",
+  "html.format.wrapLineLength": 120,
+  "scss.validate": false,
+  "scss.format.enable": true,
+  "scss.syntax": "scss",
+  "scss.lint.unknownAtRules": "ignore",
+  "scss.lint.declarationNoImportant": false
+}
