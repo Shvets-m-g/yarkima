@@ -1,5 +1,11 @@
 @font-face {
   font-family: "Inter Display";
+  src: url("../fonts/InterDisplay-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Inter Display";
   src: url("../fonts/InterDisplay-Black.ttf") format("truetype");
   font-style: normal;
   font-weight: 900;
@@ -9,6 +15,12 @@
   src: url("../fonts/InterDisplay-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
+}
+@font-face {
+  font-family: "Inter Display";
+  src: url("../fonts/InterDisplay-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
 }
 @font-face {
   font-family: "Inter Display";

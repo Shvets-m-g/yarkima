@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Yarkima - вход</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="subscription-page">
+      <header class="header d-md-none">
+        <div class="header__container pt-2 pb-1 px-2">
+          <button
+            class="button header__burger d-md-none"
+            alt=""
+            aria-label="Кнопка мобильного меню"
+          ></button>
+
+          <a href="/" class="header__logo">
+            <img src="images/logo-full.svg" class="d-none d-md-block" alt="" />
+            <img class="d-md-none" src="images/logo.svg" alt="" />
+          </a>
+          <button
+            class="modal-close button outlined min-width-6 min-height-6 ml-auto"
+          >
+            <i class="icon close"></i>
+          </button>
+        </div>
+      </header>
+      <main>
+        <div
+          class="bg subscription__info text-white flex-column justify-center d-flex"
+        >
+          <div class="subscription__info-top">
+            <div class="subscription__info-label text-white md">
+              Выбранный курс
+            </div>
+            <div class="d-flex align-center gap-3 mt-3">
+              <div class="subscription__info-image hexagon md">
+                <img src="images/pages/languages/flags/russian.svg" alt="" />
+              </div>
+              <div
+                class="subscription__info-title uppercase d-flex align-center gap-1"
+              >
+                Русский язык <i class="icon filled-arrow"></i>
+              </div>
+            </div>
+          </div>
+          <div class="divider white mt-3 mt-md-5 mb-3 mb-md-5"></div>
+          <div class="subscription__info-bottom">
+            <div class="subscription__info-value">
+              <div class="subscription__info-label">Стоимость</div>
+              <div class="subscription__info-price mt-0 mt-md-3">
+                299 ₽ <span> / месяц </span>
+              </div>
+            </div>
+            <div class="subscription__info-text mt-3">
+              Автоматическое выставление счетов. <br />
+              Подписку можно отменить в любое время.
+            </div>
+            <div class="subscription__info-add-text mt-2 mt-md-3">
+              Оплата будет списана повторно по истечению месяца.
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <header class="header d-none d-md-block">
+            <div class="header__container pt-2 px-2">
+              <button
+                class="button header__burger d-md-none"
+                alt=""
+                aria-label="Кнопка мобильного меню"
+              ></button>
+
+              <a href="/" class="header__logo">
+                <img
+                  src="images/logo-full.svg"
+                  class="d-none d-md-block"
+                  alt=""
+                />
+                <img class="d-md-none" src="images/logo.svg" alt="" />
+              </a>
+              <button
+                class="modal-close button outlined min-width-6 min-height-6 mt-2"
+              >
+                <i class="icon close"></i>
+              </button>
+            </div>
+          </header>
+          <div class="subscription-form__container">
+            <form class="subscription-form">
+              <div class="title medium uppercase d-none d-md-block">
+                Информация об оплате
+              </div>
+
+              <div class="">
+                <div class="subtitle lg">Способ оплаты</div>
+                <div class="form-radios grid-2 grid-сol-mob-1 mt-3">
+                  <label class="form-radio__input with-box">
+                    <input
+                      type="radio"
+                      id="credit-card"
+                      name="type-payment"
+                      checked
+                    />
+                    <span class="form-radio__input-icon"></span>
+                    Кредитная карта
+                  </label>
+                  <label class="form-radio__input with-box">
+                    <input
+                      type="radio"
+                      id="personal-account"
+                      name="type-payment"
+                    />
+                    <span class="form-radio__input-icon"></span>
+                    Лицевой счет
+                  </label>
+                </div>
+              </div>
+              <div
+                class="subscription-form__payment subscription-balance"
+                id="personal-account-info"
+              >
+                <div class="subscription-balance__subtitle">Баланс</div>
+                <div class="subscription-balance__money gradient-text">
+                  4 323 ₽
+                </div>
+                <div class="subscription-balance__button">
+                  <button class="button outlined md">Пополнить</button>
+                </div>
+                <div
+                  class="subscription-balance__divider divider light-gray d-md-none mt-2"
+                ></div>
+              </div>
+              <div class="form-button">
+                <a
+                  href="/subscription-result.html"
+                  class="button default w-100 lg"
+                >
+                  оформить подписку
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const creditCardRadio = document.getElementById("credit-card");
+      const personalAccountRadio = document.getElementById("personal-account");
+      const creditCardInfoDiv = document.getElementById("credit-card-info");
+      const personalAccountInfoDiv = document.getElementById(
+        "personal-account-info"
+      );
+
+      const handleRadioChange = () => {
+        if (personalAccountRadio.checked) {
+          personalAccountInfoDiv.classList.add("show");
+        } else {
+          personalAccountInfoDiv.classList.remove("show");
+        }
+      };
+
+      handleRadioChange();
+
+      creditCardRadio.addEventListener("change", handleRadioChange);
+      personalAccountRadio.addEventListener("change", handleRadioChange);
+    });
+  </script>
+</html>
