@@ -31,10 +31,10 @@
               />
             </svg>
           </div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
+          <div class="item item-1"></div>
+          <div class="item item-2"></div>
+          <div class="item item-3"></div>
+          <div class="item item-4"></div>
         </div>
       </div>
       <div class="content">
@@ -76,7 +76,9 @@
             <input type="text" class="code-input" />
           </div>
           <div class="form-button">
-            <button class="button default lg">Подтвердить</button>
+            <a href="/registration-result.html" class="button default w-100 lg"
+              >Подтвердить</a
+            >
           </div>
           <a href="#" class="button outlined md mt-7">
             <img src="images/icons/socials/telegram.svg" alt="" />
@@ -87,4 +89,7 @@
     </div>
   </body>
   <script src="script/form.js"></script>
+  <script>
+    const codeForm = new CodeForm(".form-code-inputs");
+  </script>
 </html>

@@ -71,4 +71,94 @@ class CodeForm {
     }
   }
 }
-const codeForm = new CodeForm(".form-code-inputs");
+
+class Dropdown {
+  constructor(dropdownId) {
+    this.dropdown = document.getElementById(dropdownId);
+    if (this.dropdown) {
+      this.dropdownContent = this.dropdown.querySelector(
+        ".form-dropdown__content"
+      );
+
+      this.toggleDropdown = () => {
+        this.dropdown.classList.toggle("show");
+      };
+
+      this.closeDropdown = (event) => {
+        if (!event.target.matches(".dropbtn")) {
+          if (this.dropdown.classList.contains("show")) {
+            this.dropdown.classList.remove("show");
+          }
+        }
+      };
+      // this.toggleDropdown = this.toggleDropdown.bind(this);
+      // this.closeDropdown = this.closeDropdown.bind(this);
+
+      this.dropdown
+        .querySelector(".form-dropdown__button")
+        .addEventListener("click", this.toggleDropdown);
+
+      window.addEventListener("click", this.closeDropdown);
+    }
+  }
+}
+
+class PasswordToggler {
+  constructor(selector) {
+    this.passwordInput = document.querySelector(selector);
+    this.toggleButton = this.passwordInput.nextElementSibling;
+    this.toggleButton.addEventListener("click", this.toggle.bind(this));
+  }
+
+  toggle(event) {
+    event.preventDefault();
+    this.passwordInput.type =
+      this.passwordInput.type === "password" ? "text" : "password";
+    this.toggleButton.classList.toggle("active");
+  }
+}
+
+class FloatingLabel {
+  constructor(selector) {
+    this.inputs = document.querySelectorAll(selector);
+    this.labels = document.querySelectorAll(".form-input__label");
+    this.inputs.forEach((input) => {
+      input.addEventListener("input", this.toggleLabel.bind(this));
+      input.addEventListener("focus", this.onFocus.bind(this));
+      input.addEventListener("blur", this.onBlur.bind(this));
+      this.toggleLabel(input); // Вызываем toggleLabel для каждого поля ввода при инициализации
+    });
+  }
+
+  toggleLabel(input) {
+    if (input.value !== "") {
+      input.classList.add("active");
+    } else {
+      input.classList.remove("active");
+    }
+  }
+
+  onFocus(event) {
+    const input = event.target;
+    input.classList.add("focused");
+    this.labels.forEach((label) => {
+      if (label.getAttribute("for") === input.id) {
+        label.classList.add("active");
+      }
+    });
+  }
+
+  onBlur(event) {
+    const input = event.target;
+    input.classList.remove("focused");
+    if (input.value === "") {
+      this.labels.forEach((label) => {
+        if (label.getAttribute("for") === input.id) {
+          label.classList.remove("active");
+        }
+      });
+    }
+  }
+}
+
+const floatingLabel = new FloatingLabel(".form-input input");

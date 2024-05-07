@@ -31,12 +31,13 @@
               />
             </svg>
           </div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
+          <div class="item item-1"></div>
+          <div class="item item-2"></div>
+          <div class="item item-3"></div>
+          <div class="item item-4"></div>
         </div>
       </div>
+
       <div class="content">
         <header class="header">
           <div class="header__container pt-2 px-2">
@@ -55,20 +56,23 @@
               <img class="d-md-none" src="images/logo.svg" alt="" />
             </a>
             <a href="/registration.html" class="button outlined md ml-auto">
-              Войти
+              Регистрация
             </a>
           </div>
         </header>
         <form class="auth-form px-2">
-          <div class="title medium center mb-4">Войти</div>
+          <div class="title medium center uppercase mb-4">Войти</div>
           <div class="form-input">
             <input type="text" placeholder="Телефон или email" />
           </div>
-          <div class="form-input">
-            <input type="text" placeholder="Пароль" />
+          <div class="form-input form-input__password">
+            <input type="password" placeholder="Пароль" />
+            <button class="button simple form-input__password-btn">
+              <i class="icon eye"></i>
+            </button>
           </div>
           <div class="form-button">
-            <button class="button default lg">Войти</button>
+            <button class="button default w-100 lg">Войти</button>
           </div>
           <a href="#" class="button outlined md mt-8">
             <img src="images/icons/socials/telegram.svg" alt="" />
@@ -78,4 +82,8 @@
       </div>
     </div>
   </body>
+  <script src="/script/form.js"></script>
+  <script>
+    const passwordToggler = new PasswordToggler(".form-input__password input");
+  </script>
 </html>

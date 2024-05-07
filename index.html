@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Yarkima - вход</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <!-- Модальное окна с курсом -->
+    <div class="course-modal" id="course-modal">
+      <div class="course-modal__container">
+        <div class="course-modal__image hexagon">
+          <img src="images/pages/home/list/Polygon 31.png" alt="" />
+        </div>
+        <div class="course-modal__header d-flex align-center gap-1 mt-3">
+          <div class="course-modal__image hexagon xs">
+            <img src="images/example.jpg" alt="" />
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 209 234"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="M114.25 3.20652L198.173 51.6595C204.206 55.1429 207.923 61.5803 207.923 68.547V165.453C207.923 172.42 204.206 178.857 198.173 182.34L114.25 230.793C108.217 234.277 100.783 234.277 94.75 230.793L10.8269 182.34C4.79363 178.857 1.07695 172.42 1.07695 165.453V68.547C1.07695 61.5803 4.79363 55.1428 10.8269 51.6595L94.75 3.20651C100.783 -0.276826 108.217 -0.276824 114.25 3.20652Z"
+                fill="url(#course-modal-image_pattern)"
+                stroke="#DEE3E8"
+              />
+              <defs>
+                <pattern
+                  id="course-modal-image_pattern"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use xlink:href="#image0_2_3573" />
+                </pattern>
+                <image xlink:href="images/example.jpg" />
+              </defs>
+            </svg>
+          </div>
+
+          <div class="course-modal__name text-bold">gingerbread</div>
+        </div>
+        <div class="course-modal__title md text-center uppercase mt-3">
+          Саморазвитие и самопознание
+        </div>
+        <div class="d-flex align-center gap-2 mt-3">
+          <div class="course-modal__tag card-tag">32 карточки</div>
+          <div class="course-modal__rating align-center d-flex gap-1">
+            <div class="icon star"></div>
+            <span> 4.9 <span class="text-gray"> (24) </span> </span>
+          </div>
+        </div>
+        <button class="button default md mt-5">Перейти к курсу</button>
+        <button
+          class="modal-close course-modal__close-btn button outlined min-width-6 min-height-6 mt-2"
+        >
+          <i class="icon close"></i>
+        </button>
+      </div>
+    </div>
+    <div class="home-page">
+      <!-- Хедеер -->
+      <header class="header full">
+        <div class="header__container pb-2 pt-2 px-2">
+          <div class="header__left">
+            <button
+              class="button header__burger header__mob-burger d-md-none"
+              alt=""
+              aria-label="Кнопка мобильного меню"
+            ></button>
+            <a href="/" class="header__logo">
+              <img
+                src="images/logo-full.svg"
+                class="d-none d-md-block"
+                alt=""
+              />
+              <img class="d-md-none" src="images/logo.svg" alt="" />
+            </a>
+            <div class="vertical-divider d-none d-md-block"></div>
+            <div
+              class="header__dropdown form-dropdown d-none d-md-block"
+              id="header__dropdown"
+            >
+              <button
+                class="button outlined md dropbtn form-dropdown__button px-2"
+              >
+                Изучить <i class="icon arrow-down sm"> </i>
+              </button>
+              <div class="dropdown-content form-dropdown__content">
+                <a class="form-dropdown__item" href="#">Языки</a>
+                <a class="form-dropdown__item" href="#">Школа</a>
+                <a class="form-dropdown__item" href="#">Университет</a>
+                <a class="form-dropdown__item" href="#">Личностный рост</a>
+                <a class="form-dropdown__item" href="#">Духовный рост</a>
+                <a class="form-dropdown__item" href="#">Бизнес</a>
+                <a class="form-dropdown__item" href="#">Отношения</a>
+                <a class="form-dropdown__item" href="#">Здоровье</a>
+                <a class="form-dropdown__item" href="#">Спорт</a>
+                <a class="form-dropdown__item" href="#">Хобби, увлечения</a>
+                <a class="form-dropdown__item" href="#">Эзотерика</a>
+                <a class="form-dropdown__item" href="#">Кулинария</a>
+                <a class="form-dropdown__item" href="#">Техника, гаджеты</a>
+                <a class="form-dropdown__item" href="#">Финансы</a>
+                <a class="form-dropdown__item" href="#">Инвестиции</a>
+                <a class="form-dropdown__item" href="#">Профессии</a>
+              </div>
+            </div>
+          </div>
+          <div class="header__search w-100">
+            <div class="form-input md with-icon w-100">
+              <i class="icon search md"></i>
+              <input placeholder="Поиск" type="" />
+            </div>
+          </div>
+          <div class="header__actions d-flex align-center gap-2">
+            <a
+              href="/login.html"
+              class="button default min-width-5 min-height-5 min-width-md-6 min-height-md-6 ml-auto p-0"
+            >
+              <i class="icon white-plus"></i>
+            </a>
+            <button
+              class="header__notification button simple min-width-5 min-height-5 min-width-md-6 min-height-md-6"
+            >
+              <i class="icon notification md"> </i>
+            </button>
+            <div class="header__user hexagon s-48">
+              <img src="images/header-pic.jpg" alt="" />
+            </div>
+
+            <button
+              class="button header__burger header__desk-burger d-none d-md-block"
+              alt=""
+              aria-label="Кнопка меню"
+            ></button>
+          </div>
+        </div>
+      </header>
+      <!-- Десктоп меню  -->
+      <div class="menu-header bg-white" id="header-menu">
+        <div class="menu-header__top bg-white">
+          <div class="menu-header__top-logo">
+            <img src="images/logo-full.svg" alt="" />
+          </div>
+          <button
+            class="menu-header__button-close button outlined min-width-5 min-height-5"
+          >
+            <i class="icon close"></i>
+          </button>
+        </div>
+        <div class="menu-header__body">
+          <ul class="menu-header__menu">
+            <li class="menu-header__menu-item">
+              <a href="/" class="mob-header__menu-link uppercase">
+                <span> Главная </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a href="/catalog.html" class="menu-header__menu-link uppercase">
+                <span> Каталог </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a href="/cases.html" class="menu-header__menu-link uppercase">
+                <span> Кейсы </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a href="/faq.html" class="menu-header__menu-link uppercase">
+                <span> F.a.q </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a href="/partners.html" class="menu-header__menu-link uppercase">
+                <span> партнерам </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Конец десктоп меню  -->
+
+      <!-- Мобильное меню  -->
+      <div class="mob-header bg-white" id="header-mob-menu">
+        <div class="mob-header__top bg-white">
+          <div class="mob-header__top-logo">
+            <img class="d-md-none" src="images/logo.svg" alt="" />
+          </div>
+          <button
+            class="mob-header__button-close button outlined min-width-5 min-height-5"
+          >
+            <i class="icon close"></i>
+          </button>
+        </div>
+        <div class="mob-header__body">
+          <ul class="mob-header__menu">
+            <li class="mob-header__menu-item">
+              <a href="/" class="mob-header__menu-link uppercase">
+                <span> Главная </span>
+              </a>
+            </li>
+            <li class="mob-header__menu-item">
+              <a href="/catalog.html" class="mob-header__menu-link uppercase">
+                <span> Каталог </span>
+              </a>
+            </li>
+            <li class="mob-header__menu-item">
+              <a href="/cases.html" class="mob-header__menu-link uppercase">
+                <span> Кейсы </span>
+              </a>
+            </li>
+            <li class="mob-header__menu-item">
+              <a href="/faq.html" class="mob-header__menu-link uppercase">
+                <span> F.a.q </span>
+              </a>
+            </li>
+            <li class="mob-header__menu-item">
+              <a href="/partners.html" class="mob-header__menu-link uppercase">
+                <span> партнерам </span>
+              </a>
+            </li>
+          </ul>
+          <div class="toggle-list mt-2">
+            <div
+              class="toggle-list__header show"
+              data-toggle="collapse"
+              data-target=".collapse.account-list"
+              data-text="Collapse"
+            >
+              <div class="hexagon xxs">
+                <img src="images/example.jpg" alt="" />
+              </div>
+              Аккаунт
+              <i class="icon arrow-down sm"> </i>
+            </div>
+            <div
+              class="toggle-list__body mob-header__links collapse show account-list"
+            >
+              <a href="profile" class="button mob-header__link active">
+                <img src="images/icons/menu/add/Profile.svg" alt="" />
+                Публичный профиль
+              </a>
+              <a href="#" class="button mob-header__link">
+                <img src="images/icons/menu/add/Partner.svg" alt="" />
+                Кабинет партнера
+              </a>
+              <a href="#" class="button mob-header__link">
+                <img src="images/icons/menu/add/More.svg" alt="" />
+                Еще
+              </a>
+            </div>
+          </div>
+          <div class="mob-header__divider mt-3 mb-2"></div>
+          <div class="toggle-list">
+            <div
+              class="toggle-list__header show"
+              data-toggle="collapse"
+              data-target=".collapse.groups-list"
+              data-text="Collapse"
+            >
+              <span class="gradient-text">Сообщество</span>
+              <i class="icon arrow-down sm"> </i>
+            </div>
+            <div
+              class="toggle-list__body mob-header__links collapse show groups-list"
+            >
+              <a href="#" class="button mob-header__link">
+                <img src="images/icons/menu/add/tinder.svg" alt="" />
+                Знакомства
+              </a>
+              <a href="/chat.html" class="button mob-header__link">
+                <img src="images/icons/menu/add/Chat.svg" alt="" />
+                Чаты
+              </a>
+              <a href="/groups.html" class="button mob-header__link">
+                <img src="images/icons/menu/add/Group.svg" alt="" />
+                Группы
+              </a>
+            </div>
+          </div>
+          <div class="mob-header__divider mt-3 mb-2"></div>
+          <div class="toggle-list">
+            <div
+              class="toggle-list__header show"
+              data-toggle="collapse"
+              data-target=".collapse.learn-list"
+              data-text="Collapse"
+            >
+              Изучить<i class="icon arrow-down sm"> </i>
+            </div>
+            <div
+              class="toggle-list__body mob-header__links collapse show learn-list"
+            >
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-language-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/language.svg" alt="" />
+                  Языки
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-language-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  class="btn btn-primary btn__first"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-school-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/school.svg" alt="" />
+                  Школа
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-school-list"
+                >
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Математика </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Русский язык </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Литература </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> История </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Алгебра </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Геометрия </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-university-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/university.svg" alt="" />
+                  Университет
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-university-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-personal-growth-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/personal-growth.svg" alt="" />
+                  Личностный рост
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-personal-growth-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-spiritual-growth-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/spiritual-growth.svg" alt="" />
+                  Духовный рост
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-spiritual-growth-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-bussiness-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/bussiness.svg" alt="" />
+                  Бизнес
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-bussiness-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-relationships-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/relationships.svg" alt="" />
+                  Отношения
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-relationships-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-health-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/heart.svg" alt="" />
+                  Здоровье
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-health-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-sport-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/sport.svg" alt="" />
+                  Спорт
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-sport-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-hobby-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/hobby.svg" alt="" />
+                  Хобби, увлечения
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-hobby-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-esotericism-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/esotericism.svg" alt="" />
+                  Эзотерика
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-esotericism-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-cooking-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/cooking.svg" alt="" />
+                  Кулинария
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-cooking-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-science-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/science.svg" alt="" />
+                  Наука
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-science-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-technolodgy-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/technolodgy.svg" alt="" />
+                  Техника, гаджеты
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-technolodgy-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-finance-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/finance.svg" alt="" />
+                  Финансы
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-finance-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-investment-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/investment.svg" alt="" />
+                  Инвестиции
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-investment-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-professions-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/professions.svg" alt="" />
+                  Профессии
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-professions-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Конец мобильного меню -->
+
+      <div class="intro-block">
+        <div class="container">
+          <div class="intro-block__container">
+            <div class="intro-block__animations">
+              <div class="intro-block__animation blue">
+                <img src="images/pages/home/intro/BLUE.svg" alt="" />
+              </div>
+              <div class="intro-block__animation green">
+                <img src="images/pages/home/intro/GREEN.svg" alt="" />
+              </div>
+              <div class="intro-block__animation pink">
+                <img src="images/pages/home/intro/PINK.svg" alt="" />
+              </div>
+              <div class="intro-block__animation purple">
+                <img src="images/pages/home/intro/PURP.svg" alt="" />
+              </div>
+              <div class="intro-block__animation blue">
+                <img src="images/pages/home/intro/BLUE.svg" alt="" />
+              </div>
+              <div class="intro-block__animation yellow">
+                <img src="images/pages/home/intro/YELLOW.svg" alt="" />
+              </div>
+            </div>
+            <div class="intro-block__bg d-none d-md-flex">
+              <img src="images/pages/home/intro/banner.jpg" alt="" />
+            </div>
+            <div class="intro-block__content">
+              <h1 class="intro-block__title">
+                Легко осваивайте сложные предметы с помощью карточек и тестов
+              </h1>
+              <div class="intro-block__text">
+                Присоединяйтесь к ученикам по всему миру, которые используют
+                карточки, основанные на научных принципах, чтобы достигать своих
+                целей в школе, университете и за их пределами.
+              </div>
+              <button class="button default lg px-3">Начать бесплатно</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="preview-courses__container mt-15"></div>
+      <div class="previews-courses__rows">
+        <div class="preview-courses__row">
+          <div class="preview-course">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/Polygon 29.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/Polygon 30.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/Polygon 31.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/IMAGE.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl" data-modal-id="course-modal">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/IMAGE1.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/Polygon 28.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/Polygon 29.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/Polygon 30.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/Polygon 31.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/IMAGE.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/IMAGE1.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/Polygon 28.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="preview-courses__row">
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/Polygon 29.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/Polygon 22.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/IMAGE1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/Polygon 24.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/IMAGE12.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/Polygon 29.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/Polygon 22.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/IMAGE1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/Polygon 24.jpg" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/IMAGE12.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="preview-courses__row">
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/img-3-1.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/img-3-2.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/img-3-3.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/img-3-4.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/img-3-5.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/img-3-5.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/img-3-6.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/img-3-1.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/img-3-2.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/img-3-3.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/img-3-4.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/img-3-5.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/img-3-5.png" alt="" />
+            </div>
+          </div>
+          <div class="preview-course hexagon xxl">
+            <div
+              class="preview-course__inner hexagon xxl"
+              data-modal-id="course-modal"
+            >
+              <img src="images/pages/home/list/img-3-6.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container" style="position: relative">
+        <div class="running-text">Ваш текст здесь</div>
+      </div> -->
+
+      <div class="courses-list mt-10 mt-md-15">
+        <div class="container">
+          <h2 class="title big uppercase text-center text-md-unset">
+            Рекомендуем
+          </h2>
+          <div class="list grid-3 grid-сol-mob-1 mt-5">
+            <div class="card course-item border-light p-3">
+              <div class="course-item__header">
+                <div class="course-item__image hexagon xs">
+                  <img src="images/example.jpg" alt="" />
+                </div>
+
+                <div class="course-item__name">gingerbread</div>
+              </div>
+              <div class="course-item__body mt-3 mt-md-5">
+                <div class="d-flex align-center gap-2">
+                  <div class="course-item__tag card-tag">32 карточки</div>
+                  <div class="course-item__rating align-center d-flex gap-1">
+                    <div class="icon star"></div>
+                    <span> 4.9 <span class="text-gray"> (24) </span> </span>
+                  </div>
+                </div>
+                <div class="course-item__title mt-2">Личностный рост</div>
+              </div>
+            </div>
+            <div class="card course-item border-light p-3">
+              <div class="course-item__header">
+                <div class="course-item__image hexagon xs">
+                  <img src="images/example.jpg" alt="" />
+                </div>
+
+                <div class="course-item__name">gingerbread</div>
+              </div>
+              <div class="course-item__body mt-3 mt-md-5">
+                <div class="d-flex align-center gap-2">
+                  <div class="course-item__tag card-tag">32 карточки</div>
+                  <div class="course-item__rating align-center d-flex gap-1">
+                    <div class="icon star"></div>
+                    <span> 4.9 <span class="text-gray"> (24) </span> </span>
+                  </div>
+                </div>
+                <div class="course-item__title mt-2">Личностный рост</div>
+              </div>
+            </div>
+            <div class="card course-item border-light p-3">
+              <div class="course-item__header">
+                <div class="course-item__image hexagon xs">
+                  <img src="images/example.jpg" alt="" />
+                </div>
+
+                <div class="course-item__name">gingerbread</div>
+              </div>
+              <div class="course-item__body mt-3 mt-md-5">
+                <div class="d-flex align-center gap-2">
+                  <div class="course-item__tag card-tag">32 карточки</div>
+                  <div class="course-item__rating align-center d-flex gap-1">
+                    <div class="icon star"></div>
+                    <span> 4.9 <span class="text-gray"> (24) </span> </span>
+                  </div>
+                </div>
+                <div class="course-item__title mt-2">Личностный рост</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="best-authors-list mt-10 mt-md-15">
+        <div class="container">
+          <h2 class="title big uppercase text-center text-md-unset">
+            Лучшие авторы
+          </h2>
+          <div class="list grid-3 grid-сol-mob-1 mt-5">
+            <div class="card author-item border-light p-3">
+              <div class="author-item__header d-flex align-center gap-2">
+                <div class="author-item__image hexagon sm">
+                  <img src="images/pages/home/authors/img-1.png" alt="" />
+                </div>
+
+                <div class="author-item__name text-bold">gingerbread</div>
+              </div>
+              <div class="author-item__body mt-3 mt-md-3">
+                <div class="d-flex align-center gap-2">
+                  <div class="author-item__tag card-tag">35 карточки</div>
+                  <div class="author-item__tag card-tag">1 курс</div>
+                </div>
+              </div>
+            </div>
+            <div class="card author-item border-light p-3">
+              <div class="author-item__header d-flex align-center gap-2">
+                <div class="author-item__image hexagon sm">
+                  <img src="images/pages/home/authors/img-2.jpg" alt="" />
+                </div>
+
+                <div class="author-item__name text-bold">gingerbread</div>
+              </div>
+              <div class="author-item__body mt-3 mt-md-3">
+                <div class="d-flex align-center gap-2">
+                  <div class="author-item__tag card-tag">31 карточки</div>
+                  <div class="author-item__tag card-tag">2 курс</div>
+                </div>
+              </div>
+            </div>
+            <div class="card author-item border-light p-3">
+              <div class="author-item__header d-flex align-center gap-2">
+                <div class="author-item__image hexagon sm">
+                  <img src="images/pages/home/authors/img-3.png" alt="" />
+                </div>
+
+                <div class="author-item__name text-bold">gingerbread</div>
+              </div>
+              <div class="author-item__body mt-3 mt-md-3">
+                <div class="d-flex align-center gap-2">
+                  <div class="author-item__tag card-tag">32 карточки</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews mt-10 mt-md-15">
+        <div class="container">
+          <div class="title xl text-center uppercase">Отзывы учеников</div>
+          <div class="grid-3 mt-md-10 mt-5"></div>
+
+          <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="review-item">
+                  <div class="review-item__content">
+                    <div class="review-item__image hexagon md">
+                      <img src="images/pages/home/reviews/img-1.png" alt="" />
+                    </div>
+                    <div class="review-item__text">
+                      Раньше я часто откладывал подготовку к тестам на потом, а
+                      иногда и совсем не готовился к ним. Но учеба с YaKimA мне
+                      не в тягость, потому что это очень эффективный способ
+                      подготовки к урокам и экзаменам!
+                    </div>
+                    <div class="review-item__author">
+                      <div class="review-item__author-name">Виктор</div>
+                      <div class="review-item__author-add mt-1">
+                        22 года, IT специалист
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-item">
+                  <div class="review-item__content">
+                    <div class="review-item__image hexagon md">
+                      <img src="images/pages/home/reviews/img-2.jpg" alt="" />
+                    </div>
+                    <div class="review-item__text">
+                      Я ОБОЖАЮ YaKiMa! Я рекомендую его всем своим друзьям. Я
+                      использовала YaKiMa для подготовки к экзаменам, и он мне
+                      очень помог. Это был поистине интерактивный способ
+                      обучения, и мне было интересно изучать материал!
+                    </div>
+                    <div class="review-item__author">
+                      <div class="review-item__author-name">Екатерина</div>
+                      <div class="review-item__author-add mt-1">
+                        18 лет, студент
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-item">
+                  <div class="review-item__content">
+                    <div class="review-item__image hexagon md">
+                      <img src="images/pages/home/reviews/img-3.png" alt="" />
+                    </div>
+                    <div class="review-item__text">
+                      Мне 53 года, и я решила пойти учиться в магистратуру.
+                      YaKiMa облегчает подготовку к урокам, делает ее более
+                      интересной, и помогает мне чувствовать себя уверенно. Я
+                      получаю высшие баллы по всем тестам! Спасибо, YaKiMa!
+                    </div>
+                    <div class="review-item__author">
+                      <div class="review-item__author-name">Наталья</div>
+                      <div class="review-item__author-add mt-1">
+                        53 года, студент
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-item">
+                  <div class="review-item__content">
+                    <div class="review-item__image hexagon md">
+                      <img src="images/pages/home/reviews/img-1.png" alt="" />
+                    </div>
+                    <div class="review-item__text">
+                      Раньше я часто откладывал подготовку к тестам на потом, а
+                      иногда и совсем не готовился к ним. Но учеба с YaKimA мне
+                      не в тягость, потому что это очень эффективный способ
+                      подготовки к урокам и экзаменам!
+                    </div>
+                    <div class="review-item__author">
+                      <div class="review-item__author-name">Виктор</div>
+                      <div class="review-item__author-add mt-1">
+                        22 года, IT специалист
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-item">
+                  <div class="review-item__content">
+                    <div class="review-item__image hexagon md">
+                      <img src="images/pages/home/reviews/img-1.png" alt="" />
+                    </div>
+                    <div class="review-item__text">
+                      Раньше я часто откладывал подготовку к тестам на потом, а
+                      иногда и совсем не готовился к ним. Но учеба с YaKimA мне
+                      не в тягость, потому что это очень эффективный способ
+                      подготовки к урокам и экзаменам!
+                    </div>
+                    <div class="review-item__author">
+                      <div class="review-item__author-name">Виктор</div>
+                      <div class="review-item__author-add mt-1">
+                        22 года, IT специалист
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-item">
+                  <div class="review-item__content">
+                    <div class="review-item__image hexagon md">
+                      <img src="images/pages/home/reviews/img-1.png" alt="" />
+                    </div>
+                    <div class="review-item__text">
+                      Раньше я часто откладывал подготовку к тестам на потом, а
+                      иногда и совсем не готовился к ним. Но учеба с YaKimA мне
+                      не в тягость, потому что это очень эффективный способ
+                      подготовки к урокам и экзаменам!
+                    </div>
+                    <div class="review-item__author">
+                      <div class="review-item__author-name">Виктор</div>
+                      <div class="review-item__author-add mt-1">
+                        22 года, IT специалист
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-pagination d-md-none"></div>
+          </div>
+        </div>
+      </div>
+      <div class="partners-list mt-10 mt-md-15">
+        <div class="container">
+          <div class="title xl text-center uppercase">Нам доверяют</div>
+          <div class="partners-list__grid grid-4 grid-сol-mob-2 mt-md-10 mt-5">
+            <div class="partner-item" style="--color: #10c38d">
+              <div class="partner-item__inner">
+                <svg
+                  width="84"
+                  height="48"
+                  viewBox="0 0 84 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M79.4292 37.438C77.6212 35.2678 75.5666 33.3227 73.5797 31.4415C72.8732 30.7725 72.1426 30.0809 71.4384 29.3931C69.4167 27.4164 69.3431 26.6738 70.9438 24.4286C72.0512 22.8809 73.2254 21.3312 74.3609 19.8325C75.3908 18.4727 76.456 17.0666 77.4768 15.6559L77.6864 15.3658C79.6374 12.6662 81.6552 9.87465 82.7291 6.50714C83.0079 5.61869 83.3007 4.31127 82.6312 3.21803C81.9622 2.12569 80.6644 1.79244 79.7462 1.63678C79.2921 1.55976 78.8411 1.54924 78.4226 1.54924L65.6453 1.5401L65.5397 1.53919C63.6079 1.53919 62.3059 2.44958 61.5599 4.3227C60.8477 6.1124 60.0653 8.01821 59.1725 9.83031C57.3958 13.4387 55.1394 17.5948 51.8743 21.0611L51.7362 21.2085C51.3506 21.6229 50.9138 22.0921 50.5945 22.0921C50.5456 22.0921 50.4923 22.0828 50.432 22.0638C49.7557 21.8002 49.3017 20.163 49.3223 19.4014C49.3225 19.3909 49.3227 19.3804 49.3227 19.3699L49.3138 4.60201C49.3138 4.55081 49.3102 4.50007 49.3035 4.44933C48.9785 2.04867 48.2585 0.554279 45.5381 0.0214842C45.4659 0.00708431 45.392 0 45.3184 0H32.0326C29.8681 0 28.6754 0.879763 27.5543 2.19655C27.2516 2.54855 26.6217 3.28134 26.9339 4.17024C27.2507 5.07241 28.2791 5.26532 28.6139 5.32795C30.2761 5.64429 31.213 6.66097 31.4783 8.43741C31.9416 11.5222 31.9986 14.8147 31.6575 18.7994C31.5625 19.9068 31.3743 20.7621 31.0644 21.4928C30.9924 21.6633 30.7371 22.2199 30.4768 22.2201C30.394 22.2201 30.1547 22.1877 29.7188 21.8873C28.6882 21.1813 27.9341 20.1737 27.0551 18.9292C24.0645 14.7027 21.5546 10.0468 19.3809 4.69207C18.5747 2.72089 17.0691 1.61736 15.1395 1.5849C13.0193 1.55267 11.097 1.53713 9.26369 1.53713C7.26051 1.53713 5.40339 1.55564 3.58992 1.59336C2.03748 1.62078 0.963656 2.08615 0.398633 2.97757C-0.167304 3.86968 -0.130505 5.04155 0.508118 6.46005C5.6203 17.8252 10.2555 26.0887 15.5377 33.2548C19.2389 38.2691 22.9513 41.7399 27.2196 44.1767C31.7165 46.7493 36.756 48 42.6257 48C43.291 48 43.979 47.9838 44.6727 47.9513C48.0834 47.7851 49.3488 46.5506 49.5088 43.2298C49.5849 41.5326 49.7705 39.7528 50.6048 38.2348C51.1314 37.2785 51.6224 37.2785 51.7837 37.2785C52.0946 37.2785 52.48 37.4216 52.8939 37.6897C53.6363 38.1743 54.2729 38.8234 54.7947 39.3905C55.2859 39.9292 55.7716 40.4734 56.2578 41.0179C57.3069 42.193 58.3917 43.4078 59.5249 44.56C62.0054 47.0837 64.7379 48.1936 67.8764 47.9527H79.591C79.6159 47.9527 79.6411 47.9518 79.666 47.9502C80.8333 47.8731 81.8443 47.2256 82.4397 46.1737C83.1773 44.8707 83.1624 43.2083 82.3999 41.7258C81.5348 40.0494 80.4125 38.6172 79.4292 37.438Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="partner-item" style="--color: #8e35ff">
+              <div class="partner-item__inner">
+                <svg
+                  width="226"
+                  height="35"
+                  viewBox="0 0 226 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M100.876 10.4836L105.581 6.9667H89.8223V28.0362H105.581V24.5164H94.3236V19.1387H103.946V15.6218H94.3236V10.4836H100.876Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M77.9161 15.1719H72.4566V10.4836H81.1906L85.8993 6.9667H67.9553V28.0362H77.3348C82.5897 28.0362 85.6247 25.6205 85.6247 21.4142C85.6247 17.3802 82.8965 15.1719 77.9161 15.1719ZM77.1654 24.5164H72.4566V18.6889H77.1654C80.0309 18.6889 81.36 19.6557 81.36 21.6216C81.36 23.5875 79.9287 24.5164 77.1654 24.5164Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M118.34 6.9667H109.779V28.0362H114.28V22.0685H118.376C123.832 22.0685 127.244 19.1738 127.244 14.5176C127.244 9.86146 123.832 6.9667 118.34 6.9667ZM118.238 18.5516H114.248V10.4836H118.238C121.139 10.4836 122.707 11.9325 122.707 14.5176C122.707 17.1027 121.139 18.5516 118.238 18.5516Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M60.2437 23.4823C59.0519 24.1395 57.7199 24.4842 56.3558 24.4842C52.2955 24.4842 49.3628 21.5515 49.3628 17.5175C49.3628 13.4836 52.2955 10.5508 56.3558 10.5508C57.8222 10.5187 59.2564 11.0007 60.4482 11.8624L63.6906 9.44959L63.4861 9.2422C61.6108 7.55091 59.0841 6.6892 56.2185 6.6892C53.1164 6.6892 50.2829 7.7583 48.2382 9.68912C46.1906 11.69 45.0309 14.4826 45.0981 17.3802C45.063 20.31 46.1906 23.1376 48.2382 25.2057C50.3852 27.2417 53.2507 28.3809 56.1864 28.3108C59.4258 28.3108 62.2563 27.1716 64.1667 25.1035L61.269 22.9302L60.2437 23.4823Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M181.383 7.00175V28.0684H185.884V19.4483H195.471V28.0684H199.975V7.00175H195.471V15.6568H185.884V7.00175H181.383ZM173.639 28.0684H178.38L169.579 7.00175H165.007L156.037 28.0684H160.573L162.381 23.827H171.933L173.639 28.0684ZM163.745 20.31L167.224 11.8624L170.499 20.31H163.745ZM210.073 19.5535H212.869L219.759 28.0362H225.558L216.347 17.1378L224.398 6.9667H219.248L212.562 16.0015H210.073V6.9667H205.569V28.0362H210.073V19.5535ZM141.163 15.207V10.5187H152.932V7.00175H136.658V28.0684H146.041C151.293 28.0684 154.331 25.6556 154.331 21.4493C154.331 17.4153 151.602 15.207 146.619 15.207H141.163ZM141.163 18.7239H145.871C148.734 18.7239 150.066 19.6908 150.066 21.6567C150.066 23.6225 148.667 24.5865 145.871 24.5865H141.163V18.7239Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M31.0099 6.82941C31.8278 7.89851 32.5113 9.06986 33.0896 10.3113L17.3306 22.0685L10.7115 17.8622V12.8292L17.2955 17.0005L31.0099 6.82941Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M3.99015 17.5175C3.99015 17.2751 3.99015 17.0706 4.0252 16.8282L0.0350526 16.6208C0.0350526 16.8983 0 17.2079 0 17.4825C0 22.311 1.94542 26.6896 5.08263 29.8619L7.91312 26.9993C5.49157 24.5865 3.99015 21.2419 3.99015 17.5175Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M17.2955 4.06902C17.5351 4.06902 17.7395 4.06902 17.9791 4.10407L18.1835 0.0701052C17.909 0.0701052 17.6022 0.0350533 17.3306 0.0350533C12.5547 0.0350533 8.22275 2.00092 5.08263 5.17318L7.91312 8.0358C10.3025 5.58797 13.6442 4.06902 17.2955 4.06902Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M17.2955 30.966C17.056 30.966 16.8515 30.966 16.612 30.931L16.4075 34.9649C16.6821 34.9649 16.9888 35 17.2605 35C22.0364 35 26.3712 33.0341 29.5084 29.8619L26.6779 26.9992C24.2885 29.4821 20.979 30.966 17.2955 30.966Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M24.7997 6.41462L28.1764 3.89668C25.2087 1.48389 21.423 0 17.2955 0V4.03397C20.0939 4.06902 22.6849 4.93073 24.7997 6.41462Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M34.6261 17.5175C34.6261 16.4484 34.5239 15.4144 34.3515 14.3803L30.633 17.1728C30.633 17.2751 30.633 17.4153 30.633 17.5175C30.633 21.4843 28.9271 25.0363 26.2339 27.4841L28.9272 30.4841C32.409 27.3118 34.6261 22.6556 34.6261 17.5175Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M17.2955 30.966C13.3726 30.966 9.85854 29.2426 7.43699 26.5173L4.4692 29.2426C7.64146 32.7946 12.2129 35 17.2955 35L17.2955 30.966Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M8.39217 7.55091L5.69605 4.55099C2.18202 7.7583 0 12.3794 0 17.5175L3.99015 17.5175C3.99015 13.5858 5.69605 10.0017 8.39217 7.55091Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="partner-item" style="--color: #fac602">
+              <div class="partner-item__inner">
+                <svg
+                  width="157"
+                  height="56"
+                  viewBox="0 0 157 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.748 56V38.0424L30.9302 0H25.3351L15.0399 30.3846L6.10995 5.26189H0L12.1304 37.8409V56H17.748Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M45.6344 46.1032C44.6273 47.6481 42.7249 48.9244 40.8002 48.9244C37.9578 48.9244 36.615 46.2375 36.615 42.1176C36.615 37.505 38.1145 34.4598 44.9854 34.4598H45.6344V46.1032ZM51.0953 45.0284V28.2127C51.0953 19.5474 47.6039 16.8604 41.2925 16.8604C37.6892 16.8604 34.4216 18.3383 32.7878 19.6817L33.8397 24.5854C35.6973 22.9508 38.1145 21.473 40.9344 21.473C44.0678 21.473 45.6344 23.4434 45.6344 28.1455V30.2727H44.8511C34.8469 30.2727 30.9302 35.0868 30.9302 42.7669C30.9302 49.7977 34.4216 53.6266 39.5245 53.6266C42.6578 53.6266 44.6273 52.2607 46.1939 50.2903H46.552C46.6192 51.2083 46.843 52.3503 47.0444 53.1116H51.722C51.4534 51.4098 51.0953 48.4318 51.0953 45.0284ZM63.5167 25.369C64.7924 23.6002 66.7619 21.8313 69.1119 21.8313C71.238 21.8313 72.4466 22.7493 72.4466 25.4362V53.1116H78.0418V24.9436C78.0418 19.4802 75.5575 16.8604 70.8799 16.8604C67.5452 16.8604 64.8595 19.0548 63.8524 20.3982H63.5167V17.2859H57.9662V53.1116H63.5167V25.369ZM94.3574 53.6266C97.2669 53.6266 99.2588 52.2607 100.825 50.2903H101.184L101.609 53.1116H105.727V2.37344H100.176V18.2039C99.1245 17.4202 97.3564 16.8604 95.6555 16.8604C88.4712 16.8604 83.5027 23.3091 83.5027 36.587C83.5027 47.6481 87.3522 53.6266 94.3574 53.6266ZM100.176 46.1703C99.2588 47.581 97.7816 48.9244 95.0064 48.9244C90.9555 48.9244 89.4112 43.8193 89.4112 35.445C89.4112 28.1455 91.5374 21.4058 95.9912 21.4058C97.8488 21.4058 99.0573 21.9656 100.176 23.1075V46.1703ZM131.756 50.7157L130.48 46.4614C129.07 47.4466 126.787 48.8573 123.676 48.8573C119.267 48.8573 117.007 44.603 117.007 36.5198H131.89V33.4522C131.89 21.3163 127.996 16.8604 122.042 16.8604C114.455 16.8604 111.255 25.2347 111.255 36.7213C111.255 47.7377 115.798 53.6266 123.161 53.6266C126.72 53.6266 129.495 52.4846 131.756 50.7157ZM122.042 21.4058C125.22 21.4058 126.228 25.8617 126.228 31.9744H117.074C117.432 25.593 118.641 21.4058 122.042 21.4058ZM150.555 17.3531L145.654 30.3399L141.044 17.3531H135.314L142.051 34.5942L134.598 53.1116H140.059L145.453 38.3559L150.981 53.1116H156.733L149.28 34.1016L155.949 17.3531H150.555Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="partner-item" style="--color: #f36dff">
+              <div class="partner-item__inner">
+                <svg
+                  width="180"
+                  height="40"
+                  viewBox="0 0 180 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M25.0833 28.5117C25.0833 34.794 20.0803 39.35 12.1333 39.35C7.52524 39.2224 3.15833 37.2624 0 33.9046L2.65779 30.9651C5.14539 33.3337 8.07236 35.6357 12.0807 35.6357C16.533 35.6357 21.3334 33.1388 21.3334 28.6555C21.3334 24.9319 18.3739 22.503 12.1549 20.5877C5.06805 18.4219 1.46812 15.4826 1.46812 9.95663C1.46812 4.48791 6.09681 0 12.6918 0C17.6175 0 20.6992 2.0993 23.6988 4.78185L21.0859 7.68251C18.4559 5.35268 15.9498 3.77318 12.8743 3.77318C9.05936 3.77318 5.2939 6.23295 5.2939 9.77408C5.2939 12.9826 7.13795 15.0262 13.6478 17.0188C19.6101 18.855 25.0833 21.7017 25.0833 28.5117ZM57.2506 3.62335C57.2506 5.34632 58.647 6.74308 60.3695 6.74308C61.1968 6.74348 61.9903 6.41493 62.5752 5.82977C63.1603 5.24463 63.4886 4.45087 63.4883 3.62335C63.4883 1.90037 62.0919 0.503625 60.3695 0.503625C58.647 0.503625 57.2506 1.90037 57.2506 3.62335ZM87.4316 1.14304H83.6722V38.7338H87.4316V1.14304ZM96.2052 37.4826C96.2052 37.4826 98.5196 39.3622 106.23 39.3622L106.225 39.3607C113.837 39.3607 120.014 33.7944 120.014 26.1893C120.014 18.5841 113.841 13.0396 106.23 13.0396C104.071 12.9818 101.927 13.42 99.9645 14.3206V1.14304H96.2052V37.4826ZM124.403 26.2222C124.402 33.8308 130.57 39.9991 138.179 40C145.788 40 151.957 33.8322 151.958 26.2233C151.958 18.6148 145.79 12.447 138.181 12.4467C130.572 12.4464 124.403 18.6139 124.403 26.2222ZM174.754 38.7455H179.661L168.812 25.8232L178.929 13.7038H174.05L166.366 22.9086L158.643 13.7038H153.736L163.926 25.8401L153.153 38.7455H158.031L166.371 28.7548L174.754 38.7455ZM138.203 16.1662C134.145 16.1656 130.486 18.6097 128.933 22.3586C127.379 26.1077 128.238 30.4231 131.107 33.2926C133.976 36.162 138.292 37.0204 142.041 35.4671C145.79 33.9138 148.234 30.2551 148.234 26.1972C148.233 20.6575 143.742 16.1671 138.203 16.1662ZM106.229 16.8067C103.984 16.8383 101.801 17.5457 99.9639 18.8366V34.352C101.911 35.2984 104.068 35.7298 106.229 35.6053C111.765 35.6053 116.254 31.7373 116.254 26.2061C116.254 20.6748 111.76 16.8052 106.225 16.8052L106.229 16.8067ZM71.1431 1.14346H74.9024V38.7342H71.1431V1.14346ZM47.9578 38.7371L34.808 25.5873L46.7123 13.6754H52.0279L40.1236 25.5873L53.2734 38.7371H47.9578ZM31.0369 1.14304V38.7338H34.7962V1.14304H31.0369ZM58.6219 38.7371H62.3812V13.6754H58.6219V38.7371Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Футер -->
+      <div class="footer">
+        <div class="container footer__container">
+          <div class="footer__top">
+            <div class="footer__top-left">
+              <a href="/" class="footer__logo">
+                <img src="images/logo-full.svg" alt="" />
+              </a>
+              <ul class="footer__socials">
+                <li class="footer__social">
+                  <a href="" class="footer__social-link">
+                    <img
+                      src="images/icons/socials/footer-instagram.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="footer__social">
+                  <a href="" class="footer__social-link">
+                    <img src="images/icons/socials/footer-vk.svg" alt="" />
+                  </a>
+                </li>
+                <li class="footer__social">
+                  <a href="" class="footer__social-link">
+                    <img
+                      src="images/icons/socials/footer-facebook.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__top-right">
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> О сервисе </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Что такое YarKiMa </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Реквизиты </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Контакты </a>
+                </li>
+              </ul>
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Для учеников </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Подсказки </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">
+                    Квизы, опросы, тесты
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Заучивание </a>
+                </li>
+              </ul>
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Для партнеров </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Мы предлагаем</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">
+                    Регистрация партнеров
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Личный кабинет </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__bottom-links d-flex align-center flex-wrap">
+              <div class="footer__copyrights">© 2024 YarKiMa</div>
+              <a href="#" class="footer__bottom-link">
+                Политика конфиденциальности
+              </a>
+              <a href="#" class="footer__bottom-link">
+                Условия использования
+              </a>
+            </div>
+            <a href="#" class="footer__support-link">
+              <span> Поддержка </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/script/form.js"></script>
+  <script src="/script/main.js"></script>
+  <script src="/script/scripts.js"></script>
+  <script src="/script/pages/home.js"></script>
+</html>

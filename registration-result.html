@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Yarkima - вход</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="auth-page">
+      <div class="bg animation-tiles d-none d-md-flex">
+        <div class="items">
+          <div class="animated-item">
+            <svg
+              class=""
+              width="156"
+              height="174"
+              viewBox="0 0 156 174"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M68 2.7735C74.188 -0.799153 81.812 -0.799154 88 2.7735L145.942 36.2265C152.13 39.7992 155.942 46.4017 155.942 53.547V120.453C155.942 127.598 152.13 134.201 145.942 137.774L88 171.226C81.812 174.799 74.188 174.799 68 171.226L10.0577 137.774C3.8697 134.201 0.0577164 127.598 0.0577164 120.453V53.547C0.0577164 46.4017 3.86969 39.7992 10.0577 36.2265L68 2.7735Z"
+                fill="var(--icon-color)"
+              />
+            </svg>
+          </div>
+          <div class="item item-1"></div>
+          <div class="item item-2"></div>
+          <div class="item item-3"></div>
+          <div class="item item-4"></div>
+        </div>
+      </div>
+
+      <div class="content">
+        <header class="header">
+          <div class="header__container pt-2 px-2">
+            <button
+              class="button header__burger d-md-none"
+              alt=""
+              aria-label="Кнопка мобильного меню"
+            ></button>
+
+            <a href="/" class="header__logo">
+              <img
+                src="images/logo-full.svg"
+                class="d-none d-md-block"
+                alt=""
+              />
+              <img class="d-md-none" src="images/logo.svg" alt="" />
+            </a>
+            <a href="/login.html" class="button outlined md ml-auto"> Войти </a>
+          </div>
+        </header>
+        <form class="auth-form align-center gap-2 px-2">
+          <div class="icon auth-form__result-icon mb-2">
+            <img src="images/icons/icon-form-result.svg" alt="" />
+          </div>
+          <div class="title medium center uppercase">Поздравляем!</div>
+          <div class="text text-gray text-center">
+            Регистрация успешно пройдена,<br />
+            приятного пребывания в Yarkima!
+          </div>
+          <div class="form-button mt-2">
+            <a href="/" class="button default lg">Продолжить</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="/script/form.js"></script>
+  <script>
+    const passwordToggler = new PasswordToggler(".form-input__password input");
+  </script>
+</html>

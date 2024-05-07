@@ -1,17 +1,55 @@
 @import "mixins";
 $breakpoints: (
-  sm: 576px,
+  sm: 3,
   md: 768px,
-  lg: 992px,
-  xl: 1200px,
+  lg: 1440px,
 );
 
 $STEP: 8px;
 
-@include generate-padding-classes("p", (1, 2, 3, 4, 5, 6));
-@include generate-margin-classes("m", (1, 2, 3, 4, 5, 6, 7, 8));
+@include generate-padding-classes("p", (1, 2, 3, 4, 5, 6, 7, 8));
+@include generate-margin-classes("m", (0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 15));
 
-@include generate-display-classes(none);
-@include generate-display-classes(flex);
-@include generate-display-classes(block);
+// @include generate-display-classes(none);
+// @include generate-display-classes(flex);
+// @include generate-display-classes(block);
 // @include generate-display-classes(inline);
+
+@include generate-display-classes(none, flex, block);
+
+@mixin grid($columns: 2, $gap: $STEP * 2) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-gap: $gap;
+}
+
+@for $i from 2 through 5 {
+  .grid-#{$i} {
+    @include grid($i);
+  }
+}
+
+@function px-to-rem($size) {
+  @return ($size / $base-font-size) * 1rem;
+}
+
+@function px-to-vw($size, $viewport-width: 1440px) {
+  @return ($size / $viewport-width) * 100vw;
+}
+
+@function px-to-vw-mob($size, $viewport-width: 375px) {
+  @return ($size / $viewport-width) * 100vw;
+}
+@mixin custom-media($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin min-dimension($type, $value) {
+  @if $type == width {
+    min-width: $value * 8px !important;
+  } @else if $type == height {
+    min-height: $value * 8px !important;
+  }
+}
