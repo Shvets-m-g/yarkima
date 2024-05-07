@@ -30,3 +30,10 @@ const collapse = (selector, elm, cmd) => {
     target.classList[fnmap[cmd]]("show");
   });
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth < 768) {
+    new Modal("sorting-modal");
+    new Modal("filter-modal");
+  }
+});
