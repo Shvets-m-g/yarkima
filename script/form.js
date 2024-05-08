@@ -162,3 +162,46 @@ class FloatingLabel {
 }
 
 const floatingLabel = new FloatingLabel(".form-input input");
+
+class VariantSelector {
+  constructor(containerSelector) {
+    this.container = document.querySelector(containerSelector);
+    this.variants = this.container.querySelectorAll(".form-variant");
+    this.selectedVariantIndex = null;
+
+    this.init();
+  }
+
+  init() {
+    this.loadSelectedVariantIndex();
+    this.variants.forEach((variant, index) => {
+      variant.addEventListener("click", () => {
+        this.selectVariant(index);
+      });
+    });
+  }
+
+  selectVariant(index) {
+    this.clearSelection();
+    this.variants[index].classList.add("active");
+    this.selectedVariantIndex = index;
+    this.saveSelectedVariantIndex();
+  }
+
+  clearSelection() {
+    this.variants.forEach((variant) => {
+      variant.classList.remove("active");
+    });
+  }
+
+  saveSelectedVariantIndex() {
+    localStorage.setItem("selectedVariantIndex", this.selectedVariantIndex);
+  }
+
+  loadSelectedVariantIndex() {
+    const savedIndex = localStorage.getItem("selectedVariantIndex");
+    if (savedIndex !== null) {
+      this.selectVariant(parseInt(savedIndex));
+    }
+  }
+}
