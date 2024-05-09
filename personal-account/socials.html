@@ -1,0 +1,522 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Yarkima - вход</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/2.5.4/tippy.css"
+      rel="stylesheet"
+    />
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="pesonal-account-page">
+      <!-- Хедеер -->
+      <header class="header full">
+        <div class="header__container pb-2 pt-2 px-2">
+          <div class="header__left">
+            <button
+              class="button header__burger header__mob-burger d-md-none"
+              alt=""
+              aria-label="Кнопка мобильного меню"
+            ></button>
+            <a href="/" class="header__logo">
+              <img
+                src="/images/logo-full.svg"
+                class="d-none d-md-block"
+                alt=""
+              />
+              <img class="d-md-none" src="/images/logo.svg" alt="" />
+            </a>
+            <div class="vertical-divider d-none d-md-block"></div>
+            <div
+              class="header__dropdown form-dropdown d-none d-md-block"
+              id="header__dropdown"
+            >
+              <button
+                class="button outlined md dropbtn form-dropdown__button px-2"
+              >
+                Изучить <i class="icon arrow-down sm"> </i>
+              </button>
+              <div class="dropdown-content form-dropdown__content">
+                <a class="form-dropdown__item" href="#">Языки</a>
+                <a class="form-dropdown__item" href="#">Школа</a>
+                <a class="form-dropdown__item" href="#">Университет</a>
+                <a class="form-dropdown__item" href="#">Личностный рост</a>
+                <a class="form-dropdown__item" href="#">Духовный рост</a>
+                <a class="form-dropdown__item" href="#">Бизнес</a>
+                <a class="form-dropdown__item" href="#">Отношения</a>
+                <a class="form-dropdown__item" href="#">Здоровье</a>
+                <a class="form-dropdown__item" href="#">Спорт</a>
+                <a class="form-dropdown__item" href="#">Хобби, увлечения</a>
+                <a class="form-dropdown__item" href="#">Эзотерика</a>
+                <a class="form-dropdown__item" href="#">Кулинария</a>
+                <a class="form-dropdown__item" href="#">Техника, гаджеты</a>
+                <a class="form-dropdown__item" href="#">Финансы</a>
+                <a class="form-dropdown__item" href="#">Инвестиции</a>
+                <a class="form-dropdown__item" href="#">Профессии</a>
+              </div>
+            </div>
+          </div>
+          <div class="header__search w-100">
+            <div class="form-input md with-icon mob-sm w-100">
+              <i class="icon search md"></i>
+              <input placeholder="Поиск" type="" />
+            </div>
+          </div>
+          <div class="header__actions d-flex align-center gap-2">
+            <a
+              href="/login.html"
+              class="button default min-width-5 min-height-5 min-width-md-6 min-height-md-6 ml-auto p-0"
+            >
+              <i class="icon white-plus"></i>
+            </a>
+            <button
+              class="header__notification button simple min-width-5 min-height-5 min-width-md-6 min-height-md-6"
+            >
+              <i class="icon notification md"> </i>
+            </button>
+            <div class="header__user hexagon s-48">
+              <img src="/images/header-pic.jpg" alt="" />
+            </div>
+
+            <button
+              class="button header__burger header__desk-burger d-none d-md-block"
+              alt=""
+              aria-label="Кнопка меню"
+            ></button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Десктоп меню  -->
+      <div class="menu-header bg-white" id="header-menu">
+        <div class="menu-header__top bg-white">
+          <div class="menu-header__top-logo">
+            <img src="/images/logo-full.svg" alt="" />
+          </div>
+          <button
+            class="menu-header__button-close button outlined min-width-5 min-height-5"
+          >
+            <i class="icon close"></i>
+          </button>
+        </div>
+        <div class="menu-header__body">
+          <ul class="menu-header__menu">
+            <li class="menu-header__menu-item">
+              <a href="/" class="mob-header__menu-link uppercase">
+                <span> Главная </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a href="/catalog.html" class="menu-header__menu-link uppercase">
+                <span> Каталог </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a href="/cases.html" class="menu-header__menu-link uppercase">
+                <span> Кейсы </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a href="/faq.html" class="menu-header__menu-link uppercase">
+                <span> F.a.q </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a href="/partners.html" class="menu-header__menu-link uppercase">
+                <span> партнерам </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Конец десктоп меню  -->
+
+      <main class="personal-account">
+        <div class="container">
+          <div class="personal-account__container">
+            <div>
+              <div class="d-none d-md-block personal-account__header">
+                <ul class="breadcrumbs">
+                  <li>
+                    <a
+                      href="/profile
+                  "
+                      >Публичный профиль</a
+                    >
+                  </li>
+                  <li>Социальные сети</li>
+                </ul>
+                <div class="d-flex align-center mt-3">
+                  <button
+                    class="menu-header__button-close button outlined min-width-6 min-height-6"
+                  >
+                    <i class="icon arrow-left"></i>
+                  </button>
+                  <div class="title uppercase small ml-5">Социальные сети</div>
+                </div>
+              </div>
+
+              <!-- Дропдаун на мобильном -->
+              <div
+                class="form-dropdown w-100 d-md-none"
+                id="personal-account__menu-dropdown"
+              >
+                <button
+                  class="button outlined md text-transform-unset form-dropdown__button justify-space-between px-2 w-100"
+                >
+                  Социальные сети
+                  <i class="icon arrow-down sm"> </i>
+                </button>
+                <div class="dropdown-content form-dropdown__content">
+                  <ul class="personal-account__menu">
+                    <li class="personal-account__menu-item">
+                      <a
+                        href="/personal-account/main-info.html"
+                        class="personal-account__menu-link"
+                      >
+                        Основная информация
+                      </a>
+                    </li>
+                    <li class="personal-account__menu-item">
+                      <a
+                        href="/personal-account/additional-info.html"
+                        class="personal-account__menu-link"
+                      >
+                        Дополнительная информация
+                      </a>
+                    </li>
+                    <!-- <li class="personal-account__menu-item">
+                      <a
+                        href="/personal-account/socials.html"
+                        class="personal-account__menu-link"
+                      >
+                        Социальные сети
+                      </a>
+                    </li> -->
+                    <li class="personal-account__menu-item">
+                      <a
+                        href="/personal-account/user-id.html"
+                        class="personal-account__menu-link"
+                      >
+                        Идентификатор пользователя
+                      </a>
+                    </li>
+                    <li class="personal-account__menu-item">
+                      <a
+                        href="/personal-account/personal-account.html"
+                        class="personal-account__menu-link"
+                      >
+                        Лицевой счет
+                      </a>
+                    </li>
+                    <li class="personal-account__menu-item">
+                      <a
+                        href="/personal-account/order-history.html"
+                        class="personal-account__menu-link"
+                      >
+                        История заказов
+                      </a>
+                    </li>
+                    <li class="personal-account__menu-item">
+                      <a
+                        href="/personal-account/password.html"
+                        class="personal-account__menu-link"
+                      >
+                        Пароль
+                      </a>
+                    </li>
+
+                    <li class="personal-account__menu-item">
+                      <a href="#" class="personal-account__menu-link text-red">
+                        Выйти</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <form class="personal-account__form mt-5">
+                <div class="personal-account__input">
+                  <div class="personal-account__input-label">Yarkima</div>
+                  <div class="form-input">
+                    <input
+                      id="form-contact"
+                      type="text"
+                      value="https://yarkima.ru"
+                    />
+                  </div>
+                  <button
+                    class="button simple button__set-active show"
+                    aria-label="Показать / скрыть поле"
+                  ></button>
+                </div>
+
+                <div class="personal-account__input">
+                  <div class="personal-account__input-label">Vkontakte</div>
+                  <div class="form-input">
+                    <input
+                      id="form-contact"
+                      type="text"
+                      value="https://vk.com/yarkima"
+                    />
+                  </div>
+                  <button
+                    class="button simple button__set-active show"
+                    aria-label="Показать / скрыть поле"
+                  ></button>
+                </div>
+
+                <div class="personal-account__input">
+                  <div class="personal-account__input-label">Instagram</div>
+                  <div class="form-input">
+                    <input id="form-contact" type="text" />
+                  </div>
+                  <button
+                    class="button simple button__set-active"
+                    aria-label="Показать / скрыть поле"
+                  ></button>
+                </div>
+
+                <div class="personal-account__input">
+                  <div class="personal-account__input-label">Twitter</div>
+                  <div class="form-input">
+                    <input id="form-contact" type="text" />
+                  </div>
+                  <button
+                    class="button simple button__set-active"
+                    aria-label="Показать / скрыть поле"
+                  ></button>
+                </div>
+
+                <div class="personal-account__input">
+                  <div class="personal-account__input-label">Facebook</div>
+                  <div class="form-input">
+                    <input id="form-contact" type="text" />
+                  </div>
+                  <button
+                    class="button simple button__set-active"
+                    aria-label="Показать / скрыть поле"
+                  ></button>
+                </div>
+
+                <div class="personal-account__input">
+                  <div class="personal-account__input-label">Личный сайт</div>
+                  <div class="form-input">
+                    <input id="form-contact" type="text" />
+                  </div>
+                  <button
+                    class="button simple button__set-active"
+                    aria-label="Показать / скрыть поле"
+                  ></button>
+                </div>
+
+                <button
+                  class="personal-account__form-save button outlined disabled mob-sm ml-auto lg px-3"
+                >
+                  Сохранить изменения
+                </button>
+              </form>
+            </div>
+
+            <ul class="personal-account__menu d-none d-md-flex">
+              <li class="personal-account__menu-item">
+                <a
+                  href="/personal-account/main-info.html"
+                  class="personal-account__menu-link"
+                >
+                  Основная информация
+                </a>
+              </li>
+              <li class="personal-account__menu-item">
+                <a
+                  href="/personal-account/additional-info.html"
+                  class="personal-account__menu-link"
+                >
+                  Дополнительная информация
+                </a>
+              </li>
+              <li class="personal-account__menu-item">
+                <a
+                  href="/personal-account/socials.html"
+                  class="personal-account__menu-link active"
+                >
+                  Социальные сети
+                </a>
+              </li>
+              <li class="personal-account__menu-item">
+                <a
+                  href="/personal-account/user-id.html"
+                  class="personal-account__menu-link"
+                >
+                  Идентификатор пользователя
+                </a>
+              </li>
+              <li class="personal-account__menu-item">
+                <a
+                  href="/personal-account/personal-account.html"
+                  class="personal-account__menu-link"
+                >
+                  Лицевой счет
+                </a>
+              </li>
+              <li class="personal-account__menu-item">
+                <a
+                  href="/personal-account/order-history.html"
+                  class="personal-account__menu-link"
+                >
+                  История заказов
+                </a>
+              </li>
+              <li class="personal-account__menu-item">
+                <a
+                  href="/personal-account/password.html"
+                  class="personal-account__menu-link"
+                >
+                  Пароль
+                </a>
+              </li>
+
+              <li class="personal-account__menu-item">
+                <a href="#" class="personal-account__menu-link text-red">
+                  Выйти</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+
+      <!-- Футер -->
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__top">
+            <div class="footer__top-left">
+              <a href="/" class="footer__logo">
+                <img src="/images/logo-full.svg" alt="" />
+              </a>
+              <ul class="footer__socials">
+                <li class="footer__social">
+                  <a href="" class="footer__social-link">
+                    <img
+                      src="/images/icons/socials/footer-instagram.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="footer__social">
+                  <a href="" class="footer__social-link">
+                    <img src="/images/icons/socials/footer-vk.svg" alt="" />
+                  </a>
+                </li>
+                <li class="footer__social">
+                  <a href="" class="footer__social-link">
+                    <img
+                      src="/images/icons/socials/footer-facebook.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__top-right">
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> О сервисе </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Что такое YarKiMa </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Реквизиты </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Контакты </a>
+                </li>
+              </ul>
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Для учеников </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Подсказки </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">
+                    Квизы, опросы, тесты
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Заучивание </a>
+                </li>
+              </ul>
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Для партнеров </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Мы предлагаем</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">
+                    Регистрация партнеров
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Личный кабинет </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__bottom-links d-flex align-center flex-wrap">
+              <div class="footer__copyrights">© 2024 YarKiMa</div>
+              <a href="#" class="footer__bottom-link">
+                Политика конфиденциальности
+              </a>
+              <a href="#" class="footer__bottom-link">
+                Условия использования
+              </a>
+            </div>
+            <a href="#" class="footer__support-link">
+              <span> Поддержка </span>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5/dist/tippy-bundle.iife.js"></script>
+  <script src="/script/form.js"></script>
+  <script src="/script/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const buttons = document.querySelectorAll(".button__set-active");
+      for (const button of buttons) {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+          this.classList.toggle("show");
+        });
+        tippy(button, {
+          placement: "top-end",
+          content: "Выберите, отображать данное поле в вашем профиле, или нет.",
+        });
+      }
+      // if (window.innerWidth < 768) {
+      const menu = new Dropdown("personal-account__menu-dropdown");
+      // }
+    });
+
+    const formSelects = document.querySelectorAll(".form-select");
+    for (const select of formSelects) {
+      const customSelect = new CustomSelect(select);
+    }
+  </script>
+</html>

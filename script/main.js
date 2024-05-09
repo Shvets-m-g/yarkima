@@ -3,7 +3,7 @@ const headerDropdown = new Dropdown("header__dropdown");
 document.addEventListener("DOMContentLoaded", function () {
   const burgerButton = document.querySelector(".header__mob-burger");
   const mobileMenu = document.getElementById("header-mob-menu");
-  const closeButton = mobileMenu.querySelector(".mob-header__button-close");
+  const closeButton = mobileMenu?.querySelector(".mob-header__button-close");
 
   burgerButton?.addEventListener("click", function () {
     mobileMenu.classList.toggle("show");

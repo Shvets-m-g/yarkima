@@ -81,16 +81,20 @@ class Dropdown {
       );
 
       this.toggleDropdown = () => {
-        this.dropdown.classList.toggle("show");
-      };
-
-      this.closeDropdown = (event) => {
-        if (!event.target.matches(".dropbtn")) {
-          if (this.dropdown.classList.contains("show")) {
-            this.dropdown.classList.remove("show");
-          }
+        if (this.dropdown.classList.contains("show")) {
+          this.dropdown.classList.remove("show");
+        } else {
+          this.dropdown.classList.add("show");
         }
       };
+
+      // this.closeDropdown = (event) => {
+      //   if (!event.target.matches(".dropbtn")) {
+      //     if (this.dropdown.classList.contains("show")) {
+      //       this.dropdown.classList.remove("show");
+      //     }
+      //   }
+      // };
       // this.toggleDropdown = this.toggleDropdown.bind(this);
       // this.closeDropdown = this.closeDropdown.bind(this);
 
@@ -122,12 +126,14 @@ class FloatingLabel {
   constructor(selector) {
     this.inputs = document.querySelectorAll(selector);
     this.labels = document.querySelectorAll(".form-input__label");
-    this.inputs.forEach((input) => {
-      input.addEventListener("input", this.toggleLabel.bind(this));
-      input.addEventListener("focus", this.onFocus.bind(this));
-      input.addEventListener("blur", this.onBlur.bind(this));
-      this.toggleLabel(input); // Вызываем toggleLabel для каждого поля ввода при инициализации
-    });
+    if (this.labels?.length) {
+      this.inputs.forEach((input) => {
+        input.addEventListener("input", this.toggleLabel.bind(this));
+        input.addEventListener("focus", this.onFocus.bind(this));
+        input.addEventListener("blur", this.onBlur.bind(this));
+        this.toggleLabel(input);
+      });
+    }
   }
 
   toggleLabel(input) {
@@ -203,5 +209,88 @@ class VariantSelector {
     if (savedIndex !== null) {
       this.selectVariant(parseInt(savedIndex));
     }
+  }
+}
+
+class CustomSelect {
+  constructor(selectElement) {
+    this.selectElement = selectElement; // document.querySelector(selector);
+    this.dropdown = document.createElement("div");
+    this.dropdown.classList.add("form-select__container");
+    this.init();
+  }
+
+  init() {
+    this.selectElement.style.display = "none";
+    const dropdownContent = this.generateDropdownContent();
+    this.dropdown.appendChild(dropdownContent);
+    this.selectElement.parentNode.insertBefore(
+      this.dropdown,
+      this.selectElement.nextSibling
+    );
+
+    this.dropdown.addEventListener("click", (event) => {
+      if (event.target.classList.contains("form-select__option")) {
+        this.selectOption(event.target);
+      }
+      this.toggleDropdown();
+    });
+    // const floatingLabel = new FloatingLabel(".form-input input");
+  }
+
+  generateDropdownContent() {
+    const customSelectContainer = document.createElement("div");
+    customSelectContainer.classList.add("form-select");
+
+    const customSelected = document.createElement("div");
+    customSelected.classList.add("form-selected");
+    customSelected.classList.add("form-input");
+    customSelected.classList.add("with-label");
+
+    const selectedInput = document.createElement("input");
+    const id = this.selectElement.getAttribute("data-id") || "";
+
+    selectedInput.id = id || "form-select-input";
+    selectedInput.classList.add("form-select__input");
+    selectedInput.type = "text";
+    const placeholder =
+      this.selectElement.getAttribute("data-placeholder") || "";
+
+    const label = document.createElement("label");
+    label.htmlFor = "form-select-input";
+    label.innerHTML = placeholder;
+    label.classList.add("form-input__label");
+
+    customSelected.appendChild(selectedInput);
+    customSelected.appendChild(label);
+
+    const customOptions = document.createElement("div");
+    customOptions.classList.add("form-select__options");
+
+    Array.from(this.selectElement.children[0]).forEach((option) => {
+      if (option.value) {
+        const customOption = document.createElement("div");
+        customOption.classList.add("form-select__option");
+        customOption.setAttribute("data-value", option.value);
+        customOption.textContent = option.textContent;
+
+        customOptions.appendChild(customOption);
+      }
+    });
+
+    customSelectContainer.appendChild(customSelected);
+    customSelectContainer.appendChild(customOptions);
+    return customSelectContainer;
+  }
+  toggleDropdown() {
+    this.dropdown.classList.toggle("show");
+  }
+
+  selectOption(option) {
+    const value = option.getAttribute("data-value");
+    this.selectElement.value = value;
+    this.dropdown.querySelector(".form-selected input").value =
+      option.textContent;
+    this.dropdown.querySelector(".form-input__label").classList.add("active");
   }
 }
