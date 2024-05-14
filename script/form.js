@@ -80,11 +80,20 @@ class Dropdown {
         ".form-dropdown__content"
       );
 
+      console.log("this.dropdown", this.dropdown);
       this.toggleDropdown = () => {
         if (this.dropdown.classList.contains("show")) {
           this.dropdown.classList.remove("show");
         } else {
           this.dropdown.classList.add("show");
+          window.addEventListener("click", this.closeDropdown);
+        }
+      };
+
+      this.closeDropdown = (event) => {
+        if (!event.target.closest(`#${dropdownId}`)) {
+          this.dropdown.classList.remove("show");
+          window.removeEventListener("click", this.closeDropdown);
         }
       };
 

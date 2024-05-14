@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Yarkima - вход</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/2.5.4/tippy.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/2.5.4/tippy.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="">
+    <!-- <body class="disabled-scroll"> -->
+    <!-- Подложка для модальных окон -->
+    <div class="overlay" id="overlay"></div>
+
+    <div class="profile-page chat-page page with-bg">
+      <!-- Хедеер -->
+      <header class="header full">
+        <div class="header__container pb-2 pt-2 px-2">
+          <div class="header__left">
+            <button
+              class="button header__burger header__mob-burger d-md-none"
+              alt=""
+              aria-label="Кнопка мобильного меню"
+            ></button>
+            <a href="/" class="header__logo">
+              <img
+                src="images/logo-full.svg"
+                class="d-none d-md-block"
+                alt=""
+              />
+              <img class="d-md-none" src="images/logo.svg" alt="" />
+            </a>
+            <div class="vertical-divider d-none d-md-block"></div>
+            <div
+              class="header__dropdown form-dropdown d-none d-md-block"
+              id="header__dropdown"
+            >
+              <button
+                class="button outlined md dropbtn form-dropdown__button px-2"
+              >
+                Изучить <i class="icon arrow-down sm"> </i>
+              </button>
+              <div class="dropdown-content form-dropdown__content">
+                <a class="form-dropdown__item" href="/languages.html">Языки</a>
+                <a class="form-dropdown__item" href="#">Школа</a>
+                <a class="form-dropdown__item" href="#">Университет</a>
+                <a class="form-dropdown__item" href="#">Личностный рост</a>
+                <a class="form-dropdown__item" href="#">Духовный рост</a>
+                <a class="form-dropdown__item" href="#">Бизнес</a>
+                <a class="form-dropdown__item" href="#">Отношения</a>
+                <a class="form-dropdown__item" href="#">Здоровье</a>
+                <a class="form-dropdown__item" href="#">Спорт</a>
+                <a class="form-dropdown__item" href="#">Хобби, увлечения</a>
+                <a class="form-dropdown__item" href="#">Эзотерика</a>
+                <a class="form-dropdown__item" href="#">Кулинария</a>
+                <a class="form-dropdown__item" href="#">Техника, гаджеты</a>
+                <a class="form-dropdown__item" href="#">Финансы</a>
+                <a class="form-dropdown__item" href="#">Инвестиции</a>
+                <a class="form-dropdown__item" href="#">Профессии</a>
+              </div>
+            </div>
+          </div>
+          <div class="header__search w-100">
+            <div class="form-input md with-icon w-100">
+              <i class="icon search md"></i>
+              <input placeholder="Поиск" type="" />
+            </div>
+          </div>
+          <div class="header__actions d-flex align-center gap-2 ml-auto">
+            <a
+              href="/create-course.html"
+              class="button default min-width-5 min-height-5 min-width-md-6 min-height-md-6 p-0"
+            >
+              <i class="icon white-plus"></i>
+            </a>
+            <button
+              class="header__notification button simple min-width-5 min-height-5 min-width-md-6 min-height-md-6"
+            >
+              <i class="icon notification md"> </i>
+            </button>
+            <a href="/profile.html" class="header__user hexagon s-48">
+              <img src="images/people-images/small-pic.jpg" alt="" />
+            </a>
+            <!-- <a href="/login.html" class="button outlined d-none d-md-block md">
+            Войти
+          </a>
+          <a
+            href="/registration.html"
+            class="button default d-none d-md-block md"
+          >
+            Зарегистрироваться
+          </a>
+          <a href="/registration.html" class="button default xs d-md-none">
+            Начать
+          </a> -->
+            <button
+              class="button header__burger header__desk-burger d-none d-md-block"
+              alt=""
+              aria-label="Кнопка меню"
+            ></button>
+          </div>
+        </div>
+      </header>
+      <!-- Десктоп меню  -->
+      <div class="menu-header bg-white" id="header-menu">
+        <div class="menu-header__top bg-white">
+          <div class="menu-header__top-logo">
+            <img src="images/logo-full.svg" alt="" />
+          </div>
+          <button
+            class="menu-header__button-close button outlined min-width-5 min-height-5 border-radius-50"
+          >
+            <i class="icon close"></i>
+          </button>
+        </div>
+        <div class="menu-header__body">
+          <ul class="menu-header__menu">
+            <li class="menu-header__menu-item">
+              <a href="/" class="menu-header__menu-link active uppercase">
+                <span> Главная </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a
+                href="/categories.html"
+                class="menu-header__menu-link uppercase"
+              >
+                <span> Каталог </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a href="/cases.html" class="menu-header__menu-link uppercase">
+                <span> Кейсы </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a href="/faq.html" class="menu-header__menu-link uppercase">
+                <span> F.a.q </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a href="/partners.html" class="menu-header__menu-link uppercase">
+                <span> партнерам </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Конец десктоп меню  -->
+
+      <!-- Мобильное меню  -->
+      <div class="mob-header bg-white" id="header-mob-menu">
+        <div class="mob-header__top bg-white">
+          <div class="mob-header__top-logo">
+            <img class="d-md-none" src="images/logo.svg" alt="" />
+          </div>
+          <button
+            class="mob-header__button-close button outlined min-width-5 min-height-5"
+          >
+            <i class="icon close"></i>
+          </button>
+        </div>
+        <div class="mob-header__body">
+          <ul class="mob-header__menu">
+            <li class="mob-header__menu-item">
+              <a href="/" class="mob-header__menu-link uppercase">
+                <span> Главная </span>
+              </a>
+            </li>
+            <li class="mob-header__menu-item">
+              <a
+                href="/categories.html"
+                class="mob-header__menu-link uppercase"
+              >
+                <span> Каталог </span>
+              </a>
+            </li>
+            <li class="mob-header__menu-item">
+              <a href="/cases.html" class="mob-header__menu-link uppercase">
+                <span> Кейсы </span>
+              </a>
+            </li>
+            <li class="mob-header__menu-item">
+              <a href="/faq.html" class="mob-header__menu-link uppercase">
+                <span> F.a.q </span>
+              </a>
+            </li>
+            <li class="mob-header__menu-item">
+              <a href="/partners.html" class="mob-header__menu-link uppercase">
+                <span> партнерам </span>
+              </a>
+            </li>
+          </ul>
+          <div class="toggle-list mt-2">
+            <div
+              class="toggle-list__header show"
+              data-toggle="collapse"
+              data-target=".collapse.account-list"
+              data-text="Collapse"
+            >
+              <div class="hexagon xxs">
+                <img src="images/people-images/small-pic.jpg" alt="" />
+              </div>
+              Аккаунт
+              <i class="icon arrow-down sm"> </i>
+            </div>
+
+            <div
+              class="toggle-list__body mob-header__links collapse show account-list"
+            >
+              <div class="d-grid gap-1">
+                <a
+                  href="/profile.html"
+                  class="button profile-menu__link active"
+                >
+                  <i class="icon profile md"> </i>
+                  Публичный профиль
+                </a>
+                <a
+                  href="/partners-cabinet.html"
+                  class="button profile-menu__link"
+                >
+                  <i class="icon correct-blank md"> </i> Кабинет партнера
+                </a>
+                <a
+                  href="#"
+                  class="button profile-menu__link profile-menu__link-show-more"
+                >
+                  <i class="icon more md"> </i>
+                  Еще
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mob-header__divider mt-3 mb-2"></div>
+          <div class="toggle-list">
+            <div
+              class="toggle-list__header show"
+              data-toggle="collapse"
+              data-target=".collapse.groups-list"
+              data-text="Collapse"
+            >
+              <span class="gradient-text">Сообщество</span>
+              <i class="icon arrow-down sm"> </i>
+            </div>
+            <div
+              class="toggle-list__body mob-header__links collapse show groups-list"
+            >
+              <div class="d-grid gap-1">
+                <a href="/meeting.html" class="button profile-menu__link">
+                  <i class="icon two-persons md"> </i>
+                  Знакомства
+                </a>
+
+                <a href="/chat.html" class="button profile-menu__link">
+                  <i class="icon icon-chat md"> </i>
+                  Чаты
+                </a>
+                <a href="/groups.html" class="button profile-menu__link">
+                  <i class="icon group md"> </i>
+                  Группы
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mob-header__divider mt-3 mb-2"></div>
+          <div class="toggle-list">
+            <div
+              class="toggle-list__header show"
+              data-toggle="collapse"
+              data-target=".collapse.learn-list"
+              data-text="Collapse"
+            >
+              Изучить<i class="icon arrow-down sm"> </i>
+            </div>
+            <div
+              class="toggle-list__body mob-header__links collapse show learn-list"
+            >
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-language-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/language.svg" alt="" />
+                  Языки
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-language-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  class="btn btn-primary btn__first"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-school-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/school.svg" alt="" />
+                  Школа
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-school-list"
+                >
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Математика </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Русский язык </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Литература </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> История </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Алгебра </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Геометрия </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-university-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/university.svg" alt="" />
+                  Университет
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-university-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-personal-growth-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/personal-growth.svg" alt="" />
+                  Личностный рост
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-personal-growth-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-spiritual-growth-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/spiritual-growth.svg" alt="" />
+                  Духовный рост
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-spiritual-growth-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-bussiness-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/bussiness.svg" alt="" />
+                  Бизнес
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-bussiness-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-relationships-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/relationships.svg" alt="" />
+                  Отношения
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-relationships-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-health-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/heart.svg" alt="" />
+                  Здоровье
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-health-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-sport-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/sport.svg" alt="" />
+                  Спорт
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-sport-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-hobby-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/hobby.svg" alt="" />
+                  Хобби, увлечения
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-hobby-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-esotericism-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/esotericism.svg" alt="" />
+                  Эзотерика
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-esotericism-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-cooking-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/cooking.svg" alt="" />
+                  Кулинария
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-cooking-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-science-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/science.svg" alt="" />
+                  Наука
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-science-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-technolodgy-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/technolodgy.svg" alt="" />
+                  Техника, гаджеты
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-technolodgy-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-finance-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/finance.svg" alt="" />
+                  Финансы
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-finance-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-investment-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/investment.svg" alt="" />
+                  Инвестиции
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-investment-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-professions-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/professions.svg" alt="" />
+                  Профессии
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-professions-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <main class="pt-5">
+        <div class="profile__container with-sidebar container">
+          <!-- Боковое меню -->
+          <div class="profile__sidebar d-none d-md-grid">
+            <a href="/profile.html" class="button profile-menu__link">
+              <i class="icon profile md"> </i>
+              Публичный профиль
+            </a>
+            <a href="/partners-cabinet.html" class="button profile-menu__link">
+              <i class="icon correct-blank md"> </i> Кабинет партнера
+            </a>
+            <a
+              href="#"
+              class="button profile-menu__link profile-menu__link-show-more"
+            >
+              <i class="icon more md"> </i>
+              Еще
+            </a>
+            <a
+              href="/community.html"
+              class="button profile-menu__link px-0 pt-0 pb-0"
+              style="background: unset"
+            >
+              <span class="gradient-text">Сообщество </span>
+            </a>
+            <a href="/meeting.html" class="button profile-menu__link">
+              <i class="icon two-persons md"> </i>
+              Знакомства
+            </a>
+
+            <a href="/chat.html" class="button profile-menu__link">
+              <i class="icon icon-chat md"> </i>
+              Чаты
+            </a>
+            <a href="/groups.html" class="button profile-menu__link active">
+              <i class="icon group md"> </i>
+              Группы
+            </a>
+          </div>
+          <!-- Всплывающее меню Ещё -->
+          <div
+            class="tippy-menu bg-white border-light p-1 d-none"
+            id="show-more-menu"
+          >
+            <a href="#" class="tippy-menu__link">Настройки </a>
+            <a href="#" class="tippy-menu__link">Поддержка </a>
+            <div class="tippy-menu__link text-red">Выйти из чата</div>
+          </div>
+          <!-- Конец бокового меню -->
+          <!-- Основное  -->
+          <div class="profile__content">
+            <div id="message-tabs">
+              <div
+                class="profile-tabs__header tabs__header justify-start d-none d-md-flex"
+              >
+                <button
+                  class="tabs__button button uppercase active"
+                  data-tab="public"
+                >
+                  Публичные
+                </button>
+                <button
+                  class="tabs__button uppercase button"
+                  data-tab="private"
+                >
+                  Приватные
+                </button>
+              </div>
+
+              <div class="tabs__body mt-0 mt-md-3">
+                <!-- Таб Публичные -->
+                <div
+                  class="tabs__content mt-0 mt-md-5 info active"
+                  data-tab="public"
+                >
+                  <div class="profile__content messages-opened">
+                    <div class="preview-messages d-none d-md-grid">
+                      <!-- Превью сообщения -->
+                      <a href="/group-message.html" class="preview-message">
+                        <div class="preview-message__image hexagon sm">
+                          <img
+                            src="images/pages/languages/flags/russian.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="preview-message__name">Русский язык</div>
+                        <div class="preview-message__content">
+                          <span class="text-purple">Arcan_7:</span> Привет, как
+                          дела? Прошел вчера новый курс по английскому языку,
+                          есть пара моментов, которые хотелось бы обсудить.
+                          Когда сможешь?
+                        </div>
+                        <div class="preview-message__date">11:21</div>
+                      </a>
+
+                      <!-- Превью сообщения -->
+                      <a href="/group-message.html" class="preview-message">
+                        <div class="preview-message__image hexagon sm">
+                          <img
+                            src="images/pages/languages/flags/english.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="preview-message__name">Английский язык</div>
+                        <div class="preview-message__content">
+                          <span class="text-purple">Mr_yarkima:</span>
+                          Когда ожидать курс для подготовки к егэ?
+                        </div>
+                        <div class="preview-message__date">28.03.2024</div>
+                      </a>
+
+                      <!-- Превью сообщения -->
+                      <a href="/group-message.html" class="preview-message">
+                        <div class="preview-message__image hexagon sm">
+                          <img
+                            src="images/pages/languages/flags/german.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="preview-message__name">Немецкий язык</div>
+                        <div class="preview-message__content">
+                          <span class="text-purple">Вы:</span>
+                          Когда ожидать курс для подготовки к егэ?
+                        </div>
+                        <div class="preview-message__date">28.03.2024</div>
+                      </a>
+
+                      <!-- Превью сообщения -->
+                      <a href="/group-message.html" class="preview-message">
+                        <div class="preview-message__image hexagon sm">
+                          <img
+                            src="images/pages/languages/flags/french.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="preview-message__name">
+                          Французский язык
+                        </div>
+                        <div class="preview-message__content">
+                          <span class="text-purple">Вы:</span>
+                          Когда ожидать курс для подготовки к егэ?
+                        </div>
+                        <div class="preview-message__date">28.03.2024</div>
+                      </a>
+
+                      <!-- Превью сообщения -->
+                      <a href="/group-message.html" class="preview-message">
+                        <div class="preview-message__image hexagon sm">
+                          <img
+                            src="images/pages/languages/flags/chinese.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="preview-message__name">Китайский язык</div>
+                        <div class="preview-message__content">
+                          <span class="text-purple">Вы:</span>
+                          Привет, как дела? Прошел вчера новый курс по
+                          китайскому языку, есть пара моментов, которые хотелось
+                          бы обсудить. Когда сможешь?
+                        </div>
+                        <div class="preview-message__date">28.03.2024</div>
+                      </a>
+                      <!--  -->
+                    </div>
+                    <!-- Чат -->
+                    <div class="chat">
+                      <div
+                        class="chat-header d-flex justify-space-between gap-1"
+                      >
+                        <a
+                          href="/groups.html"
+                          class="button basic min-width-4 min-height-4 min-width-md-6 min-height-md-6 d-md-none"
+                        >
+                          <i class="icon arrow-left md"> </i>
+                        </a>
+                        <div>
+                          <div class="chat-header__name">Русский язык</div>
+                          <div class="text sm text-gray text-regular">
+                            145 участников
+                          </div>
+                        </div>
+                        <div class="chat-header__actions">
+                          <a
+                            href="/language.html"
+                            class="button basic md uppercase d-none d-md-block"
+                          >
+                            На страницу курса
+                          </a>
+                          <button
+                            class="button basic min-width-4 min-height-4 min-width-md-6 min-height-md-6 button__show-more"
+                            data-modal-id="show-more-modal"
+                          >
+                            <i class="icon more md"> </i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="chat-body">
+                        <div class="chat__date">Вчера</div>
+                        <div
+                          class="chat-message__full d-flex align-start gap-1"
+                        >
+                          <div class="course-item__image hexagon s-32">
+                            <img src="images/people-images/img-8.jpg" alt="" />
+                          </div>
+                          <div class="d-grid gap-1">
+                            <div class="chat-message">
+                              <div class="chat-message__content">
+                                Привет, как вам мой курс?
+                              </div>
+                              <div class="chat-message__date">11:21</div>
+                            </div>
+                            <div class="chat-message">
+                              <div class="chat-message__content">
+                                Понравился?
+                              </div>
+                              <div class="chat-message__date">11:21</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="chat-message__full d-flex align-start gap-1"
+                        >
+                          <div class="course-item__image hexagon s-32">
+                            <img src="images/people-images/img-5.jpg" alt="" />
+                          </div>
+                          <div class="d-grid gap-1">
+                            <div class="chat-message">
+                              <div class="chat-message__content">
+                                Привет, очень круто!
+                              </div>
+                              <div class="chat-message__date">11:21</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="chat-message__full d-flex align-start gap-1"
+                        >
+                          <div class="course-item__image hexagon s-32">
+                            <img src="images/people-images/img-4.jpg" alt="" />
+                          </div>
+                          <div class="d-grid gap-1">
+                            <div class="chat-message">
+                              <div class="chat-message__content">
+                                Да, супер!
+                              </div>
+                              <div class="chat-message__date">11:21</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="chat-message from">
+                          <div class="chat-message__content">Привет, да</div>
+                          <div class="chat-message__date">11:21</div>
+                        </div>
+                        <div
+                          class="chat-message__full d-flex align-start gap-1"
+                        >
+                          <div class="course-item__image hexagon s-32">
+                            <img src="images/people-images/img-8.jpg" alt="" />
+                          </div>
+                          <div class="d-grid gap-1">
+                            <div class="chat-message">
+                              <div class="chat-message__content">
+                                Понравилось, как ты поделила все школьные темы
+                                на курсы, очень удобно!
+                              </div>
+                              <div class="chat-message__date">11:21</div>
+                            </div>
+                            <div class="chat-message">
+                              <div class="chat-message__content">
+                                Спасибо большое за твою работу!
+                              </div>
+                              <div class="chat-message__date">11:21</div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
+                      </div>
+                      <div class="chat__send">
+                        <textarea
+                          name=""
+                          id=""
+                          placeholder="Напишите сообщение..."
+                        ></textarea>
+                        <button
+                          class="chat__send-button button simple min-width-5 min-height-5 min-width-md-6 min-height-md-6"
+                        >
+                          <i class="icon send md"> </i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Таб Приватные -->
+
+                <div class="tabs__content mt-5 favorite" data-tab="private">
+                  <div class="profile__content messages-opened">
+                    <div class="preview-messages d-none d-md-grid">
+                      <!-- Превью сообщения -->
+                      <a href="/group-message.html" class="preview-message">
+                        <div class="preview-message__image hexagon sm">
+                          <img
+                            src="images/pages/languages/flags/russian.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="preview-message__name">Русский язык</div>
+                        <div class="preview-message__content">
+                          <span class="text-purple">Arcan_7:</span> Привет, как
+                          дела? Прошел вчера новый курс по английскому языку,
+                          есть пара моментов, которые хотелось бы обсудить.
+                          Когда сможешь?
+                        </div>
+                        <div class="preview-message__date">11:21</div>
+                      </a>
+
+                      <!-- Превью сообщения -->
+                      <a href="/group-message.html" class="preview-message">
+                        <div class="preview-message__image hexagon sm">
+                          <img
+                            src="images/pages/languages/flags/english.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="preview-message__name">Английский язык</div>
+                        <div class="preview-message__content">
+                          <span class="text-purple">Mr_yarkima:</span>
+                          Когда ожидать курс для подготовки к егэ?
+                        </div>
+                        <div class="preview-message__date">28.03.2024</div>
+                      </a>
+
+                      <!-- Превью сообщения -->
+                      <a href="/group-message.html" class="preview-message">
+                        <div class="preview-message__image hexagon sm">
+                          <img
+                            src="images/pages/languages/flags/german.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="preview-message__name">Немецкий язык</div>
+                        <div class="preview-message__content">
+                          <span class="text-purple">Вы:</span>
+                          Когда ожидать курс для подготовки к егэ?
+                        </div>
+                        <div class="preview-message__date">28.03.2024</div>
+                      </a>
+
+                      <!-- Превью сообщения -->
+                      <a href="/group-message.html" class="preview-message">
+                        <div class="preview-message__image hexagon sm">
+                          <img
+                            src="images/pages/languages/flags/french.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="preview-message__name">
+                          Французский язык
+                        </div>
+                        <div class="preview-message__content">
+                          <span class="text-purple">Вы:</span>
+                          Когда ожидать курс для подготовки к егэ?
+                        </div>
+                        <div class="preview-message__date">28.03.2024</div>
+                      </a>
+
+                      <!-- Превью сообщения -->
+                      <a href="/group-message.html" class="preview-message">
+                        <div class="preview-message__image hexagon sm">
+                          <img
+                            src="images/pages/languages/flags/chinese.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="preview-message__name">Китайский язык</div>
+                        <div class="preview-message__content">
+                          <span class="text-purple">Вы:</span>
+                          Привет, как дела? Прошел вчера новый курс по
+                          китайскому языку, есть пара моментов, которые хотелось
+                          бы обсудить. Когда сможешь?
+                        </div>
+                        <div class="preview-message__date">28.03.2024</div>
+                      </a>
+                      <!--  -->
+                    </div>
+                    <!-- Чат -->
+                    <div class="chat">
+                      <div class="chat-header">
+                        <a
+                          href="/groups.html"
+                          class="button basic min-width-4 min-height-4 min-width-md-6 min-height-md-6 d-md-none"
+                        >
+                          <i class="icon arrow-left md"> </i>
+                        </a>
+                        <div class="chat-header__name">Arcan_7</div>
+                        <div class="chat-header__actions">
+                          <button
+                            class="button basic min-width-4 min-height-4 min-width-md-6 min-height-md-6 button__show-more"
+                            data-modal-id="show-more-modal"
+                          >
+                            <i class="icon more md"> </i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="chat-body">
+                        <div class="chat__date">Вчера</div>
+                        <div
+                          class="chat-message__full d-flex align-start gap-1"
+                        >
+                          <div class="course-item__image hexagon s-32">
+                            <img src="images/people-images/img-8.jpg" alt="" />
+                          </div>
+                          <div class="d-grid gap-1">
+                            <div class="chat-message">
+                              <div class="chat-message__content">
+                                Привет, как вам мой курс?
+                              </div>
+                              <div class="chat-message__date">11:21</div>
+                            </div>
+                            <div class="chat-message">
+                              <div class="chat-message__content">
+                                Понравился?
+                              </div>
+                              <div class="chat-message__date">11:21</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="chat-message__full d-flex align-start gap-1"
+                        >
+                          <div class="course-item__image hexagon s-32">
+                            <img src="images/people-images/img-5.jpg" alt="" />
+                          </div>
+                          <div class="d-grid gap-1">
+                            <div class="chat-message">
+                              <div class="chat-message__content">
+                                Привет, очень круто!
+                              </div>
+                              <div class="chat-message__date">11:21</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="chat-message__full d-flex align-start gap-1"
+                        >
+                          <div class="course-item__image hexagon s-32">
+                            <img src="images/people-images/img-4.jpg" alt="" />
+                          </div>
+                          <div class="d-grid gap-1">
+                            <div class="chat-message">
+                              <div class="chat-message__content">
+                                Да, супер!
+                              </div>
+                              <div class="chat-message__date">11:21</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="chat-message from">
+                          <div class="chat-message__content">Привет, да</div>
+                          <div class="chat-message__date">11:21</div>
+                        </div>
+                        <div
+                          class="chat-message__full d-flex align-start gap-1"
+                        >
+                          <div class="course-item__image hexagon s-32">
+                            <img src="images/people-images/img-8.jpg" alt="" />
+                          </div>
+                          <div class="d-grid gap-1">
+                            <div class="chat-message">
+                              <div class="chat-message__content">
+                                Понравилось, как ты поделила все школьные темы
+                                на курсы, очень удобно!
+                              </div>
+                              <div class="chat-message__date">11:21</div>
+                            </div>
+                            <div class="chat-message">
+                              <div class="chat-message__content">
+                                Спасибо большое за твою работу!
+                              </div>
+                              <div class="chat-message__date">11:21</div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
+                      </div>
+                      <div class="chat__send">
+                        <textarea
+                          name=""
+                          id=""
+                          placeholder="Напишите сообщение..."
+                        ></textarea>
+                        <button
+                          class="chat__send-button button simple min-width-5 min-height-5 min-width-md-6 min-height-md-6"
+                        >
+                          <i class="icon send md"> </i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Футер -->
+      <div class="footer">
+        <div class="container footer__container">
+          <div class="footer__top">
+            <div class="footer__top-left">
+              <a href="/" class="footer__logo">
+                <img src="images/logo-full.svg" alt="" />
+              </a>
+              <ul class="footer__socials">
+                <li class="footer__social">
+                  <a href="" class="footer__social-link">
+                    <img
+                      src="images/icons/socials/footer-instagram.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="footer__social">
+                  <a href="" class="footer__social-link">
+                    <img src="images/icons/socials/footer-vk.svg" alt="" />
+                  </a>
+                </li>
+                <li class="footer__social">
+                  <a href="" class="footer__social-link">
+                    <img
+                      src="images/icons/socials/footer-facebook.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__top-right">
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> О сервисе </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Что такое YarKiMa </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Реквизиты </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Контакты </a>
+                </li>
+              </ul>
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Для учеников </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Подсказки </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">
+                    Квизы, опросы, тесты
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Заучивание </a>
+                </li>
+              </ul>
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Для партнеров </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Мы предлагаем</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">
+                    Регистрация партнеров
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Личный кабинет </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__bottom-links d-flex align-center flex-wrap">
+              <div class="footer__copyrights">© 2024 YarKiMa</div>
+              <a href="#" class="footer__bottom-link">
+                Политика конфиденциальности
+              </a>
+              <a href="#" class="footer__bottom-link">
+                Условия использования
+              </a>
+            </div>
+            <a href="#" class="footer__support-link">
+              <span> Поддержка </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Мобильное модальное окно фильтров  -->
+    <div class="mob-modal slide filter-modal bg-white" id="filter-modal">
+      <div class="mob-modal__header">
+        <div class="title small uppercase">Фильтры</div>
+        <button class="button modal-close outlined min-width-5 min-height-5">
+          <i class="icon close"></i>
+        </button>
+      </div>
+
+      <div class="mob-modal__body px-2 pb-5 pt-4">
+        <div class="toggle-list">
+          <div
+            class="toggle-list__header show"
+            data-toggle="collapse"
+            data-target=".collapse.age-sorting"
+            data-text="Collapse"
+          >
+            Возраст
+            <i class="icon arrow-down sm"> </i>
+          </div>
+          <div class="toggle-list__body collapse show age-sorting">
+            <div class="form-radios">
+              <label class="form-radio__input">
+                <input type="radio" id="age-16" name="age-sorting" checked />
+                <span class="form-radio__input-icon"></span>
+                6+
+              </label>
+              <label class="form-radio__input">
+                <input type="radio" id="age-12" name="age-sorting" />
+                <span class="form-radio__input-icon"></span>
+                12+
+              </label>
+              <label class="form-radio__input">
+                <input type="radio" id="age-18" name="age-sorting" />
+                <span class="form-radio__input-icon"></span>
+                18+
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="mob-modal__divider mt-3 mb-1"></div>
+        <div class="toggle-list">
+          <div
+            class="toggle-list__header show"
+            data-toggle="collapse"
+            data-target=".collapse.type-sorting"
+            data-text="Collapse"
+          >
+            Тип
+            <i class="icon arrow-down sm"> </i>
+          </div>
+          <div class="toggle-list__body collapse show type-sorting">
+            <div class="form-radios">
+              <label class="form-radio__input">
+                <input
+                  type="radio"
+                  id="type-memorization"
+                  name="type-sorting"
+                  checked
+                />
+                <span class="form-radio__input-icon"></span>
+                Заучивание
+              </label>
+              <label class="form-radio__input">
+                <input type="radio" id="type-text" name="type-sorting" />
+                <span class="form-radio__input-icon"></span>
+                Тест
+              </label>
+              <label class="form-radio__input">
+                <input type="radio" id="type-quiz" name="type-sorting" />
+                <span class="form-radio__input-icon"></span>
+                Квиз
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="mob-modal__divider mt-3 mb-2"></div>
+        <div class="toggle-list">
+          <div
+            class="toggle-list__header show"
+            data-toggle="collapse"
+            data-target=".collapse.caterogies-soring"
+            data-text="Collapse"
+          >
+            Категории
+            <i class="icon arrow-down sm"> </i>
+          </div>
+          <div class="toggle-list__body collapse show caterogies-soring">
+            <div class="toggle-list languages__sidebar-list">
+              <div
+                class="toggle-list__header show"
+                data-toggle="collapse"
+                data-target=".collapse.caterogies-soring-1"
+                data-text="Collapse"
+              >
+                <i class="icon md purple-language"></i>
+                Языки
+                <i class="icon arrow-down sm"> </i>
+              </div>
+              <ul
+                class="toggle-list__body toggle-list__list collapse show caterogies-soring-1"
+              >
+                <li class="toggle-list__list-item">
+                  <a href="#" class="toggle-list__link"> Русский </a>
+                </li>
+                <li class="toggle-list__item">
+                  <a href="#" class="toggle-list__link"> Английский </a>
+                </li>
+                <li class="toggle-list__item">
+                  <a href="#" class="toggle-list__link"> Немецкий </a>
+                </li>
+                <li class="toggle-list__item">
+                  <a href="#" class="toggle-list__link"> Французский </a>
+                </li>
+                <li class="toggle-list__item">
+                  <a href="#" class="toggle-list__link"> Китайский </a>
+                </li>
+                <li class="toggle-list__item">
+                  <a href="#" class="toggle-list__link"> Японский </a>
+                </li>
+              </ul>
+            </div>
+            <div class="toggle-list languages__sidebar-list mt-3">
+              <div
+                class="toggle-list__header show"
+                class="btn btn-primary btn__first"
+                data-toggle="collapse"
+                data-target=".collapse.caterogies-soring-2"
+                data-text="Collapse"
+              >
+                <i class="icon md purple-school"></i>
+                Школа
+                <i class="icon arrow-down sm"> </i>
+              </div>
+              <ul
+                class="toggle-list__body show toggle-list__list collapse caterogies-soring-2"
+              >
+                <li class="toggle-list__item">
+                  <a href="#" class="toggle-list__link"> Математика </a>
+                </li>
+                <li class="toggle-list__item">
+                  <a href="#" class="toggle-list__link"> Русский язык </a>
+                </li>
+                <li class="toggle-list__item">
+                  <a href="#" class="toggle-list__link"> Литература </a>
+                </li>
+                <li class="toggle-list__item">
+                  <a href="#" class="toggle-list__link"> История </a>
+                </li>
+                <li class="toggle-list__item">
+                  <a href="#" class="toggle-list__link"> Алгебра </a>
+                </li>
+                <li class="toggle-list__item">
+                  <a href="#" class="toggle-list__link"> Геометрия </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Вспывающее окно на десктопе при нажатии на три точки -->
+    <div
+      class="chat__more-menu bg-white border-light p-1 d-none"
+      id="chat__more-menu"
+    >
+      <div
+        class="chat__more-menu-btn button basic md text-transform-unset w-100 text-red"
+      >
+        Выйти из группы
+      </div>
+    </div>
+
+    <!-- Мобильное модальное окно сортировки  -->
+    <div
+      class="mob-modal border-radius px-2 pb-5 pt-2 text-center slide sort-modal bg-white"
+      id="show-more-modal"
+    >
+      <a
+        href="/language.html"
+        class="button basic md text-transform-unset w-100"
+      >
+        На страницу курс
+      </a>
+      <div
+        class="chat__more-menu-btn button basic md text-transform-unset w-100 text-red"
+      >
+        Выйти из группы
+      </div>
+    </div>
+
+    <!-- Мобильное модальное окно сортировки  -->
+    <div
+      class="mob-modal border-radius px-2 pb-5 pt-2 slide sort-modal bg-white"
+      id="sorting-modal"
+    >
+      <div class="form-radios">
+        <label class="form-radio__input">
+          <input type="radio" id="radio-1" name="lang-sorting" checked />
+          <span class="form-radio__input-icon"></span>
+
+          По популярности
+        </label>
+        <label class="form-radio__input">
+          <input type="radio" id="radio-2" name="lang-sorting" />
+          <span class="form-radio__input-icon"></span>
+
+          По рейтингу
+        </label>
+        <label class="form-radio__input">
+          <input type="radio" id="radio-3" name="lang-sorting" />
+          <span class="form-radio__input-icon"></span>
+
+          По дате добавления
+        </label>
+      </div>
+    </div>
+  </body>
+  <script src="/script/form.js"></script>
+  <script src="/script/main.js"></script>
+  <script src="/script/scripts.js"></script>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5/dist/tippy-bundle.iife.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // if (window.innerWidth < 768) {
+      // const menu = new Dropdown("personal-account__menu-dropdown");
+      // }
+    });
+
+    // const formSelects = document.querySelectorAll(".form-select");
+    // for (const select of formSelects) {
+    //   const customSelect = new CustomSelect(select);
+    // }
+    const buttonShowMore = document.querySelector(
+      ".profile-menu__link-show-more"
+    );
+
+    const template = document.getElementById("show-more-menu");
+    document.addEventListener("DOMContentLoaded", function () {
+      tippy(buttonShowMore, {
+        trigger: "click",
+        placement: "bottom-center",
+        theme: "light",
+        content: template.innerHTML,
+        // hideOnClick: false,
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.innerWidth < 768) {
+        new Modal("show-more-modal");
+      } else {
+        const button = document.querySelector(".button__show-more");
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+          this.classList.toggle("show");
+        });
+        const template = document.getElementById("chat__more-menu");
+
+        tippy(button, {
+          trigger: "click",
+          placement: "bottom-center",
+          theme: "light",
+          content: template.innerHTML,
+          // hideOnClick: false,
+        });
+      }
+    });
+    const tabs = new Tabs("message-tabs");
+  </script>
+</html>

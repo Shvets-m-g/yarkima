@@ -2,6 +2,7 @@ const swiper = new Swiper(".reviews-slider", {
   slidesPerView: 3,
   spaceBetween: 0,
   loop: true,
+  initialSlide: 1,
   breakpoints: {
     320: {
       slidesPerView: 1,

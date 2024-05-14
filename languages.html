@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -17,7 +17,7 @@
     <!-- Подложка для модальных окон -->
     <div class="overlay" id="overlay"></div>
 
-    <div class="languages-page with-bg with-bg">
+    <div class="languages-page page with-bg">
       <!-- Хедеер -->
       <header class="header full">
         <div class="header__container pb-2 pt-2 px-2">
@@ -46,7 +46,7 @@
                 Изучить <i class="icon arrow-down sm"> </i>
               </button>
               <div class="dropdown-content form-dropdown__content">
-                <a class="form-dropdown__item" href="#">Языки</a>
+                <a class="form-dropdown__item" href="/languages.html">Языки</a>
                 <a class="form-dropdown__item" href="#">Школа</a>
                 <a class="form-dropdown__item" href="#">Университет</a>
                 <a class="form-dropdown__item" href="#">Личностный рост</a>
@@ -71,10 +71,10 @@
               <input placeholder="Поиск" type="" />
             </div>
           </div>
-          <div class="header__actions d-flex align-center gap-2">
+          <div class="header__actions d-flex align-center gap-2 ml-auto">
             <a
-              href="/login.html"
-              class="button default min-width-5 min-height-5 min-width-md-6 min-height-md-6 ml-auto p-0"
+              href="/create-course.html"
+              class="button default min-width-5 min-height-5 min-width-md-6 min-height-md-6 p-0"
             >
               <i class="icon white-plus"></i>
             </a>
@@ -83,10 +83,21 @@
             >
               <i class="icon notification md"> </i>
             </button>
-            <div class="header__user hexagon s-48">
-              <img src="images/header-pic.jpg" alt="" />
-            </div>
-
+            <a href="/profile.html" class="header__user hexagon s-48">
+              <img src="images/people-images/small-pic.jpg" alt="" />
+            </a>
+            <!-- <a href="/login.html" class="button outlined d-none d-md-block md">
+        Войти
+      </a>
+      <a
+        href="/registration.html"
+        class="button default d-none d-md-block md"
+      >
+        Зарегистрироваться
+      </a>
+      <a href="/registration.html" class="button default xs d-md-none">
+        Начать
+      </a> -->
             <button
               class="button header__burger header__desk-burger d-none d-md-block"
               alt=""
@@ -102,7 +113,7 @@
             <img src="images/logo-full.svg" alt="" />
           </div>
           <button
-            class="menu-header__button-close button outlined min-width-5 min-height-5"
+            class="menu-header__button-close button outlined min-width-5 min-height-5 border-radius-50"
           >
             <i class="icon close"></i>
           </button>
@@ -110,12 +121,15 @@
         <div class="menu-header__body">
           <ul class="menu-header__menu">
             <li class="menu-header__menu-item">
-              <a href="/" class="mob-header__menu-link uppercase">
+              <a href="/" class="menu-header__menu-link active uppercase">
                 <span> Главная </span>
               </a>
             </li>
             <li class="menu-header__menu-item">
-              <a href="/catalog.html" class="menu-header__menu-link uppercase">
+              <a
+                href="/categories.html"
+                class="menu-header__menu-link uppercase"
+              >
                 <span> Каталог </span>
               </a>
             </li>
@@ -159,7 +173,10 @@
               </a>
             </li>
             <li class="mob-header__menu-item">
-              <a href="/catalog.html" class="mob-header__menu-link uppercase">
+              <a
+                href="/categories.html"
+                class="mob-header__menu-link uppercase"
+              >
                 <span> Каталог </span>
               </a>
             </li>
@@ -187,26 +204,37 @@
               data-text="Collapse"
             >
               <div class="hexagon xxs">
-                <img src="images/example.jpg" alt="" />
+                <img src="images/people-images/small-pic.jpg" alt="" />
               </div>
               Аккаунт
               <i class="icon arrow-down sm"> </i>
             </div>
+
             <div
               class="toggle-list__body mob-header__links collapse show account-list"
             >
-              <a href="profile" class="button mob-header__link active">
-                <img src="images/icons/menu/add/Profile.svg" alt="" />
-                Публичный профиль
-              </a>
-              <a href="#" class="button mob-header__link">
-                <img src="images/icons/menu/add/Partner.svg" alt="" />
-                Кабинет партнера
-              </a>
-              <a href="#" class="button mob-header__link">
-                <img src="images/icons/menu/add/More.svg" alt="" />
-                Еще
-              </a>
+              <div class="d-grid gap-1">
+                <a
+                  href="/profile.html"
+                  class="button profile-menu__link active"
+                >
+                  <i class="icon profile md"> </i>
+                  Публичный профиль
+                </a>
+                <a
+                  href="/partners-cabinet.html"
+                  class="button profile-menu__link"
+                >
+                  <i class="icon correct-blank md"> </i> Кабинет партнера
+                </a>
+                <a
+                  href="#"
+                  class="button profile-menu__link profile-menu__link-show-more"
+                >
+                  <i class="icon more md"> </i>
+                  Еще
+                </a>
+              </div>
             </div>
           </div>
           <div class="mob-header__divider mt-3 mb-2"></div>
@@ -223,18 +251,21 @@
             <div
               class="toggle-list__body mob-header__links collapse show groups-list"
             >
-              <a href="#" class="button mob-header__link">
-                <img src="images/icons/menu/add/tinder.svg" alt="" />
-                Знакомства
-              </a>
-              <a href="/chat.html" class="button mob-header__link">
-                <img src="images/icons/menu/add/Chat.svg" alt="" />
-                Чаты
-              </a>
-              <a href="/groups.html" class="button mob-header__link">
-                <img src="images/icons/menu/add/Group.svg" alt="" />
-                Группы
-              </a>
+              <div class="d-grid gap-1">
+                <a href="/meeting.html" class="button profile-menu__link">
+                  <i class="icon two-persons md"> </i>
+                  Знакомства
+                </a>
+
+                <a href="/chat.html" class="button profile-menu__link">
+                  <i class="icon icon-chat md"> </i>
+                  Чаты
+                </a>
+                <a href="/groups.html" class="button profile-menu__link">
+                  <i class="icon group md"> </i>
+                  Группы
+                </a>
+              </div>
             </div>
           </div>
           <div class="mob-header__divider mt-3 mb-2"></div>
@@ -833,8 +864,6 @@
           </div>
         </div>
       </div>
-      <!-- Конец мобильного меню -->
-
       <!--  -->
       <main class="pt-6 pt-md-7">
         <div class="container">
@@ -1001,9 +1030,13 @@
                   </ul>
                 </div>
               </div>
+              <!-- Список -->
               <div class="catalog__list grid-col-1 grid-3">
                 <!-- Карточка -->
-                <div class="card course border-light bg-white p-3">
+                <a
+                  href="/language.html"
+                  class="card course border-light bg-white p-3 text-decoration-unset hover-gradient-border"
+                >
                   <div class="course__header d-flex justify-space-between">
                     <div
                       class="d-flex gap-1 align-center flex-column flex-md-row"
@@ -1017,9 +1050,9 @@
                       <div
                         class="course__author d-flex d-md-none gap-2 align-center mt-2"
                       >
-                        <div class="course__author-image hexagon xxs">
+                        <div class="course__author-image hexagon xs">
                           <img
-                            src="images/pages/languages/img-avatar.png"
+                            src="images/people-images/small-pic.jpg"
                             alt=""
                           />
                         </div>
@@ -1043,11 +1076,8 @@
                     <div
                       class="course__author d-none d-md-flex gap-2 align-center"
                     >
-                      <div class="course__author-image hexagon xxs">
-                        <img
-                          src="images/pages/languages/img-avatar.png"
-                          alt=""
-                        />
+                      <div class="course__author-image hexagon xs">
+                        <img src="images/people-images/img-8.jpg" alt="" />
                       </div>
                       <div class="course__author-name subtitle sm">
                         gingerbread
@@ -1096,19 +1126,19 @@
                       >
                         <b>Достижения:</b>
                         <div class="d-flex align-center gap-1">
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-1.svg"
                               alt=""
                             />
                           </div>
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-2.svg"
                               alt=""
                             />
                           </div>
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-3.svg"
                               alt=""
@@ -1118,10 +1148,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
 
                 <!-- Карточка -->
-                <div class="card course border-light bg-white p-3">
+                <a
+                  href="/language.html"
+                  class="card course border-light bg-white p-3 text-decoration-unset hover-gradient-border"
+                >
                   <div class="course__header d-flex justify-space-between">
                     <div
                       class="d-flex gap-1 align-center flex-column flex-md-row"
@@ -1135,9 +1168,9 @@
                       <div
                         class="course__author d-flex d-md-none gap-2 align-center mt-2"
                       >
-                        <div class="course__author-image hexagon xxs">
+                        <div class="course__author-image hexagon xs">
                           <img
-                            src="images/pages/languages/img-avatar.png"
+                            src="images/people-images/small-pic.jpg"
                             alt=""
                           />
                         </div>
@@ -1161,11 +1194,8 @@
                     <div
                       class="course__author d-none d-md-flex gap-2 align-center"
                     >
-                      <div class="course__author-image hexagon xxs">
-                        <img
-                          src="images/pages/languages/img-avatar.png"
-                          alt=""
-                        />
+                      <div class="course__author-image hexagon xs">
+                        <img src="images/people-images/img-8.jpg" alt="" />
                       </div>
                       <div class="course__author-name subtitle sm">
                         gingerbread
@@ -1203,19 +1233,19 @@
                       >
                         <b>Достижения:</b>
                         <div class="d-flex align-center gap-1">
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-1.svg"
                               alt=""
                             />
                           </div>
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-2.svg"
                               alt=""
                             />
                           </div>
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-3.svg"
                               alt=""
@@ -1225,10 +1255,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
 
                 <!-- Карточка -->
-                <div class="card course border-light bg-white p-3">
+                <a
+                  href="/language.html"
+                  class="card course border-light bg-white p-3 text-decoration-unset hover-gradient-border"
+                >
                   <div class="course__header d-flex justify-space-between">
                     <div
                       class="d-flex gap-1 align-center flex-column flex-md-row"
@@ -1242,9 +1275,9 @@
                       <div
                         class="course__author d-flex d-md-none gap-2 align-center mt-2"
                       >
-                        <div class="course__author-image hexagon xxs">
+                        <div class="course__author-image hexagon xs">
                           <img
-                            src="images/pages/languages/img-avatar.png"
+                            src="images/people-images/small-pic.jpg"
                             alt=""
                           />
                         </div>
@@ -1268,11 +1301,8 @@
                     <div
                       class="course__author d-none d-md-flex gap-2 align-center"
                     >
-                      <div class="course__author-image hexagon xxs">
-                        <img
-                          src="images/pages/languages/img-avatar.png"
-                          alt=""
-                        />
+                      <div class="course__author-image hexagon xs">
+                        <img src="images/people-images/img-8.jpg" alt="" />
                       </div>
                       <div class="course__author-name subtitle sm">
                         gingerbread
@@ -1309,19 +1339,19 @@
                       >
                         <b>Достижения:</b>
                         <div class="d-flex align-center gap-1">
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-1.svg"
                               alt=""
                             />
                           </div>
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-2.svg"
                               alt=""
                             />
                           </div>
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-3.svg"
                               alt=""
@@ -1331,10 +1361,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
 
                 <!-- Карточка -->
-                <div class="card course border-light bg-white p-3">
+                <a
+                  href="/language.html"
+                  class="card course border-light bg-white p-3 text-decoration-unset hover-gradient-border"
+                >
                   <div class="course__header d-flex justify-space-between">
                     <div
                       class="d-flex gap-1 align-center flex-column flex-md-row"
@@ -1348,9 +1381,9 @@
                       <div
                         class="course__author d-flex d-md-none gap-2 align-center mt-2"
                       >
-                        <div class="course__author-image hexagon xxs">
+                        <div class="course__author-image hexagon xs">
                           <img
-                            src="images/pages/languages/img-avatar.png"
+                            src="images/people-images/small-pic.jpg"
                             alt=""
                           />
                         </div>
@@ -1374,11 +1407,8 @@
                     <div
                       class="course__author d-none d-md-flex gap-2 align-center"
                     >
-                      <div class="course__author-image hexagon xxs">
-                        <img
-                          src="images/pages/languages/img-avatar.png"
-                          alt=""
-                        />
+                      <div class="course__author-image hexagon xs">
+                        <img src="images/people-images/img-8.jpg" alt="" />
                       </div>
                       <div class="course__author-name subtitle sm">
                         gingerbread
@@ -1416,19 +1446,19 @@
                       >
                         <b>Достижения:</b>
                         <div class="d-flex align-center gap-1">
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-1.svg"
                               alt=""
                             />
                           </div>
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-2.svg"
                               alt=""
                             />
                           </div>
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-3.svg"
                               alt=""
@@ -1438,10 +1468,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
 
                 <!-- Карточка -->
-                <div class="card course border-light bg-white p-3">
+                <a
+                  href="/language.html"
+                  class="card course border-light bg-white p-3 text-decoration-unset hover-gradient-border"
+                >
                   <div class="course__header d-flex justify-space-between">
                     <div
                       class="d-flex gap-1 align-center flex-column flex-md-row"
@@ -1455,9 +1488,9 @@
                       <div
                         class="course__author d-flex d-md-none gap-2 align-center mt-2"
                       >
-                        <div class="course__author-image hexagon xxs">
+                        <div class="course__author-image hexagon xs">
                           <img
-                            src="images/pages/languages/img-avatar.png"
+                            src="images/people-images/small-pic.jpg"
                             alt=""
                           />
                         </div>
@@ -1481,11 +1514,8 @@
                     <div
                       class="course__author d-none d-md-flex gap-2 align-center"
                     >
-                      <div class="course__author-image hexagon xxs">
-                        <img
-                          src="images/pages/languages/img-avatar.png"
-                          alt=""
-                        />
+                      <div class="course__author-image hexagon xs">
+                        <img src="images/people-images/img-8.jpg" alt="" />
                       </div>
                       <div class="course__author-name subtitle sm">
                         gingerbread
@@ -1536,19 +1566,19 @@
                       >
                         <b>Достижения:</b>
                         <div class="d-flex align-center gap-1">
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-1.svg"
                               alt=""
                             />
                           </div>
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-2.svg"
                               alt=""
                             />
                           </div>
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-3.svg"
                               alt=""
@@ -1558,10 +1588,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
 
                 <!-- Карточка -->
-                <div class="card course border-light bg-white p-3">
+                <a
+                  href="/language.html"
+                  class="card course border-light bg-white p-3 text-decoration-unset hover-gradient-border"
+                >
                   <div class="course__header d-flex justify-space-between">
                     <div
                       class="d-flex gap-1 align-center flex-column flex-md-row"
@@ -1575,9 +1608,9 @@
                       <div
                         class="course__author d-flex d-md-none gap-2 align-center mt-2"
                       >
-                        <div class="course__author-image hexagon xxs">
+                        <div class="course__author-image hexagon xs">
                           <img
-                            src="images/pages/languages/img-avatar.png"
+                            src="images/people-images/small-pic.jpg"
                             alt=""
                           />
                         </div>
@@ -1601,11 +1634,8 @@
                     <div
                       class="course__author d-none d-md-flex gap-2 align-center"
                     >
-                      <div class="course__author-image hexagon xxs">
-                        <img
-                          src="images/pages/languages/img-avatar.png"
-                          alt=""
-                        />
+                      <div class="course__author-image hexagon xs">
+                        <img src="images/people-images/img-8.jpg" alt="" />
                       </div>
                       <div class="course__author-name subtitle sm">
                         gingerbread
@@ -1642,19 +1672,19 @@
                       >
                         <b>Достижения:</b>
                         <div class="d-flex align-center gap-1">
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-1.svg"
                               alt=""
                             />
                           </div>
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-2.svg"
                               alt=""
                             />
                           </div>
-                          <div class="language-header__image hexagon xxs">
+                          <div class="achievement__icon xxs">
                             <img
                               src="images/pages/languages/icon-3.svg"
                               alt=""
@@ -1664,7 +1694,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
                 <div
                   class="catalog__bottom mt-5 d-flex align-center justify-center"
                 >

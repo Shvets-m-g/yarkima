@@ -21,9 +21,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
   burgerDescButton?.addEventListener("click", function () {
     deskMenu.classList.toggle("show");
+    const closeMenuHandler = function (event) {
+      if (
+        !deskMenu.contains(event.target) &&
+        !burgerDescButton.contains(event.target)
+      ) {
+        deskMenu.classList.remove("show");
+        document.removeEventListener("click", closeMenuHandler);
+      }
+    };
+    document.addEventListener("click", closeMenuHandler);
   });
 
   closeDeskButton?.addEventListener("click", function () {
     deskMenu.classList.remove("show");
   });
 });
+
+//collapse
+const mainTriggers = Array.from(
+  document.querySelectorAll('[data-toggle="collapse"]')
+);
+
+window.addEventListener(
+  "click",
+  (ev) => {
+    const elm = ev.target;
+    if (mainTriggers.includes(elm)) {
+      const selector = elm.getAttribute("data-target");
+      collapse(selector, elm, "toggle");
+    }
+  },
+  false
+);
+
+const fnmap = {
+  toggle: "toggle",
+  show: "add",
+  hide: "remove",
+};
+const collapse = (selector, elm, cmd) => {
+  elm.classList.toggle("show");
+  const targets = Array.from(document.querySelectorAll(selector));
+  targets.forEach((target) => {
+    target.classList[fnmap[cmd]]("show");
+  });
+};
