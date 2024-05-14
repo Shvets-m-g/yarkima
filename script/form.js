@@ -250,11 +250,23 @@ class CustomSelect {
   generateDropdownContent() {
     const customSelectContainer = document.createElement("div");
     customSelectContainer.classList.add("form-select");
+    // console.log(
+    //   "customsClasses",
+    //   customsClasses,
+    //   // String(customsClasses).contains("sm")
+    // );
+    // customSelectContainer.classList.add(customsClasses);
 
     const customSelected = document.createElement("div");
     customSelected.classList.add("form-selected");
     customSelected.classList.add("form-input");
     customSelected.classList.add("with-label");
+
+    const customsClasses =
+      this.selectElement.getAttribute("data-classes") || "";
+    if (customsClasses) {
+      customSelectContainer.classList.add(customsClasses);
+    }
 
     const selectedInput = document.createElement("input");
     const id = this.selectElement.getAttribute("data-id") || "";

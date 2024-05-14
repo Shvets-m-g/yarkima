@@ -15,12 +15,8 @@
       rel="stylesheet"
     />
   </head>
-  <body class="">
-    <!-- <body class="disabled-scroll"> -->
-    <!-- Подложка для модальных окон -->
-    <div class="overlay" id=""></div>
-
-    <div class="courses-page page with-bg">
+  <body>
+    <div class="categories-page page with-bg">
       <!-- Хедеер -->
       <header class="header full">
         <div class="header__container pb-2 pt-2 px-2">
@@ -90,17 +86,17 @@
               <img src="images/people-images/small-pic.jpg" alt="" />
             </a>
             <!-- <a href="/login.html" class="button outlined d-none d-md-block md">
-          Войти
-        </a>
-        <a
-          href="/registration.html"
-          class="button default d-none d-md-block md"
-        >
-          Зарегистрироваться
-        </a>
-        <a href="/registration.html" class="button default xs d-md-none">
-          Начать
-        </a> -->
+              Войти
+            </a>
+            <a
+              href="/registration.html"
+              class="button default d-none d-md-block md"
+            >
+              Зарегистрироваться
+            </a>
+            <a href="/registration.html" class="button default xs d-md-none">
+              Начать
+            </a> -->
             <button
               class="button header__burger header__desk-burger d-none d-md-block"
               alt=""
@@ -870,29 +866,130 @@
           </div>
         </div>
       </div>
-      <main class="pt-6 pt-md-7">
+      <!-- Конец мобильного меню -->
+      <main class="pt-5">
         <div class="container">
-          <ul class="breadcrumbs">
-            <li>
-              <a href="/categories.html"> Категории </a>
-            </li>
-            <li>Языки</li>
-          </ul>
-          <h1 class="title big uppercase text-center text-md-unset mt-3">
-            Языки
-          </h1>
+          <h2 class="title big uppercase">Категории</h2>
+        </div>
+        <div class="courses-list bg mt-5 pt-3">
+          <div class="container">
+            <h2 class="title medium gradient-text uppercase">
+              Популярные Категории
+            </h2>
+            <div class="list grid-col-1 grid-сol-md-3 grid-3 mt-5">
+              <!-- Карточка Категории -->
+              <a
+                href="/languages.html"
+                class="card course-item border-light p-3 bg-white text-decoration-unset hover-gradient-border"
+              >
+                <div class="course-item__header justify-space-between d-flex">
+                  <div
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
+                  >
+                    <i class="icon language md"></i>
+                  </div>
+
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
+                  >
+                    <span class="icon stack"> </span>
+                    <span>21 курс</span>
+                  </div>
+                </div>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Душа</div>
+                    <div class="course-item__tag card-tag">Личность</div>
+                    <div class="course-item__tag card-tag">Вселенная</div>
+                  </div>
+                  <div class="course-item__title gradient-text text-bold mt-3">
+                    Воин
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Борьба за смысл, снижение того, во что есть вера,
+                    устойчивость позиций своих и необходимость переход...
+                  </div>
+                </div>
+              </a>
+
+              <!-- Карточка Категории -->
+              <a
+                href="/languages.html"
+                class="card course-item border-light p-3 bg-white text-decoration-unset hover-gradient-border"
+              >
+                <div class="course-item__header justify-space-between d-flex">
+                  <div
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
+                  >
+                    <i class="icon language md"></i>
+                  </div>
+
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
+                  >
+                    <span class="icon stack"> </span>
+                    <span>32 курс</span>
+                  </div>
+                </div>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Языки</div>
+                    <div class="course-item__tag card-tag">Общение</div>
+                  </div>
+                  <div class="course-item__title gradient-text text-bold mt-3">
+                    Языки
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Спонтанные озарения, инсайты, структурирование информации,
+                    потен...
+                  </div>
+                </div>
+              </a>
+
+              <!-- Карточка Категории -->
+              <a
+                href="/languages.html"
+                class="card course-item border-light p-3 bg-white text-decoration-unset hover-gradient-border"
+              >
+                <div class="course-item__header justify-space-between d-flex">
+                  <div
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
+                  >
+                    <i class="icon language md"></i>
+                  </div>
+
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
+                  >
+                    <span class="icon stack"> </span>
+                    <span>21 курс</span>
+                  </div>
+                </div>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Душа</div>
+                    <div class="course-item__tag card-tag">Личность</div>
+                    <div class="course-item__tag card-tag">Вселенная</div>
+                  </div>
+                  <div
+                    class="course-item__title gradient-text text-bold subtitle md mt-3"
+                  >
+                    Воин
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Борьба за смысл, снижение того, во что есть вера,
+                    устойчивость позиций своих и необходимость переход...
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
 
         <div class="courses-list mt-5">
           <div class="container">
-            <div class="languages-list__header catalog__header">
-              <div class="d-md-none d-flex gap-1">
-                <button
-                  class="button outlined min-width-6 min-height-6"
-                  data-modal-id="filter-modal"
-                >
-                  <i class="icon filter"></i>
-                </button>
+            <div class="courser-list__header catalog__header">
+              <div class="d-md-none">
                 <button class="button outlined min-width-6 min-height-6">
                   <i class="icon sort"></i>
                 </button>
@@ -923,7 +1020,14 @@
               </div>
               <div>
                 <div class="form-toggler">
-                  <a href="/languages.html" class="form-toggler__input">
+                  <label class="form-toggler__input">
+                    <input
+                      type="radio"
+                      id="view-1"
+                      name="catalog-view"
+                      class=""
+                      checked
+                    />
                     <svg
                       width="24"
                       height="24"
@@ -935,16 +1039,8 @@
                         d="M20.25 5.25V10.875C20.25 10.9745 20.2105 11.0698 20.1402 11.1402C20.0698 11.2105 19.9745 11.25 19.875 11.25H12.75V4.125C12.75 4.02554 12.7895 3.93016 12.8598 3.85984C12.9302 3.78951 13.0255 3.75 13.125 3.75H18.75C19.1478 3.75 19.5294 3.90804 19.8107 4.18934C20.092 4.47064 20.25 4.85218 20.25 5.25ZM10.875 3.75H5.25C4.85218 3.75 4.47064 3.90804 4.18934 4.18934C3.90804 4.47064 3.75 4.85218 3.75 5.25V10.875C3.75 10.9745 3.78951 11.0698 3.85984 11.1402C3.93016 11.2105 4.02554 11.25 4.125 11.25H11.25V4.125C11.25 4.02554 11.2105 3.93016 11.1402 3.85984C11.0698 3.78951 10.9745 3.75 10.875 3.75ZM19.875 12.75H12.75V19.875C12.75 19.9745 12.7895 20.0698 12.8598 20.1402C12.9302 20.2105 13.0255 20.25 13.125 20.25H18.75C19.1478 20.25 19.5294 20.092 19.8107 19.8107C20.092 19.5294 20.25 19.1478 20.25 18.75V13.125C20.25 13.0255 20.2105 12.9302 20.1402 12.8598C20.0698 12.7895 19.9745 12.75 19.875 12.75ZM3.75 13.125V18.75C3.75 19.1478 3.90804 19.5294 4.18934 19.8107C4.47064 20.092 4.85218 20.25 5.25 20.25H10.875C10.9745 20.25 11.0698 20.2105 11.1402 20.1402C11.2105 20.0698 11.25 19.9745 11.25 19.875V12.75H4.125C4.02554 12.75 3.93016 12.7895 3.85984 12.8598C3.78951 12.9302 3.75 13.0255 3.75 13.125Z"
                         fill="var(--icon-color)"
                       />
-                    </svg>
-                  </a>
-
-                  <label class="form-toggler__input">
-                    <input
-                      type="radio"
-                      id="view-2"
-                      checked
-                      name="catalog-view"
-                    />
+                    </svg> </label
+                  ><a href="/categories-hext.html" class="form-toggler__input">
                     <svg
                       width="24"
                       height="24"
@@ -957,873 +1053,584 @@
                         fill="var(--icon-color)"
                       />
                     </svg>
-                  </label>
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="courses__container catalog__with-sidebar mt-5">
-              <div class="catalog__sidebar d-none d-md-block">
-                <div class="toggle-list courses__sidebar-list">
+
+            <div class="list grid-col-1 grid-сol-md-3 grid-3 mt-5">
+              <!-- Карточка -->
+              <a
+                href="/languages.html"
+                class="card course-item border-light p-3 bg-white text-decoration-unset hover-gradient-border hover-gradient-border"
+              >
+                <div class="course-item__header justify-space-between d-flex">
                   <div
-                    class="toggle-list__header show"
-                    data-toggle="collapse"
-                    data-target=".collapse.first"
-                    data-text="Collapse"
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
                   >
-                    <i class="icon md purple-language"></i>
-                    Языки
-                    <i class="icon arrow-down sm"> </i>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.0001 9L9.75012 14.25M6.37512 15.375L3.2195 18.5306C3.07895 18.6713 3 18.862 3 19.0608C3 19.2596 3.07895 19.4503 3.2195 19.5909L4.40637 20.7806C4.47603 20.8504 4.55874 20.9057 4.64979 20.9434C4.74084 20.9812 4.83843 21.0006 4.937 21.0006C5.03556 21.0006 5.13315 20.9812 5.2242 20.9434C5.31525 20.9057 5.39797 20.8504 5.46762 20.7806L8.62512 17.625M7.72887 12.2278L14.2501 3.75H20.2501V9.75L11.7723 16.2712M3.97009 11.9095L5.15935 10.7202C5.45261 10.4269 5.92808 10.4269 6.22134 10.7202L13.2794 17.7782C13.5726 18.0715 13.5726 18.5469 13.2794 18.8402L12.0901 20.0295C11.7968 20.3227 11.3214 20.3227 11.0281 20.0295L3.97009 12.9714C3.67683 12.6782 3.67683 12.2027 3.97009 11.9095Z"
+                        stroke="var(--icon-color)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                   </div>
-                  <ul
-                    class="toggle-list__body toggle-list__list collapse show first"
+
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
                   >
-                    <li class="toggle-list__list-item">
-                      <a href="#" class="toggle-list__link"> Русский </a>
-                    </li>
-                    <li class="toggle-list__item">
-                      <a href="#" class="toggle-list__link"> Английский </a>
-                    </li>
-                    <li class="toggle-list__item">
-                      <a href="#" class="toggle-list__link"> Немецкий </a>
-                    </li>
-                    <li class="toggle-list__item">
-                      <a href="#" class="toggle-list__link"> Французский </a>
-                    </li>
-                    <li class="toggle-list__item">
-                      <a href="#" class="toggle-list__link"> Китайский </a>
-                    </li>
-                    <li class="toggle-list__item">
-                      <a href="#" class="toggle-list__link"> Японский </a>
-                    </li>
-                  </ul>
+                    <span class="icon stack"> </span>
+                    <span>21 курс</span>
+                  </div>
                 </div>
-                <div class="toggle-list courses__sidebar-list mt-5">
-                  <div
-                    class="toggle-list__header show"
-                    class="btn btn-primary btn__first"
-                    data-toggle="collapse"
-                    data-target=".collapse.second"
-                    data-text="Collapse"
-                  >
-                    <i class="icon md purple-school"></i>
-                    Школа
-                    <i class="icon arrow-down sm"> </i>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Душа</div>
+                    <div class="course-item__tag card-tag">Личность</div>
+                    <div class="course-item__tag card-tag">Вселенная</div>
                   </div>
-                  <ul
-                    class="toggle-list__body show toggle-list__list collapse second"
+                  <div class="course-item__title subtitle lg text-bold mt-3">
+                    Воин
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Борьба за смысл, снижение того, во что есть вера,
+                    устойчивость позиций своих и необходимость переход...
+                  </div>
+                </div>
+              </a>
+
+              <!-- Карточка -->
+              <a
+                href="/languages.html"
+                class="card course-item border-light p-3 bg-white text-decoration-unset hover-gradient-border hover-gradient-border"
+              >
+                <div class="course-item__header justify-space-between d-flex">
+                  <div
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
                   >
-                    <li class="toggle-list__item">
-                      <a href="#" class="toggle-list__link"> Математика </a>
-                    </li>
-                    <li class="toggle-list__item">
-                      <a href="#" class="toggle-list__link"> Русский язык </a>
-                    </li>
-                    <li class="toggle-list__item">
-                      <a href="#" class="toggle-list__link"> Литература </a>
-                    </li>
-                    <li class="toggle-list__item">
-                      <a href="#" class="toggle-list__link"> История </a>
-                    </li>
-                    <li class="toggle-list__item">
-                      <a href="#" class="toggle-list__link"> Алгебра </a>
-                    </li>
-                    <li class="toggle-list__item">
-                      <a href="#" class="toggle-list__link"> Геометрия </a>
-                    </li>
-                  </ul>
+                    <i class="icon language md"></i>
+                  </div>
+
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
+                  >
+                    <span class="icon stack"> </span>
+                    <span>32 курс</span>
+                  </div>
+                </div>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Языки</div>
+                    <div class="course-item__tag card-tag">Общение</div>
+                  </div>
+                  <div class="course-item__title subtitle lg text-bold mt-3">
+                    Языки
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Спонтанные озарения, инсайты, структурирование информации,
+                    потен...
+                  </div>
+                </div>
+              </a>
+
+              <!-- Карточка -->
+              <a
+                href="/languages.html"
+                class="card course-item border-light p-3 bg-white text-decoration-unset hover-gradient-border hover-gradient-border"
+              >
+                <div class="course-item__header justify-space-between d-flex">
+                  <div
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
+                  >
+                    <i class="icon language md"></i>
+                  </div>
+
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
+                  >
+                    <span class="icon stack"> </span>
+                    <span>32 курс</span>
+                  </div>
+                </div>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Языки</div>
+                    <div class="course-item__tag card-tag">Общение</div>
+                  </div>
+                  <div class="course-item__title subtitle lg text-bold mt-3">
+                    Языки
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Спонтанные озарения, инсайты, структурирование информации,
+                    потен...
+                  </div>
+                </div>
+              </a>
+
+              <!-- Карточка -->
+              <a
+                href="/languages.html"
+                class="card course-item border-light p-3 bg-white text-decoration-unset hover-gradient-border"
+              >
+                <div class="course-item__header justify-space-between d-flex">
+                  <div
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
+                  >
+                    <i class="icon language md"></i>
+                  </div>
+
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
+                  >
+                    <span class="icon stack"> </span>
+                    <span>21 курс</span>
+                  </div>
+                </div>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Душа</div>
+                    <div class="course-item__tag card-tag">Личность</div>
+                    <div class="course-item__tag card-tag">Вселенная</div>
+                  </div>
+                  <div class="course-item__title subtitle lg text-bold mt-3">
+                    Воин
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Борьба за смысл, снижение того, во что есть вера,
+                    устойчивость позиций своих и необходимость переход...
+                  </div>
+                </div>
+              </a>
+
+              <!-- Карточка -->
+              <a
+                href="/languages.html"
+                class="card course-item border-light p-3 bg-white text-decoration-unset hover-gradient-border"
+              >
+                <div class="course-item__header justify-space-between d-flex">
+                  <div
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
+                  >
+                    <img
+                      src="images/pages/categories/icon-1.svg"
+                      class="width-3 height-3"
+                      alt=""
+                    />
+                  </div>
+
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
+                  >
+                    <span class="icon stack"> </span>
+                    <span>21 курс</span>
+                  </div>
+                </div>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Душа</div>
+                    <div class="course-item__tag card-tag">Личность</div>
+                    <div class="course-item__tag card-tag">Вселенная</div>
+                  </div>
+                  <div class="course-item__title subtitle lg text-bold mt-3">
+                    Воин
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Борьба за смысл, снижение того, во что есть вера,
+                    устойчивость позиций своих и необходимость переход...
+                  </div>
+                </div>
+              </a>
+
+              <!-- Карточка -->
+              <a
+                href="/languages.html"
+                class="card course-item border-light p-3 bg-white text-decoration-unset hover-gradient-border"
+              >
+                <div class="course-item__header justify-space-between d-flex">
+                  <div
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
+                  >
+                    <i class="icon language md"></i>
+                  </div>
+
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
+                  >
+                    <span class="icon stack"> </span>
+                    <span>32 курс</span>
+                  </div>
+                </div>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Языки</div>
+                    <div class="course-item__tag card-tag">Общение</div>
+                  </div>
+                  <div class="course-item__title subtitle lg text-bold mt-3">
+                    Языки
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Спонтанные озарения, инсайты, структурирование информации,
+                    потен...
+                  </div>
+                </div>
+              </a>
+
+              <!-- Карточка -->
+              <div
+                class="card course-item border-light p-3 bg-white d-none d-md-block"
+              >
+                <div class="course-item__header justify-space-between d-flex">
+                  <div
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
+                  >
+                    <i class="icon language md"></i>
+                  </div>
+
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
+                  >
+                    <span class="icon stack"> </span>
+                    <span>21 курс</span>
+                  </div>
+                </div>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Душа</div>
+                    <div class="course-item__tag card-tag">Личность</div>
+                    <div class="course-item__tag card-tag">Вселенная</div>
+                  </div>
+                  <div class="course-item__title subtitle lg text-bold mt-3">
+                    Воин
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Борьба за смысл, снижение того, во что есть вера,
+                    устойчивость позиций своих и необходимость переход...
+                  </div>
                 </div>
               </div>
-              <div class="catalog__list__container">
-                <div class="catalog__list courses-list hexagons">
-                  <!-- Карточка курса -->
-                  <div class="card course hexagon">
-                    <div class="course__inner">
-                      <div class="course__header d-flex justify-space-between">
-                        <div class="d-flex gap-1 align-center flex-column">
-                          <div class="course-header__image hexagon md">
-                            <img
-                              src="images/pages/languages/flags/russian.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="course__author mt-2 d-flex gap-2 align-center"
-                        >
-                          <div class="course__author-image hexagon xxs">
-                            <img
-                              src="images/pages/languages/img-avatar.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="course__author-name subtitle sm">
-                            gingerbread
-                          </div>
-                        </div>
-                      </div>
-                      <div class="course__body text-center text-md-unset">
-                        <div class="d-flex align-center justify-center gap-2">
-                          <div class="course__title title small">
-                            Русский язык
-                          </div>
-                          <div class="course__progress progress-circle-bar md">
-                            <svg
-                              width="250"
-                              height="250"
-                              viewBox="0 0 250 250"
-                              class="progress-circle-bar__svg"
-                              style="--progress: 65"
-                            >
-                              <circle class="bg"></circle>
-                              <circle class="fg"></circle>
-                            </svg>
-                            <div class="progress-circle-bar__quantity">65%</div>
-                          </div>
-                          <i class="icon purple-star md"></i>
-                        </div>
-                        <div class="d-flex gap-1">
-                          <div class="d-flex gap-1 align-center">
-                            <div class="course__tag card-tag">Квиз</div>
-                            <div class="course__tag card-tag">12+</div>
-                          </div>
-                          <div class="course__rating align-center d-flex gap-1">
-                            <i class="icon star"></i>
-                            <span>
-                              4.9 <span class="text-gray"> (24) </span>
-                            </span>
-                          </div>
-                        </div>
-                        <div class="course__description font-medium text">
-                          Язык восточнославянской группы славянской
-                          ветви индоевропейской языковой семьи, национальный
-                          язык русского народа.
-                        </div>
-                        <div
-                          class="course__body-bottom d-flex align-center justify-space-between gap-2 flex-column"
-                        >
-                          <div class="course__tags d-md-flex gap-2 d-none">
-                            <div class="course__tag card-tag">Общение</div>
-                            <div class="course__tag card-tag">Языки</div>
-                            <div class="course__tag card-tag">Развитие</div>
-                          </div>
-                          <div
-                            class="course__achievements d-flex align-center gap-2"
-                          >
-                            <div class="d-flex align-center gap-1">
-                              <div class="course-header__image hexagon xxs">
-                                <img
-                                  src="images/pages/languages/icon-1.svg"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="course-header__image hexagon xxs">
-                                <img
-                                  src="images/pages/languages/icon-2.svg"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="course-header__image hexagon xxs">
-                                <img
-                                  src="images/pages/languages/icon-3.svg"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Карточка курса -->
-                  <div class="card course hexagon">
-                    <div class="course__inner">
-                      <div class="course__header d-flex justify-space-between">
-                        <div class="d-flex gap-1 align-center flex-column">
-                          <div class="course-header__image hexagon md">
-                            <img
-                              src="images/pages/languages/flags/russian.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="course__author mt-2 d-flex gap-2 align-center"
-                        >
-                          <div class="course__author-image hexagon xxs">
-                            <img
-                              src="images/pages/languages/img-avatar.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="course__author-name subtitle sm">
-                            gingerbread
-                          </div>
-                        </div>
-                      </div>
-                      <div class="course__body text-center text-md-unset">
-                        <div class="d-flex align-center justify-center gap-2">
-                          <div class="course__title title small">
-                            Русский язык
-                          </div>
-                          <div class="course__progress progress-circle-bar md">
-                            <svg
-                              width="250"
-                              height="250"
-                              viewBox="0 0 250 250"
-                              class="progress-circle-bar__svg"
-                              style="--progress: 65"
-                            >
-                              <circle class="bg"></circle>
-                              <circle class="fg"></circle>
-                            </svg>
-                            <div class="progress-circle-bar__quantity">65%</div>
-                          </div>
-                          <i class="icon purple-star md"></i>
-                        </div>
-                        <div class="d-flex gap-1">
-                          <div class="d-flex gap-1 align-center">
-                            <div class="course__tag card-tag">Квиз</div>
-                            <div class="course__tag card-tag">12+</div>
-                          </div>
-                          <div class="course__rating align-center d-flex gap-1">
-                            <i class="icon star"></i>
-                            <span>
-                              4.9 <span class="text-gray"> (24) </span>
-                            </span>
-                          </div>
-                        </div>
-                        <div class="course__description font-medium text">
-                          Язык восточнославянской группы славянской
-                          ветви индоевропейской языковой семьи, национальный
-                          язык русского народа.
-                        </div>
-                        <div
-                          class="course__body-bottom d-flex align-center justify-space-between gap-2 flex-column"
-                        >
-                          <div class="course__tags d-md-flex gap-2 d-none">
-                            <div class="course__tag card-tag">Общение</div>
-                            <div class="course__tag card-tag">Языки</div>
-                            <div class="course__tag card-tag">Развитие</div>
-                          </div>
-                          <div
-                            class="course__achievements d-flex align-center gap-2"
-                          >
-                            <div class="d-flex align-center gap-1">
-                              <div class="course-header__image hexagon xxs">
-                                <img
-                                  src="images/pages/languages/icon-1.svg"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="course-header__image hexagon xxs">
-                                <img
-                                  src="images/pages/languages/icon-2.svg"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="course-header__image hexagon xxs">
-                                <img
-                                  src="images/pages/languages/icon-3.svg"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              <!-- Карточка -->
+              <div
+                class="card course-item border-light p-3 bg-white d-none d-md-block"
+              >
+                <div class="course-item__header justify-space-between d-flex">
+                  <div
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
+                  >
+                    <i class="icon language md"></i>
                   </div>
 
-                  <!-- Карточка курса -->
-                  <div class="card course hexagon">
-                    <div class="course__inner">
-                      <div class="course__header d-flex justify-space-between">
-                        <div class="d-flex gap-1 align-center flex-column">
-                          <div class="course-header__image hexagon md">
-                            <img
-                              src="images/pages/languages/flags/russian.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="course__author mt-2 d-flex gap-2 align-center"
-                        >
-                          <div class="course__author-image hexagon xxs">
-                            <img
-                              src="images/pages/languages/img-avatar.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="course__author-name subtitle sm">
-                            gingerbread
-                          </div>
-                        </div>
-                      </div>
-                      <div class="course__body text-center text-md-unset">
-                        <div class="d-flex align-center justify-center gap-2">
-                          <div class="course__title title small">
-                            Русский язык
-                          </div>
-                          <div class="course__progress progress-circle-bar md">
-                            <svg
-                              width="250"
-                              height="250"
-                              viewBox="0 0 250 250"
-                              class="progress-circle-bar__svg"
-                              style="--progress: 65"
-                            >
-                              <circle class="bg"></circle>
-                              <circle class="fg"></circle>
-                            </svg>
-                            <div class="progress-circle-bar__quantity">65%</div>
-                          </div>
-                          <i class="icon purple-star md"></i>
-                        </div>
-                        <div class="d-flex gap-1">
-                          <div class="d-flex gap-1 align-center">
-                            <div class="course__tag card-tag">Квиз</div>
-                            <div class="course__tag card-tag">12+</div>
-                          </div>
-                          <div class="course__rating align-center d-flex gap-1">
-                            <i class="icon star"></i>
-                            <span>
-                              4.9 <span class="text-gray"> (24) </span>
-                            </span>
-                          </div>
-                        </div>
-                        <div class="course__description font-medium text">
-                          Язык восточнославянской группы славянской
-                          ветви индоевропейской языковой семьи, национальный
-                          язык русского народа.
-                        </div>
-                        <div
-                          class="course__body-bottom d-flex align-center justify-space-between gap-2 flex-column"
-                        >
-                          <div class="course__tags d-md-flex gap-2 d-none">
-                            <div class="course__tag card-tag">Общение</div>
-                            <div class="course__tag card-tag">Языки</div>
-                            <div class="course__tag card-tag">Развитие</div>
-                          </div>
-                          <div
-                            class="course__achievements d-flex align-center gap-2"
-                          >
-                            <div class="d-flex align-center gap-1">
-                              <div class="course-header__image hexagon xxs">
-                                <img
-                                  src="images/pages/languages/icon-1.svg"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="course-header__image hexagon xxs">
-                                <img
-                                  src="images/pages/languages/icon-2.svg"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="course-header__image hexagon xxs">
-                                <img
-                                  src="images/pages/languages/icon-3.svg"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Карточка курса -->
-                  <div class="card course hexagon">
-                    <div class="course__inner">
-                      <div class="course__header d-flex justify-space-between">
-                        <div class="d-flex gap-1 align-center flex-column">
-                          <div class="course-header__image hexagon md">
-                            <img
-                              src="images/pages/languages/flags/russian.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="course__author mt-2 d-flex gap-2 align-center"
-                        >
-                          <div class="course__author-image hexagon xxs">
-                            <img
-                              src="images/pages/languages/img-avatar.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="course__author-name subtitle sm">
-                            gingerbread
-                          </div>
-                        </div>
-                      </div>
-                      <div class="course__body text-center text-md-unset">
-                        <div class="d-flex align-center justify-center gap-2">
-                          <div class="course__title title small">
-                            Русский язык
-                          </div>
-                          <div class="course__progress progress-circle-bar md">
-                            <svg
-                              width="250"
-                              height="250"
-                              viewBox="0 0 250 250"
-                              class="progress-circle-bar__svg"
-                              style="--progress: 65"
-                            >
-                              <circle class="bg"></circle>
-                              <circle class="fg"></circle>
-                            </svg>
-                            <div class="progress-circle-bar__quantity">65%</div>
-                          </div>
-                          <i class="icon purple-star md"></i>
-                        </div>
-                        <div class="d-flex gap-1">
-                          <div class="d-flex gap-1 align-center">
-                            <div class="course__tag card-tag">Квиз</div>
-                            <div class="course__tag card-tag">12+</div>
-                          </div>
-                          <div class="course__rating align-center d-flex gap-1">
-                            <i class="icon star"></i>
-                            <span>
-                              4.9 <span class="text-gray"> (24) </span>
-                            </span>
-                          </div>
-                        </div>
-                        <div class="course__description font-medium text">
-                          Язык восточнославянской группы славянской
-                          ветви индоевропейской языковой семьи, национальный
-                          язык русского народа.
-                        </div>
-                        <div
-                          class="course__body-bottom d-flex align-center justify-space-between gap-2 flex-column"
-                        >
-                          <div class="course__tags d-md-flex gap-2 d-none">
-                            <div class="course__tag card-tag">Общение</div>
-                            <div class="course__tag card-tag">Языки</div>
-                            <div class="course__tag card-tag">Развитие</div>
-                          </div>
-                          <div
-                            class="course__achievements d-flex align-center gap-2"
-                          >
-                            <div class="d-flex align-center gap-1">
-                              <div class="course-header__image hexagon xxs">
-                                <img
-                                  src="images/pages/languages/icon-1.svg"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="course-header__image hexagon xxs">
-                                <img
-                                  src="images/pages/languages/icon-2.svg"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="course-header__image hexagon xxs">
-                                <img
-                                  src="images/pages/languages/icon-3.svg"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Карточка курса -->
-                  <div class="card course hexagon d-none d-md-block">
-                    <div class="course__inner">
-                      <div class="course__header d-flex justify-space-between">
-                        <div class="d-flex gap-1 align-center flex-column">
-                          <div class="course-header__image hexagon md">
-                            <img
-                              src="images/pages/languages/flags/russian.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="course__author mt-2 d-flex gap-2 align-center"
-                        >
-                          <div class="course__author-image hexagon xxs">
-                            <img
-                              src="images/pages/languages/img-avatar.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="course__author-name subtitle sm">
-                            gingerbread
-                          </div>
-                        </div>
-                      </div>
-                      <div class="course__body text-center text-md-unset">
-                        <div class="d-flex align-center justify-center gap-2">
-                          <div class="course__title title small">
-                            Русский язык
-                          </div>
-                          <div class="course__progress progress-circle-bar md">
-                            <svg
-                              width="250"
-                              height="250"
-                              viewBox="0 0 250 250"
-                              class="progress-circle-bar__svg"
-                              style="--progress: 65"
-                            >
-                              <circle class="bg"></circle>
-                              <circle class="fg"></circle>
-                            </svg>
-                            <div class="progress-circle-bar__quantity">65%</div>
-                          </div>
-                          <i class="icon purple-star md"></i>
-                        </div>
-                        <div class="d-flex gap-1">
-                          <div class="d-flex gap-1 align-center">
-                            <div class="course__tag card-tag">Квиз</div>
-                            <div class="course__tag card-tag">12+</div>
-                          </div>
-                          <div class="course__rating align-center d-flex gap-1">
-                            <i class="icon star"></i>
-                            <span>
-                              4.9 <span class="text-gray"> (24) </span>
-                            </span>
-                          </div>
-                        </div>
-                        <div class="course__description font-medium text">
-                          Язык восточнославянской группы славянской
-                          ветви индоевропейской языковой семьи, национальный
-                          язык русского народа.
-                        </div>
-                        <div
-                          class="course__body-bottom d-flex align-center justify-space-between gap-2 flex-column"
-                        >
-                          <div class="course__tags d-flex gap-2">
-                            <div class="course__tag card-tag">Общение</div>
-                            <div class="course__tag card-tag">Языки</div>
-                            <div class="course__tag card-tag">Развитие</div>
-                          </div>
-                          <div
-                            class="course__achievements d-flex align-center gap-2"
-                          >
-                            <div class="d-flex align-center gap-1">
-                              <div class="course-header__image hexagon xxs">
-                                <img
-                                  src="images/pages/languages/icon-1.svg"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="course-header__image hexagon xxs">
-                                <img
-                                  src="images/pages/languages/icon-2.svg"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="course-header__image hexagon xxs">
-                                <img
-                                  src="images/pages/languages/icon-3.svg"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
+                  >
+                    <span class="icon stack"> </span>
+                    <span>21 курс</span>
                   </div>
                 </div>
-                <div
-                  class="catalog__bottom mt-5 d-flex align-center justify-center"
-                >
-                  <button class="button outlined md">Показать еще</button>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Душа</div>
+                    <div class="course-item__tag card-tag">Личность</div>
+                    <div class="course-item__tag card-tag">Вселенная</div>
+                  </div>
+                  <div class="course-item__title subtitle lg text-bold mt-3">
+                    Воин
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Борьба за смысл, снижение того, во что есть вера,
+                    устойчивость позиций своих и необходимость переход...
+                  </div>
                 </div>
+              </div>
+
+              <!-- Карточка -->
+              <div
+                class="card course-item border-light p-3 bg-white d-none d-md-block"
+              >
+                <div class="course-item__header justify-space-between d-flex">
+                  <div
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
+                  >
+                    <i class="icon language md"></i>
+                  </div>
+
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
+                  >
+                    <span class="icon stack"> </span>
+                    <span>32 курс</span>
+                  </div>
+                </div>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Языки</div>
+                    <div class="course-item__tag card-tag">Общение</div>
+                  </div>
+                  <div class="course-item__title subtitle lg text-bold mt-3">
+                    Языки
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Спонтанные озарения, инсайты, структурирование информации,
+                    потен...
+                  </div>
+                </div>
+              </div>
+
+              <!-- Карточка -->
+              <div
+                class="card course-item border-light p-3 bg-white d-none d-md-block"
+              >
+                <div class="course-item__header justify-space-between d-flex">
+                  <div
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
+                  >
+                    <i class="icon language md"></i>
+                  </div>
+
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
+                  >
+                    <span class="icon stack"> </span>
+                    <span>21 курс</span>
+                  </div>
+                </div>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Душа</div>
+                    <div class="course-item__tag card-tag">Личность</div>
+                    <div class="course-item__tag card-tag">Вселенная</div>
+                  </div>
+                  <div class="course-item__title subtitle lg text-bold mt-3">
+                    Воин
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Борьба за смысл, снижение того, во что есть вера,
+                    устойчивость позиций своих и необходимость переход...
+                  </div>
+                </div>
+              </div>
+
+              <!-- Карточка -->
+              <div
+                class="card course-item border-light p-3 bg-white d-none d-md-block"
+              >
+                <div class="course-item__header justify-space-between d-flex">
+                  <div
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
+                  >
+                    <i class="icon language md"></i>
+                  </div>
+
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
+                  >
+                    <span class="icon stack"> </span>
+                    <span>21 курс</span>
+                  </div>
+                </div>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Душа</div>
+                    <div class="course-item__tag card-tag">Личность</div>
+                    <div class="course-item__tag card-tag">Вселенная</div>
+                  </div>
+                  <div class="course-item__title subtitle lg text-bold mt-3">
+                    Воин
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Борьба за смысл, снижение того, во что есть вера,
+                    устойчивость позиций своих и необходимость переход...
+                  </div>
+                </div>
+              </div>
+
+              <!-- Карточка -->
+              <div
+                class="card course-item border-light p-3 bg-white d-none d-md-block"
+              >
+                <div class="course-item__header justify-space-between d-flex">
+                  <div
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
+                  >
+                    <i class="icon language md"></i>
+                  </div>
+
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
+                  >
+                    <span class="icon stack"> </span>
+                    <span>32 курс</span>
+                  </div>
+                </div>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Языки</div>
+                    <div class="course-item__tag card-tag">Общение</div>
+                  </div>
+                  <div class="course-item__title subtitle lg text-bold mt-3">
+                    Языки
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Спонтанные озарения, инсайты, структурирование информации,
+                    потен...
+                  </div>
+                </div>
+              </div>
+
+              <!-- Карточка -->
+              <div
+                class="card course-item border-light p-3 bg-white d-none d-md-block"
+              >
+                <div class="course-item__header justify-space-between d-flex">
+                  <div
+                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
+                  >
+                    <i class="icon language md"></i>
+                  </div>
+
+                  <div
+                    class="course-item__add-text justify-space-between d-flex gap-1"
+                  >
+                    <span class="icon stack"> </span>
+                    <span>21 курс</span>
+                  </div>
+                </div>
+                <div class="course-item__body mt-3">
+                  <div class="d-flex align-center gap-1">
+                    <div class="course-item__tag card-tag">Душа</div>
+                    <div class="course-item__tag card-tag">Личность</div>
+                    <div class="course-item__tag card-tag">Вселенная</div>
+                  </div>
+                  <div class="course-item__title subtitle lg text-bold mt-3">
+                    Воин
+                  </div>
+                  <div class="course-item__text mt-2_5">
+                    Борьба за смысл, снижение того, во что есть вера,
+                    устойчивость позиций своих и необходимость переход...
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="catalog__bottom d-md-none mt-5 d-flex align-center justify-center"
+              >
+                <button class="button outlined md">Показать еще</button>
               </div>
             </div>
           </div>
         </div>
       </main>
-    </div>
-    <!-- Футер -->
-    <div class="footer">
-      <div class="container footer__container">
-        <div class="footer__top">
-          <div class="footer__top-left">
-            <a href="/" class="footer__logo">
-              <img src="images/logo-full.svg" alt="" />
-            </a>
-            <ul class="footer__socials">
-              <li class="footer__social">
-                <a href="" class="footer__social-link">
-                  <img src="images/icons/socials/footer-instagram.svg" alt="" />
-                </a>
-              </li>
-              <li class="footer__social">
-                <a href="" class="footer__social-link">
-                  <img src="images/icons/socials/footer-vk.svg" alt="" />
-                </a>
-              </li>
-              <li class="footer__social">
-                <a href="" class="footer__social-link">
-                  <img src="images/icons/socials/footer-facebook.svg" alt="" />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__top-right">
-            <ul class="footer__menu">
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link"> О сервисе </a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link"> Что такое YarKiMa </a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link"> Реквизиты </a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link"> Контакты </a>
-              </li>
-            </ul>
-            <ul class="footer__menu">
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link"> Для учеников </a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link"> Подсказки </a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link"> Квизы, опросы, тесты </a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link"> Заучивание </a>
-              </li>
-            </ul>
-            <ul class="footer__menu">
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link"> Для партнеров </a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link"> Мы предлагаем</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">
-                  Регистрация партнеров
-                </a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link"> Личный кабинет </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer__bottom">
-          <div class="footer__bottom-links d-flex align-center flex-wrap">
-            <div class="footer__copyrights">© 2024 YarKiMa</div>
-            <a href="#" class="footer__bottom-link">
-              Политика конфиденциальности
-            </a>
-            <a href="#" class="footer__bottom-link"> Условия использования </a>
-          </div>
-          <a href="#" class="footer__support-link">
-            <span> Поддержка </span>
-          </a>
-        </div>
-      </div>
-    </div>
 
-    <!-- Мобильное модальное окно фильтров  -->
-    <div class="mob-modal slide filter-modal bg-white" id="filter-modal">
-      <div class="mob-modal__header">
-        <div class="title small uppercase">Фильтры</div>
-        <button class="button modal-close outlined min-width-5 min-height-5">
-          <i class="icon close"></i>
-        </button>
-      </div>
-
-      <div class="mob-modal__body px-2 pb-5 pt-4">
-        <div class="toggle-list">
-          <div
-            class="toggle-list__header show"
-            data-toggle="collapse"
-            data-target=".collapse.age-sorting"
-            data-text="Collapse"
-          >
-            Возраст
-            <i class="icon arrow-down sm"> </i>
-          </div>
-          <div class="toggle-list__body collapse show age-sorting">
-            <div class="form-radios">
-              <label class="form-radio__input">
-                <input type="radio" id="age-16" name="age-sorting" checked />
-                <span class="form-radio__input-icon"></span>
-                6+
-              </label>
-              <label class="form-radio__input">
-                <input type="radio" id="age-12" name="age-sorting" />
-                <span class="form-radio__input-icon"></span>
-                12+
-              </label>
-              <label class="form-radio__input">
-                <input type="radio" id="age-18" name="age-sorting" />
-                <span class="form-radio__input-icon"></span>
-                18+
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="mob-modal__divider mt-3 mb-1"></div>
-        <div class="toggle-list">
-          <div
-            class="toggle-list__header show"
-            data-toggle="collapse"
-            data-target=".collapse.type-sorting"
-            data-text="Collapse"
-          >
-            Тип
-            <i class="icon arrow-down sm"> </i>
-          </div>
-          <div class="toggle-list__body collapse show type-sorting">
-            <div class="form-radios">
-              <label class="form-radio__input">
-                <input
-                  type="radio"
-                  id="type-memorization"
-                  name="type-sorting"
-                  checked
-                />
-                <span class="form-radio__input-icon"></span>
-                Заучивание
-              </label>
-              <label class="form-radio__input">
-                <input type="radio" id="type-text" name="type-sorting" />
-                <span class="form-radio__input-icon"></span>
-                Тест
-              </label>
-              <label class="form-radio__input">
-                <input type="radio" id="type-quiz" name="type-sorting" />
-                <span class="form-radio__input-icon"></span>
-                Квиз
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="mob-modal__divider mt-3 mb-2"></div>
-        <div class="toggle-list">
-          <div
-            class="toggle-list__header show"
-            data-toggle="collapse"
-            data-target=".collapse.caterogies-soring"
-            data-text="Collapse"
-          >
-            Категории
-            <i class="icon arrow-down sm"> </i>
-          </div>
-          <div class="toggle-list__body collapse show caterogies-soring">
-            <div class="toggle-list languages__sidebar-list">
-              <div
-                class="toggle-list__header show"
-                data-toggle="collapse"
-                data-target=".collapse.caterogies-soring-1"
-                data-text="Collapse"
-              >
-                <i class="icon md purple-language"></i>
-                Языки
-                <i class="icon arrow-down sm"> </i>
-              </div>
-              <ul
-                class="toggle-list__body toggle-list__list collapse show caterogies-soring-1"
-              >
-                <li class="toggle-list__list-item">
-                  <a href="#" class="toggle-list__link"> Русский </a>
+      <!-- Футер -->
+      <div class="footer">
+        <div class="container footer__container">
+          <div class="footer__top">
+            <div class="footer__top-left">
+              <a href="/" class="footer__logo">
+                <img src="images/logo-full.svg" alt="" />
+              </a>
+              <ul class="footer__socials">
+                <li class="footer__social">
+                  <a href="" class="footer__social-link">
+                    <img
+                      src="images/icons/socials/footer-instagram.svg"
+                      alt=""
+                    />
+                  </a>
                 </li>
-                <li class="toggle-list__item">
-                  <a href="#" class="toggle-list__link"> Английский </a>
+                <li class="footer__social">
+                  <a href="" class="footer__social-link">
+                    <img src="images/icons/socials/footer-vk.svg" alt="" />
+                  </a>
                 </li>
-                <li class="toggle-list__item">
-                  <a href="#" class="toggle-list__link"> Немецкий </a>
-                </li>
-                <li class="toggle-list__item">
-                  <a href="#" class="toggle-list__link"> Французский </a>
-                </li>
-                <li class="toggle-list__item">
-                  <a href="#" class="toggle-list__link"> Китайский </a>
-                </li>
-                <li class="toggle-list__item">
-                  <a href="#" class="toggle-list__link"> Японский </a>
+                <li class="footer__social">
+                  <a href="" class="footer__social-link">
+                    <img
+                      src="images/icons/socials/footer-facebook.svg"
+                      alt=""
+                    />
+                  </a>
                 </li>
               </ul>
             </div>
-            <div class="toggle-list languages__sidebar-list mt-3">
-              <div
-                class="toggle-list__header show"
-                class="btn btn-primary btn__first"
-                data-toggle="collapse"
-                data-target=".collapse.caterogies-soring-2"
-                data-text="Collapse"
-              >
-                <i class="icon md purple-school"></i>
-                Школа
-                <i class="icon arrow-down sm"> </i>
-              </div>
-              <ul
-                class="toggle-list__body show toggle-list__list collapse caterogies-soring-2"
-              >
-                <li class="toggle-list__item">
-                  <a href="#" class="toggle-list__link"> Математика </a>
+            <div class="footer__top-right">
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> О сервисе </a>
                 </li>
-                <li class="toggle-list__item">
-                  <a href="#" class="toggle-list__link"> Русский язык </a>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Что такое YarKiMa </a>
                 </li>
-                <li class="toggle-list__item">
-                  <a href="#" class="toggle-list__link"> Литература </a>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Реквизиты </a>
                 </li>
-                <li class="toggle-list__item">
-                  <a href="#" class="toggle-list__link"> История </a>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Контакты </a>
                 </li>
-                <li class="toggle-list__item">
-                  <a href="#" class="toggle-list__link"> Алгебра </a>
+              </ul>
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Для учеников </a>
                 </li>
-                <li class="toggle-list__item">
-                  <a href="#" class="toggle-list__link"> Геометрия </a>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Подсказки </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">
+                    Квизы, опросы, тесты
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Заучивание </a>
+                </li>
+              </ul>
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Для партнеров </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Мы предлагаем</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">
+                    Регистрация партнеров
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link"> Личный кабинет </a>
                 </li>
               </ul>
             </div>
           </div>
+          <div class="footer__bottom">
+            <div class="footer__bottom-links d-flex align-center flex-wrap">
+              <div class="footer__copyrights">© 2024 YarKiMa</div>
+              <a href="#" class="footer__bottom-link">
+                Политика конфиденциальности
+              </a>
+              <a href="#" class="footer__bottom-link">
+                Условия использования
+              </a>
+            </div>
+            <a href="#" class="footer__support-link">
+              <span> Поддержка </span>
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Мобильное модальное окно сортировки  -->
-    <div
-      class="mob-modal border-radius px-2 pb-5 pt-2 slide sort-modal bg-white"
-      id="sorting-modal"
-    >
-      <div class="form-radios">
-        <label class="form-radio__input">
-          <input type="radio" id="radio-1" name="lang-sorting" checked />
-          <span class="form-radio__input-icon"></span>
-
-          По популярности
-        </label>
-        <label class="form-radio__input">
-          <input type="radio" id="radio-2" name="lang-sorting" />
-          <span class="form-radio__input-icon"></span>
-
-          По рейтингу
-        </label>
-        <label class="form-radio__input">
-          <input type="radio" id="radio-3" name="lang-sorting" />
-          <span class="form-radio__input-icon"></span>
-
-          По дате добавления
-        </label>
       </div>
     </div>
   </body>
+
   <script src="/script/form.js"></script>
   <script src="/script/main.js"></script>
   <script src="/script/scripts.js"></script>
-  <script src="/script/pages/courses.js"></script>
+  <script src="/script/pages/categories.js"></script>
 </html>

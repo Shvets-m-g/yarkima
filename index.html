@@ -3,7 +3,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Yarkima - вход</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -297,13 +300,104 @@
                 >
                   <i class="icon correct-blank md"> </i> Кабинет партнера
                 </a>
-                <a
-                  href="#"
-                  class="button profile-menu__link profile-menu__link-show-more"
-                >
-                  <i class="icon more md"> </i>
-                  Еще
-                </a>
+
+                <div class="toggle-list">
+                  <div
+                    class="toggle-list__header button profile-menu__link show-disabled"
+                    data-toggle="collapse"
+                    data-target=".collapse.personals-links"
+                    data-text="Collapse"
+                  >
+                    <i class="icon more md"> </i>
+                    Еще
+                    <i class="icon arrow-down sm"> </i>
+                  </div>
+                  <div
+                    class="toggle-list__body mt-0 mob-header__links collapse personals-links"
+                  >
+                    <div class="d-grid gap-1">
+                      <a href="/meeting.html" class="button profile-menu__link">
+                        <i class="icon two-persons md"> </i>
+                        Знакомства
+                      </a>
+
+                      <a href="/chat.html" class="button profile-menu__link">
+                        <i class="icon icon-chat md"> </i>
+                        Чаты
+                      </a>
+                      <a href="/groups.html" class="button profile-menu__link">
+                        <i class="icon group md"> </i>
+                        Группы
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Меню кабинета -->
+                <ul class="personal-account__menu d-none d-md-flex">
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/main-info.html"
+                      class="personal-account__menu-link active"
+                    >
+                      Основная информация
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/additional-info.html"
+                      class="personal-account__menu-link"
+                    >
+                      Дополнительная информация
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/socials.html"
+                      class="personal-account__menu-link"
+                    >
+                      Социальные сети
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/user-id.html"
+                      class="personal-account__menu-link"
+                    >
+                      Идентификатор пользователя
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/personal-account.html"
+                      class="personal-account__menu-link"
+                    >
+                      Лицевой счет
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/order-history.html"
+                      class="personal-account__menu-link"
+                    >
+                      История заказов
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/password.html"
+                      class="personal-account__menu-link"
+                    >
+                      Пароль
+                    </a>
+                  </li>
+
+                  <li class="personal-account__menu-item">
+                    <a href="#" class="personal-account__menu-link text-red">
+                      Выйти</a
+                    >
+                  </li>
+                </ul>
+                <!--  -->
               </div>
             </div>
           </div>
