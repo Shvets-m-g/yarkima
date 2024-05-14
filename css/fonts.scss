@@ -12,6 +12,12 @@
 }
 @font-face {
   font-family: "Inter Display";
+  src: url("../fonts/InterDisplay-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Inter Display";
   src: url("../fonts/InterDisplay-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
@@ -39,4 +45,263 @@
   src: url("../fonts/InterDisplay-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icons/icomoon.eot?k45kit");
+  src: url("../fonts/icons/icomoon.eot?k45kit#iefix")
+      format("embedded-opentype"),
+    url("../fonts/icons/icomoon.ttf?k45kit") format("truetype"),
+    url("../fonts/icons/icomoon.woff?k45kit") format("woff"),
+    url("../fonts/icons/icomoon.svg?k45kit#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chat:before {
+  content: "\1f327";
+  color: #b9bdcc;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pen:before {
+  content: "\e900";
+  color: #8b8e9a;
+}
+.icon-full:before {
+  content: "\e901";
+  color: #8b8e9a;
+}
+.icon-mute-volume:before {
+  content: "\e902";
+  color: #8b8e9a;
+}
+.icon-pause:before {
+  content: "\e903";
+  color: #8b8e9a;
+}
+.icon-play:before {
+  content: "\e904";
+  color: #8b8e9a;
+}
+.icon-facebook:before {
+  content: "\e906";
+  color: #8b8e9a;
+}
+.icon-instagram:before {
+  content: "\e907";
+  color: #8b8e9a;
+}
+.icon-vk:before {
+  content: "\e908";
+  color: #8b8e9a;
+}
+.icon-Chat:before {
+  content: "\e911";
+  color: #8b8e9a;
+}
+.icon-group:before {
+  content: "\e912";
+  color: #8b8e9a;
+}
+.icon-More:before {
+  content: "\e913";
+  color: #8b8e9a;
+}
+.icon-correct:before {
+  content: "\e914";
+  color: #8b8e9a;
+}
+.icon-profile:before {
+  content: "\e915";
+}
+.icon-tinder:before {
+  content: "\e916";
+  color: #8b8e9a;
+}
+.icon-bussiness:before {
+  content: "\e917";
+  color: #8b8e9a;
+}
+.icon-cooking:before {
+  content: "\e918";
+  color: #8b8e9a;
+}
+.icon-esotericism:before {
+  content: "\e919";
+  color: #8b8e9a;
+}
+.icon-finance:before {
+  content: "\e91a";
+  color: #8b8e9a;
+}
+.icon-heart:before {
+  content: "\e91b";
+  color: #8b8e9a;
+}
+.icon-hobby:before {
+  content: "\e91c";
+  color: #8b8e9a;
+}
+.icon-investment:before {
+  content: "\e91d";
+  color: #8b8e9a;
+}
+.icon-language:before {
+  content: "\e91e";
+  color: #8b8e9a;
+}
+.icon-personal-growth:before {
+  content: "\e91f";
+  color: #8b8e9a;
+}
+.icon-professions:before {
+  content: "\e920";
+  color: #8b8e9a;
+}
+.icon-relationships:before {
+  content: "\e921";
+  color: #8b8e9a;
+}
+.icon-school:before {
+  content: "\e922";
+  color: #8b8e9a;
+}
+.icon-science:before {
+  content: "\e923";
+  color: #8b8e9a;
+}
+.icon-spiritual-growth:before {
+  content: "\e924";
+  color: #8b8e9a;
+}
+.icon-sport:before {
+  content: "\e925";
+  color: #8b8e9a;
+}
+.icon-technolodgy:before {
+  content: "\e926";
+  color: #8b8e9a;
+}
+.icon-university:before {
+  content: "\e927";
+  color: #8b8e9a;
+}
+.icon-chat:before {
+  content: "\e928";
+  color: #8b8e9a;
+}
+.icon-flame:before {
+  content: "\e929";
+  color: #8b8e9a;
+}
+.icon-icon-stack-white:before {
+  content: "\e92a";
+  color: #8b8e9a;
+}
+.icon-double-check-green:before {
+  content: "\e92b";
+  color: #8b8e9a;
+}
+.icon-eye-off:before {
+  content: "\e92c";
+  color: #8b8e9a;
+}
+.icon-more:before {
+  content: "\e92d";
+}
+.icon-border-bg:before {
+  content: "\e92e";
+  color: #8b8e9a;
+}
+.icon-grid:before {
+  content: "\e92f";
+  color: #8b8e9a;
+}
+.icon-arrow-left:before {
+  content: "\e931";
+}
+.icon-icon-down:before {
+  content: "\e932";
+}
+.icon-filter:before {
+  content: "\e933";
+  color: #8b8e9a;
+}
+.icon-notification:before {
+  content: "\e938";
+  color: #8b8e9a;
+}
+.icon-question:before {
+  content: "\e93b";
+  color: #8b8e9a;
+}
+.icon-close:before {
+  content: "\e93c";
+}
+.icon-sort:before {
+  content: "\e93f";
+  color: #8b8e9a;
+}
+.icon-icon-star-gray:before {
+  content: "\e940";
+}
+.icon-volume:before {
+  content: "\e941";
+}
+.icon-hexagon:before {
+  content: "\e942";
+  color: #8b8e9a;
+}
+.icon-filled-star:before {
+  content: "\e943";
+  color: #8b8e9a;
+}
+.icon-plus:before {
+  content: "\e945";
+  color: #8b8e9a;
+}
+.icon-eye:before {
+  content: "\e946";
+  color: #8b8e9a;
+}
+.icon-icon-search:before {
+  content: "\e947";
+}
+.icon-stack:before {
+  content: "\e948";
+  color: #8b8e9a;
 }
