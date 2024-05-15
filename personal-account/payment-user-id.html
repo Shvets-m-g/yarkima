@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class="pesonal-account-page">
-      <!-- Хедеер -->
+      <!-- Хедер -->
       <header class="header full">
         <div class="header__container pb-2 pt-2 px-2">
           <div class="header__left">
@@ -74,32 +74,32 @@
             </div>
           </div>
           <div class="header__actions d-flex align-center gap-2 ml-auto">
-            <a
-              href="/create-course.html"
-              class="button default min-width-5 min-height-5 min-width-md-6 min-height-md-6 p-0"
-            >
-              <i class="icon white-plus"></i>
-            </a>
-            <button
-              class="header__notification button simple min-width-5 min-height-5 min-width-md-6 min-height-md-6"
-            >
-              <i class="icon notification md"> </i>
-            </button>
-            <a href="/profile.html" class="header__user hexagon s-48">
-              <img src="/images/people-images/small-pic.jpg" alt="" />
-            </a>
-            <!-- <a href="/login.html" class="button outlined d-none d-md-block md">
-          Войти
-        </a>
-        <a
-          href="/registration.html"
-          class="button default d-none d-md-block md"
+            <!-- <a
+          href="/create-course.html"
+          class="button default min-width-5 min-height-5 min-width-md-6 min-height-md-6p-0"
         >
-          Зарегистрироваться
-        </a>
-        <a href="/registration.html" class="button default xs d-md-none">
-          Начать
+          <i class="icon white-plus"></i>
         </a> -->
+            <!-- <button
+          class="header__notification button simple min-width-5 min-height-5 min-width-md-6 min-height-md-6"
+        >
+          <i class="icon notification md"> </i>
+        </button> -->
+            <!-- <a href="/profile.html" class="header__user hexagon s-48">
+          <img src="/images/header-pic.jpg" alt="" />
+        </a> -->
+            <a href="/login.html" class="button outlined d-none d-md-flex md">
+              Войти
+            </a>
+            <a
+              href="/registration.html"
+              class="button default d-none d-md-flex md"
+            >
+              Зарегистрироваться
+            </a>
+            <a href="/registration.html" class="button default xs d-md-none">
+              Начать
+            </a>
             <button
               class="button header__burger header__desk-burger d-none d-md-block"
               alt=""
@@ -123,14 +123,14 @@
         <div class="menu-header__body">
           <ul class="menu-header__menu">
             <li class="menu-header__menu-item">
-              <a href="/" class="menu-header__menu-link active uppercase">
+              <a href="/" class="menu-header__menu-link uppercase">
                 <span> Главная </span>
               </a>
             </li>
             <li class="menu-header__menu-item">
               <a
                 href="/categories.html"
-                class="menu-header__menu-link uppercase"
+                class="menu-header__menu-link active uppercase"
               >
                 <span> Каталог </span>
               </a>
@@ -157,7 +157,6 @@
         </div>
       </div>
       <!-- Конец десктоп меню  -->
-
       <!-- Мобильное меню  -->
       <div class="mob-header bg-white" id="header-mob-menu">
         <div class="mob-header__top bg-white">
@@ -219,10 +218,7 @@
               class="toggle-list__body mob-header__links collapse show account-list"
             >
               <div class="d-grid gap-1">
-                <a
-                  href="/profile.html"
-                  class="button profile-menu__link active"
-                >
+                <a href="/profile.html" class="button profile-menu__link">
                   <i class="icon profile md"> </i>
                   Публичный профиль
                 </a>
@@ -248,18 +244,24 @@
                     class="toggle-list__body mt-0 mob-header__links collapse personals-links"
                   >
                     <div class="d-grid gap-1">
-                      <a href="/meeting.html" class="button profile-menu__link">
-                        <i class="icon two-persons md"> </i>
-                        Знакомства
+                      <a
+                        href="/personal-account/main-info.html"
+                        class="button profile-menu__link"
+                      >
+                        <i class="icon profile md"> </i>
+                        Настройки
                       </a>
 
-                      <a href="/chat.html" class="button profile-menu__link">
+                      <a
+                        href="/empty-page.html"
+                        class="button profile-menu__link"
+                      >
                         <i class="icon icon-chat md"> </i>
-                        Чаты
+                        Поддержка
                       </a>
-                      <a href="/groups.html" class="button profile-menu__link">
-                        <i class="icon group md"> </i>
-                        Группы
+                      <a href="/" class="button profile-menu__link text-red">
+                        <!-- <i class="icon group md"> </i> -->
+                        Выйти
                       </a>
                     </div>
                   </div>
@@ -960,7 +962,7 @@
           </div>
         </div>
       </div>
-      <!--  -->
+      <!-- Конец мобильного меню -->
       <main class="personal-account">
         <div class="container">
           <div class="personal-account__container">

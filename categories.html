@@ -16,8 +16,10 @@
     />
   </head>
   <body>
+    <div class="overlay" id="overlay"></div>
+
     <div class="categories-page page with-bg">
-      <!-- Хедеер -->
+      <!-- Хедер -->
       <header class="header full">
         <div class="header__container pb-2 pt-2 px-2">
           <div class="header__left">
@@ -71,32 +73,32 @@
             </div>
           </div>
           <div class="header__actions d-flex align-center gap-2 ml-auto">
+            <!-- <a
+            href="/create-course.html"
+            class="button default min-width-5 min-height-5 min-width-md-6 min-height-md-6p-0"
+          >
+            <i class="icon white-plus"></i>
+          </a> -->
+            <!-- <button
+            class="header__notification button simple min-width-5 min-height-5 min-width-md-6 min-height-md-6"
+          >
+            <i class="icon notification md"> </i>
+          </button> -->
+            <!-- <a href="/profile.html" class="header__user hexagon s-48">
+            <img src="/images/header-pic.jpg" alt="" />
+          </a> -->
+            <a href="/login.html" class="button outlined d-none d-md-flex md">
+              Войти
+            </a>
             <a
-              href="/create-course.html"
-              class="button default min-width-5 min-height-5 min-width-md-6 min-height-md-6 p-0"
+              href="/registration.html"
+              class="button default d-none d-md-flex md"
             >
-              <i class="icon white-plus"></i>
+              Зарегистрироваться
             </a>
-            <button
-              class="header__notification button simple min-width-5 min-height-5 min-width-md-6 min-height-md-6"
-            >
-              <i class="icon notification md"> </i>
-            </button>
-            <a href="/profile.html" class="header__user hexagon s-48">
-              <img src="/images/people-images/small-pic.jpg" alt="" />
+            <a href="/registration.html" class="button default xs d-md-none">
+              Начать
             </a>
-            <!-- <a href="/login.html" class="button outlined d-none d-md-block md">
-          Войти
-        </a>
-        <a
-          href="/registration.html"
-          class="button default d-none d-md-block md"
-        >
-          Зарегистрироваться
-        </a>
-        <a href="/registration.html" class="button default xs d-md-none">
-          Начать
-        </a> -->
             <button
               class="button header__burger header__desk-burger d-none d-md-block"
               alt=""
@@ -120,14 +122,14 @@
         <div class="menu-header__body">
           <ul class="menu-header__menu">
             <li class="menu-header__menu-item">
-              <a href="/" class="menu-header__menu-link active uppercase">
+              <a href="/" class="menu-header__menu-link uppercase">
                 <span> Главная </span>
               </a>
             </li>
             <li class="menu-header__menu-item">
               <a
                 href="/categories.html"
-                class="menu-header__menu-link uppercase"
+                class="menu-header__menu-link active uppercase"
               >
                 <span> Каталог </span>
               </a>
@@ -154,7 +156,6 @@
         </div>
       </div>
       <!-- Конец десктоп меню  -->
-
       <!-- Мобильное меню  -->
       <div class="mob-header bg-white" id="header-mob-menu">
         <div class="mob-header__top bg-white">
@@ -216,10 +217,7 @@
               class="toggle-list__body mob-header__links collapse show account-list"
             >
               <div class="d-grid gap-1">
-                <a
-                  href="/profile.html"
-                  class="button profile-menu__link active"
-                >
+                <a href="/profile.html" class="button profile-menu__link">
                   <i class="icon profile md"> </i>
                   Публичный профиль
                 </a>
@@ -245,18 +243,24 @@
                     class="toggle-list__body mt-0 mob-header__links collapse personals-links"
                   >
                     <div class="d-grid gap-1">
-                      <a href="/meeting.html" class="button profile-menu__link">
-                        <i class="icon two-persons md"> </i>
-                        Знакомства
+                      <a
+                        href="/personal-account/main-info.html"
+                        class="button profile-menu__link"
+                      >
+                        <i class="icon profile md"> </i>
+                        Настройки
                       </a>
 
-                      <a href="/chat.html" class="button profile-menu__link">
+                      <a
+                        href="/empty-page.html"
+                        class="button profile-menu__link"
+                      >
                         <i class="icon icon-chat md"> </i>
-                        Чаты
+                        Поддержка
                       </a>
-                      <a href="/groups.html" class="button profile-menu__link">
-                        <i class="icon group md"> </i>
-                        Группы
+                      <a href="/" class="button profile-menu__link text-red">
+                        <!-- <i class="icon group md"> </i> -->
+                        Выйти
                       </a>
                     </div>
                   </div>
@@ -957,7 +961,7 @@
           </div>
         </div>
       </div>
-      <!--  -->
+      <!-- Конец мобильного меню -->
       <main class="pt-5">
         <div class="container">
           <h2 class="title big uppercase">Категории</h2>
@@ -1081,7 +1085,10 @@
           <div class="container">
             <div class="courser-list__header catalog__header">
               <div class="d-md-none">
-                <button class="button outlined min-width-6 min-height-6">
+                <button
+                  class="button outlined min-width-6 min-height-6"
+                  data-modal-id="sorting-modal"
+                >
                   <i class="icon sort"></i>
                 </button>
               </div>
@@ -1572,46 +1579,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Карточка -->
-              <div
-                class="card course-item border-light p-3 bg-white d-none d-md-block"
-              >
-                <div class="course-item__header justify-space-between d-flex">
-                  <div
-                    class="course-item__image hexagon sm with-border d-flex justify-center align-center"
-                  >
-                    <i class="icon language md"></i>
-                  </div>
-
-                  <div
-                    class="course-item__add-text justify-space-between d-flex gap-1"
-                  >
-                    <span class="icon stack"> </span>
-                    <span>21 курс</span>
-                  </div>
-                </div>
-                <div class="course-item__body mt-3">
-                  <div class="d-flex align-center gap-1">
-                    <div class="course-item__tag card-tag">Душа</div>
-                    <div class="course-item__tag card-tag">Личность</div>
-                    <div class="course-item__tag card-tag">Вселенная</div>
-                  </div>
-                  <div class="course-item__title subtitle lg text-bold mt-3">
-                    Воин
-                  </div>
-                  <div class="course-item__text mt-2_5">
-                    Борьба за смысл, снижение того, во что есть вера,
-                    устойчивость позиций своих и необходимость переход...
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="catalog__bottom d-md-none mt-5 d-flex align-center justify-center"
-              >
-                <button class="button outlined md">Показать еще</button>
-              </div>
             </div>
           </div>
         </div>
@@ -1723,10 +1690,44 @@
         </div>
       </footer>
     </div>
+    <!-- Мобильное модальное окно сортировки  -->
+    <div
+      class="mob-modal border-radius px-2 pb-5 pt-2 slide sort-modal bg-white"
+      id="sorting-modal"
+    >
+      <div class="form-radios">
+        <label class="form-radio__input">
+          <input type="radio" id="radio-1" name="lang-sorting" checked />
+          <span class="form-radio__input-icon"></span>
+
+          По популярности
+        </label>
+        <label class="form-radio__input">
+          <input type="radio" id="radio-2" name="lang-sorting" />
+          <span class="form-radio__input-icon"></span>
+
+          По рейтингу
+        </label>
+        <label class="form-radio__input">
+          <input type="radio" id="radio-3" name="lang-sorting" />
+          <span class="form-radio__input-icon"></span>
+
+          По дате добавления
+        </label>
+      </div>
+    </div>
   </body>
 
   <script src="/script/form.js"></script>
   <script src="/script/main.js"></script>
   <script src="/script/scripts.js"></script>
   <script src="/script/pages/categories.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.innerWidth < 768) {
+        new Modal("sorting-modal");
+        // new Modal("filter-modal");
+      }
+    });
+  </script>
 </html>

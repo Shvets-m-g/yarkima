@@ -2035,6 +2035,16 @@ h4 {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+@media (min-width: 767px) and (max-width: 1440px) {
+  .hover-gradient-border::before {
+    border-radius: 1.3888888889vw;
+  }
+}
+@media (max-width: 766px) {
+  .hover-gradient-border::before {
+    border-radius: 5.3333333333vw;
+  }
+}
 .hover-gradient-border .on-parent-hover {
   position: relative;
 }
@@ -4741,7 +4751,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: -0.01em;
   color: #8b8e9a;
   -webkit-transition: all 0.3s ease;
@@ -4786,6 +4796,48 @@ body {
 .form-dropdown.show .form-dropdown__content {
   display: block;
   pointer-events: all;
+}
+@media (min-width: 767px) and (max-width: 1440px) {
+  .form-dropdown .button.outlined {
+    padding-left: 1.3888888889vw;
+    padding-right: 1.3888888889vw;
+  }
+  .form-dropdown__item {
+    padding: 0.8333333333vw 1.6666666667vw;
+    font-size: 1.1111111111vw;
+  }
+  .form-dropdown__item + .form-dropdown__item {
+    margin-top: 0.5555555556vw;
+  }
+  .form-dropdown__content {
+    top: calc(100% + 1.1111111111vw);
+    padding-top: 0.5555555556vw;
+    padding-bottom: 0.5555555556vw;
+    min-width: 11.1111111111vw;
+    max-height: 20vw;
+    border-radius: 1.3888888889vw;
+  }
+}
+@media (max-width: 766px) {
+  .form-dropdown .button.outlined {
+    padding-left: 5.3333333333vw;
+    padding-right: 5.3333333333vw;
+  }
+  .form-dropdown__item {
+    padding: 3.2vw 6.4vw;
+    font-size: 4.2666666667vw;
+  }
+  .form-dropdown__item + .form-dropdown__item {
+    margin-top: 2.1333333333vw;
+  }
+  .form-dropdown__content {
+    top: calc(100% + 1.1111111111vw);
+    padding-top: 0.5555555556vw;
+    padding-bottom: 2.1333333333vw;
+    min-width: 42.6666666667vw;
+    max-height: 76.8vw;
+    border-radius: 5.3333333333vw;
+  }
 }
 .form-code-inputs {
   display: -webkit-box;
@@ -7408,12 +7460,15 @@ body {
   transition: all 0.3s ease;
   border-bottom: 2px solid #191a26;
 }
-.menu-header__menu-link:hover {
+.menu-header__menu-link:not(.active):hover {
   color: #8e35ff;
   background-color: #f5f8fa;
 }
-.menu-header__menu-link:hover span::before {
+.menu-header__menu-link:not(.active):hover span::before {
   width: 0;
+}
+.menu-header__menu-link.active {
+  background-color: #f5f8fa;
 }
 @media (min-width: 767px) and (max-width: 1440px) {
   .menu-header__top {
