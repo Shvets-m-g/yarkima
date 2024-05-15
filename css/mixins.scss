@@ -1,111 +1,22 @@
-@mixin generate-padding-classes($property, $steps) {
-  $directions: (
-    t: top,
-    b: bottom,
-    l: left,
-    r: right,
-    y: top bottom,
-    x: left right,
-  );
-  @each $step in $steps {
-    $class_name: "#{$property}-#{$step}";
-    .#{$class_name} {
-      padding: $step * $STEP;
-    }
-  }
-  @each $key, $value in $directions {
-    @each $step in $steps {
-      $class_name: "#{$property}#{$key}-#{$step}";
-      .#{$class_name} {
-        @if $key == "y" or $key == "x" {
-          padding-top: if($key == "y", $step * $STEP, null) !important;
-          padding-bottom: if($key == "y", $step * $STEP, null) !important;
-          padding-left: if($key == "x", $step * $STEP, null) !important;
-          padding-right: if($key == "x", $step * $STEP, null) !important;
-        } @else {
-          padding-#{$value}: $step * $STEP !important;
-        }
-      }
-    }
-  }
+$STEP: 8px;
+
+$breakpoints: (
+  md: 767px,
+  lg: 1440px,
+);
+
+$viewportForCounts: (
+  sm: 767,
+  md: 1440,
+  lg: 1440,
+);
+
+@function px-to-vw($size, $viewport-width: 1440px) {
+  @return ($size / $viewport-width) * 100vw;
 }
-@mixin generate-margin-classes($property, $steps) {
-  $directions: (
-    t: top,
-    b: bottom,
-    l: left,
-    r: right,
-    y: top bottom,
-    x: left right,
-  );
 
-  // @each $key, $value in $directions {
-  //   @each $step in $steps {
-  //     $class_name: "#{$property}#{$key}-#{$step}";
-  //     .#{$class_name} {
-  //       @if $key == "y" or $key == "x" {
-  //         margin-top: if($key == "y", $step * $STEP, null);
-  //         margin-bottom: if($key == "y", $step * $STEP, null);
-  //         margin-left: if($key == "x", $step * $STEP, null);
-  //         margin-right: if($key == "x", $step * $STEP, null);
-  //       } @else {
-  //         margin-#{$value}: $step * $STEP;
-  //       }
-  //     }
-  //   }
-  // }
-  @each $key, $value in $directions {
-    @each $step in $steps {
-      $class_name: "#{$property}#{$key}-#{$step}";
-      .#{$class_name} {
-        @if $key == "y" or $key == "x" {
-          margin-top: if($key == "y", $step * $STEP, null);
-          margin-bottom: if($key == "y", $step * $STEP, null);
-          margin-left: if($key == "x", $step * $STEP, null);
-          margin-right: if($key == "x", $step * $STEP, null);
-        } @else {
-          margin-#{$value}: $step * $STEP;
-        }
-      }
-
-      // Генерация классов с брейкпоинтами
-      // @each $bp, $width in $breakpoints {
-      //   $bp_class_name: "#{$property}#{$key}-#{$bp}-#{$step}";
-      //   @media (min-width: $width) {
-      //     .#{$bp_class_name} {
-      //       @if $key == "y" or $key == "x" {
-      //         margin-top: if($key == "y", $step * $STEP, null);
-      //         margin-bottom: if($key == "y", $step * $STEP, null);
-      //         margin-left: if($key == "x", $step * $STEP, null);
-      //         margin-right: if($key == "x", $step * $STEP, null);
-      //       } @else {
-      //         margin-#{$value}: $step * $STEP;
-      //       }
-      //     }
-      //   }
-      // }
-    }
-  }
-  @each $key, $value in $directions {
-    @each $step in $steps {
-      $class_name: "#{$property}#{$key}-#{$step}";
-      @each $bp, $width in $breakpoints {
-        $bp_class_name: "#{$property}#{$key}-#{$bp}-#{$step}";
-        @media (min-width: $width) {
-          .#{$bp_class_name} {
-            @if $key == "y" or $key == "x" {
-              margin-top: if($key == "y", $step * $STEP, null);
-              margin-bottom: if($key == "y", $step * $STEP, null);
-              margin-left: if($key == "x", $step * $STEP, null);
-              margin-right: if($key == "x", $step * $STEP, null);
-            } @else {
-              margin-#{$value}: $step * $STEP;
-            }
-          }
-        }
-      }
-    }
-  }
+@function px-to-vw-mob($size, $viewport-width: 375px) {
+  @return ($size / $viewport-width) * 100vw;
 }
 
 @mixin abs-position($top: 0px, $right: null, $bottom: null, $left: null) {
@@ -153,20 +64,6 @@
   }
 }
 
-// @mixin generate-display-classes($display-value) {
-//   .d-#{$display-value} {
-//     display: #{$display-value} !important;
-//   }
-//   @each $breakpoint, $width in $breakpoints {
-//     $class-name: unquote("d-#{$breakpoint}-#{$display-value}");
-
-//     @media (min-width: $width) {
-//       .#{$class-name} {
-//         display: #{$display-value} !important;
-//       }
-//     }
-//   }
-// }
 @mixin generate-display-classes($display-values...) {
   @each $display-value in $display-values {
     .d-#{$display-value} {
@@ -184,3 +81,126 @@
     }
   }
 }
+
+@mixin custom-margin($size, $step, $property) {
+  @if $size == md {
+    @include minBreakpoint(lg) {
+      #{$property}: $step * $STEP !important;
+    }
+    @include minMaxBreakpoint(md, lg) {
+      #{$property}: px-to-vw($step * $STEP) !important;
+    }
+  } @else if $size == undefined {
+    @include minBreakpoint(lg) {
+      #{$property}: $step * $STEP !important;
+    }
+    @include minMaxBreakpoint(md, lg) {
+      #{$property}: px-to-vw($step * $STEP) !important;
+    }
+    @include maxBreakpoint(md) {
+      #{$property}: px-to-vw-mob($step * $STEP) !important;
+    }
+  }
+}
+
+@mixin generate-padding-classes($property, $steps) {
+  $directions: (
+    t: top,
+    b: bottom,
+    l: left,
+    r: right,
+    y: top bottom,
+    x: left right,
+  );
+  @each $step in $steps {
+    $class_name: "#{$property}-#{$step}";
+    .#{$class_name} {
+      padding: $step * $STEP;
+    }
+  }
+  @each $key, $value in $directions {
+    @each $step in $steps {
+      $class_name: "#{$property}#{$key}-#{$step}";
+      .#{$class_name} {
+        @if $key == "y" or $key == "x" {
+          @include minBreakpoint(lg) {
+            #{$property}: $step * $STEP;
+          }
+          @include minMaxBreakpoint(md, lg) {
+            #{$property}: px-to-vw($step * $STEP);
+          }
+          @include maxBreakpoint(md) {
+            #{$property}: px-to-vw-mob($step * $STEP);
+          }
+          contdsent: $step;
+          contdsentd: $key;
+          padding-top: if(
+            $key == "y" and $step != null,
+            #{$step * $STEP} !important,
+            null
+          );
+          padding-bottom: if(
+            $key == "y" and $step != null,
+            #{$step * $STEP} !important,
+            null
+          );
+          padding-left: if(
+            $key == "x" and $step != null,
+            #{$step * $STEP} !important,
+            null
+          );
+          padding-right: if(
+            $key == "x" and $step != null,
+            #{$step * $STEP} !important,
+            null
+          );
+        } @else {
+          padding-#{$value}: $step * $STEP !important;
+        }
+      }
+    }
+  }
+
+  // @mixin custom-margin($size, $step, $property) {
+  //   @if $size == md {
+  //     @include minBreakpoint(lg) {
+  //       #{$property}: $step * $STEP;
+  //     }
+  //     @include minMaxBreakpoint(md, lg) {
+  //       #{$property}: px-to-vw($step * $STEP);
+  //     }
+  //   } @else if $size == undefined {
+  //     @include minBreakpoint(lg) {
+  //       #{$property}: $step * $STEP;
+  //     }
+  //     @include minMaxBreakpoint(md, lg) {
+  //       #{$property}: px-to-vw($step * $STEP);
+  //     }
+  //     @include maxBreakpoint(md) {
+  //       #{$property}: px-to-vw-mob($step * $STEP);
+  //     }
+  //   }
+  // }
+}
+
+@mixin generate-margin-classes($prefix, $values) {
+  @each $value in $values {
+    .#{$prefix}t-#{$value} {
+      @include custom-margin(undefined, $value, "margin-top");
+    }
+    .#{$prefix}b-#{$value} {
+      @include custom-margin(undefined, $value, "margin-bottom");
+    }
+  }
+
+  @each $value in $values {
+    .#{$prefix}t-md-#{$value} {
+      @include custom-margin(md, $value, "margin-top");
+    }
+    .#{$prefix}b-md-#{$value} {
+      @include custom-margin(md, $value, "margin-bottom");
+    }
+  }
+}
+@include generate-margin-classes("m", (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15));
+// @include generate-padding-classes("p", (0, 1, 2, 3, 4, 5, 6, 7, 8, 16, 18));

@@ -28,11 +28,11 @@
     <div class="course-modal" id="course-modal">
       <div class="course-modal__container">
         <div class="course-modal__image hexagon">
-          <img src="images/pages/home/list-2/img-7.jpg" alt="" />
+          <img src="/images/pages/home/list-2/img-7.jpg" alt="" />
         </div>
         <div class="course-modal__header d-flex align-center gap-1">
           <div class="course-modal__image hexagon xs">
-            <img src="images/people-images/img-8.jpg" alt="" />
+            <img src="/images/people-images/img-8.jpg" alt="" />
             <svg
               width="100%"
               height="100%"
@@ -99,7 +99,7 @@
             ></button>
             <a href="/" class="header__logo">
               <img
-                src="images/logo-full.svg"
+                src="/images/logo-full.svg"
                 class="d-none d-md-block"
                 alt=""
               />
@@ -154,7 +154,7 @@
               <i class="icon notification md"> </i>
             </button> -->
             <!-- <a href="/profile.html" class="header__user hexagon s-48">
-              <img src="images/header-pic.jpg" alt="" />
+              <img src="/images/header-pic.jpg" alt="" />
             </a> -->
             <a href="/login.html" class="button outlined d-none d-md-flex md">
               Войти
@@ -241,7 +241,7 @@
         <div class="mob-header__body">
           <ul class="mob-header__menu">
             <li class="mob-header__menu-item">
-              <a href="/" class="mob-header__menu-link uppercase">
+              <a href="/" class="mob-header__menu-link uppercase active">
                 <span> Главная </span>
               </a>
             </li>
@@ -287,10 +287,7 @@
               class="toggle-list__body mob-header__links collapse show account-list"
             >
               <div class="d-grid gap-1">
-                <a
-                  href="/profile.html"
-                  class="button profile-menu__link active"
-                >
+                <a href="/profile.html" class="button profile-menu__link">
                   <i class="icon profile md"> </i>
                   Публичный профиль
                 </a>
@@ -316,18 +313,24 @@
                     class="toggle-list__body mt-0 mob-header__links collapse personals-links"
                   >
                     <div class="d-grid gap-1">
-                      <a href="/meeting.html" class="button profile-menu__link">
-                        <i class="icon two-persons md"> </i>
-                        Знакомства
+                      <a
+                        href="/personal-account/main-info.html"
+                        class="button profile-menu__link"
+                      >
+                        <i class="icon profile md"> </i>
+                        Настройки
                       </a>
 
-                      <a href="/chat.html" class="button profile-menu__link">
+                      <a
+                        href="/empty-page.html"
+                        class="button profile-menu__link"
+                      >
                         <i class="icon icon-chat md"> </i>
-                        Чаты
+                        Поддержка
                       </a>
-                      <a href="/groups.html" class="button profile-menu__link">
-                        <i class="icon group md"> </i>
-                        Группы
+                      <a href="/" class="button profile-menu__link text-red">
+                        <!-- <i class="icon group md"> </i> -->
+                        Выйти
                       </a>
                     </div>
                   </div>
@@ -452,7 +455,7 @@
                   data-target=".collapse.mob-language-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/language.svg" alt="" />
+                  <img src="/images/icons/menu/language.svg" alt="" />
                   Языки
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -487,7 +490,7 @@
                   data-target=".collapse.mob-school-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/school.svg" alt="" />
+                  <img src="/images/icons/menu/school.svg" alt="" />
                   Школа
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -521,7 +524,7 @@
                   data-target=".collapse.mob-university-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/university.svg" alt="" />
+                  <img src="/images/icons/menu/university.svg" alt="" />
                   Университет
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -555,7 +558,7 @@
                   data-target=".collapse.mob-personal-growth-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/personal-growth.svg" alt="" />
+                  <img src="/images/icons/menu/personal-growth.svg" alt="" />
                   Личностный рост
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -589,7 +592,7 @@
                   data-target=".collapse.mob-spiritual-growth-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/spiritual-growth.svg" alt="" />
+                  <img src="/images/icons/menu/spiritual-growth.svg" alt="" />
                   Духовный рост
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -623,7 +626,7 @@
                   data-target=".collapse.mob-bussiness-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/bussiness.svg" alt="" />
+                  <img src="/images/icons/menu/bussiness.svg" alt="" />
                   Бизнес
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -657,7 +660,7 @@
                   data-target=".collapse.mob-relationships-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/relationships.svg" alt="" />
+                  <img src="/images/icons/menu/relationships.svg" alt="" />
                   Отношения
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -691,7 +694,7 @@
                   data-target=".collapse.mob-health-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/heart.svg" alt="" />
+                  <img src="/images/icons/menu/heart.svg" alt="" />
                   Здоровье
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -725,7 +728,7 @@
                   data-target=".collapse.mob-sport-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/sport.svg" alt="" />
+                  <img src="/images/icons/menu/sport.svg" alt="" />
                   Спорт
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -759,7 +762,7 @@
                   data-target=".collapse.mob-hobby-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/hobby.svg" alt="" />
+                  <img src="/images/icons/menu/hobby.svg" alt="" />
                   Хобби, увлечения
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -793,7 +796,7 @@
                   data-target=".collapse.mob-esotericism-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/esotericism.svg" alt="" />
+                  <img src="/images/icons/menu/esotericism.svg" alt="" />
                   Эзотерика
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -827,7 +830,7 @@
                   data-target=".collapse.mob-cooking-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/cooking.svg" alt="" />
+                  <img src="/images/icons/menu/cooking.svg" alt="" />
                   Кулинария
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -861,7 +864,7 @@
                   data-target=".collapse.mob-science-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/science.svg" alt="" />
+                  <img src="/images/icons/menu/science.svg" alt="" />
                   Наука
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -895,7 +898,7 @@
                   data-target=".collapse.mob-technolodgy-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/technolodgy.svg" alt="" />
+                  <img src="/images/icons/menu/technolodgy.svg" alt="" />
                   Техника, гаджеты
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -929,7 +932,7 @@
                   data-target=".collapse.mob-finance-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/finance.svg" alt="" />
+                  <img src="/images/icons/menu/finance.svg" alt="" />
                   Финансы
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -963,7 +966,7 @@
                   data-target=".collapse.mob-investment-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/investment.svg" alt="" />
+                  <img src="/images/icons/menu/investment.svg" alt="" />
                   Инвестиции
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -997,7 +1000,7 @@
                   data-target=".collapse.mob-professions-list"
                   data-text="Collapse"
                 >
-                  <img src="images/icons/menu/professions.svg" alt="" />
+                  <img src="/images/icons/menu/professions.svg" alt="" />
                   Профессии
                   <i class="icon arrow-down sm"> </i>
                 </div>
@@ -1035,7 +1038,7 @@
           <div class="px-2">
             <div class="intro-block__container">
               <div class="intro-block__bg d-none d-md-flex">
-                <img src="images/pages/home/intro/banner.jpg" alt="" />
+                <img src="/images/pages/home/intro/banner.jpg" alt="" />
               </div>
               <div class="intro-block__content">
                 <h1 class="intro-block__title">
@@ -1054,22 +1057,22 @@
                 </a>
                 <div class="intro-block__animations d-none d-md-block">
                   <div class="intro-block__animation blue">
-                    <img src="images/pages/home/intro/BLUE.svg" alt="" />
+                    <img src="/images/pages/home/intro/BLUE.svg" alt="" />
                   </div>
                   <div class="intro-block__animation green">
-                    <img src="images/pages/home/intro/GREEN.svg" alt="" />
+                    <img src="/images/pages/home/intro/GREEN.svg" alt="" />
                   </div>
                   <div class="intro-block__animation pink">
-                    <img src="images/pages/home/intro/PINK.svg" alt="" />
+                    <img src="/images/pages/home/intro/PINK.svg" alt="" />
                   </div>
                   <div class="intro-block__animation purple">
-                    <img src="images/pages/home/intro/PURP.svg" alt="" />
+                    <img src="/images/pages/home/intro/PURP.svg" alt="" />
                   </div>
                   <div class="intro-block__animation blue">
-                    <img src="images/pages/home/intro/BLUE.svg" alt="" />
+                    <img src="/images/pages/home/intro/BLUE.svg" alt="" />
                   </div>
                   <div class="intro-block__animation yellow">
-                    <img src="images/pages/home/intro/YELLOW.svg" alt="" />
+                    <img src="/images/pages/home/intro/YELLOW.svg" alt="" />
                   </div>
                 </div>
               </div>
@@ -1084,7 +1087,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-1.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-1.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1092,7 +1095,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-2.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-2.jpg" alt="" />
                 >
               </div>
             </div>
@@ -1101,7 +1104,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-3.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-3.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1109,7 +1112,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-4.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-4.jpg" alt="" />
               </div>
             </div>
             <div
@@ -1120,7 +1123,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-5.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-5.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1128,7 +1131,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-6.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-6.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1136,7 +1139,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-7.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-7.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1144,7 +1147,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-8.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-8.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course">
@@ -1152,7 +1155,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-1.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-1.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1160,7 +1163,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-2.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-2.jpg" alt="" />
                 >
               </div>
             </div>
@@ -1169,7 +1172,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-3.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-3.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1177,7 +1180,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-4.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-4.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -1189,7 +1192,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-9.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-9.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1197,7 +1200,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-10.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-10.jpg" alt="" />
                 >
               </div>
             </div>
@@ -1206,7 +1209,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-11.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-11.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1214,7 +1217,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-12.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-12.jpg" alt="" />
               </div>
             </div>
             <div
@@ -1225,7 +1228,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-13.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-13.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1233,7 +1236,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-14.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-14.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1241,7 +1244,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-15.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-15.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1249,7 +1252,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-16.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-16.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course">
@@ -1257,7 +1260,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-11.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-11.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1265,7 +1268,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-12.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-12.jpg" alt="" />
                 >
               </div>
             </div>
@@ -1274,7 +1277,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-13.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-13.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1282,7 +1285,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-14.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-14.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -1294,7 +1297,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-17.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-17.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1302,7 +1305,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-18.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-18.jpg" alt="" />
                 >
               </div>
             </div>
@@ -1311,7 +1314,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-19.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-19.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1319,7 +1322,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-20.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-20.jpg" alt="" />
               </div>
             </div>
             <div
@@ -1330,7 +1333,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-21.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-21.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1338,7 +1341,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-22.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-22.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1346,7 +1349,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-23.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-23.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1354,7 +1357,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-24.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-24.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course">
@@ -1362,7 +1365,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-25.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-25.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1370,7 +1373,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-26.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-26.jpg" alt="" />
                 >
               </div>
             </div>
@@ -1379,7 +1382,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-18.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-18.jpg" alt="" />
               </div>
             </div>
             <div class="preview-course hexagon xxl">
@@ -1387,7 +1390,7 @@
                 class="preview-course__inner hexagon xxl"
                 data-modal-id="course-modal"
               >
-                <img src="images/pages/home/list-2/img-19.jpg" alt="" />
+                <img src="/images/pages/home/list-2/img-19.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -1409,7 +1412,7 @@
               >
                 <div class="course-item__header">
                   <div class="course-item__image hexagon xs">
-                    <img src="images/people-images/img-8.jpg" alt="" />
+                    <img src="/images/people-images/img-8.jpg" alt="" />
                   </div>
 
                   <div class="text sm text-bold">gingerbread</div>
@@ -1435,7 +1438,7 @@
               >
                 <div class="course-item__header">
                   <div class="course-item__image hexagon xs">
-                    <img src="images/people-images/img-3.jpg" alt="" />
+                    <img src="/images/people-images/img-3.jpg" alt="" />
                   </div>
 
                   <div class="text sm text-bold">gingerbread</div>
@@ -1460,7 +1463,7 @@
               >
                 <div class="course-item__header">
                   <div class="course-item__image hexagon xs">
-                    <img src="images/people-images/img-6.jpg" alt="" />
+                    <img src="/images/people-images/img-6.jpg" alt="" />
                   </div>
                   <div class="text sm text-bold">gingerbread</div>
                 </div>
@@ -1557,7 +1560,10 @@
                   <div class="review-item">
                     <div class="review-item__content">
                       <div class="review-item__image hexagon md">
-                        <img src="images/pages/home/reviews/img-1.png" alt="" />
+                        <img
+                          src="/images/pages/home/reviews/img-1.png"
+                          alt=""
+                        />
                       </div>
                       <div class="review-item__text">
                         Раньше я часто откладывал подготовку к тестам на потом,
@@ -1578,7 +1584,10 @@
                   <div class="review-item">
                     <div class="review-item__content">
                       <div class="review-item__image hexagon md">
-                        <img src="images/pages/home/reviews/img-2.jpg" alt="" />
+                        <img
+                          src="/images/pages/home/reviews/img-2.jpg"
+                          alt=""
+                        />
                       </div>
                       <div class="review-item__text">
                         Я ОБОЖАЮ YaKiMa! Я рекомендую его всем своим друзьям. Я
@@ -1599,7 +1608,10 @@
                   <div class="review-item">
                     <div class="review-item__content">
                       <div class="review-item__image hexagon md">
-                        <img src="images/pages/home/reviews/img-3.png" alt="" />
+                        <img
+                          src="/images/pages/home/reviews/img-3.png"
+                          alt=""
+                        />
                       </div>
                       <div class="review-item__text">
                         Мне 53 года, и я решила пойти учиться в магистратуру.
@@ -1620,7 +1632,10 @@
                   <div class="review-item">
                     <div class="review-item__content">
                       <div class="review-item__image hexagon md">
-                        <img src="images/pages/home/reviews/img-1.png" alt="" />
+                        <img
+                          src="/images/pages/home/reviews/img-1.png"
+                          alt=""
+                        />
                       </div>
                       <div class="review-item__text">
                         Раньше я часто откладывал подготовку к тестам на потом,
@@ -1641,7 +1656,10 @@
                   <div class="review-item">
                     <div class="review-item__content">
                       <div class="review-item__image hexagon md">
-                        <img src="images/pages/home/reviews/img-1.png" alt="" />
+                        <img
+                          src="/images/pages/home/reviews/img-1.png"
+                          alt=""
+                        />
                       </div>
                       <div class="review-item__text">
                         Раньше я часто откладывал подготовку к тестам на потом,
@@ -1662,7 +1680,10 @@
                   <div class="review-item">
                     <div class="review-item__content">
                       <div class="review-item__image hexagon md">
-                        <img src="images/pages/home/reviews/img-1.png" alt="" />
+                        <img
+                          src="/images/pages/home/reviews/img-1.png"
+                          alt=""
+                        />
                       </div>
                       <div class="review-item__text">
                         Раньше я часто откладывал подготовку к тестам на потом,
@@ -1844,13 +1865,19 @@
                   <div class="footer__menu-title uppercase">О сервисе</div>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#" class="footer__menu-link"> Что такое YarKiMa </a>
+                  <a href="/empty-page.html" class="footer__menu-link">
+                    Что такое YarKiMa
+                  </a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#" class="footer__menu-link"> Реквизиты </a>
+                  <a href="/empty-page.html" class="footer__menu-link">
+                    Реквизиты
+                  </a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#" class="footer__menu-link"> Контакты </a>
+                  <a href="/empty-page.html" class="footer__menu-link">
+                    Контакты
+                  </a>
                 </li>
               </ul>
               <ul class="footer__menu">
@@ -1858,10 +1885,12 @@
                   <div class="footer__menu-title uppercase">Для учеников</div>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#" class="footer__menu-link"> Подсказки </a>
+                  <a href="/empty-page.html" class="footer__menu-link">
+                    Подсказки
+                  </a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#" class="footer__menu-link">
+                  <a href="/empty-page.html" class="footer__menu-link">
                     Квизы, опросы, тесты
                   </a>
                 </li>
@@ -1876,7 +1905,9 @@
                   <div class="footer__menu-title uppercase">Для партнеров</div>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#" class="footer__menu-link"> Мы предлагаем</a>
+                  <a href="/empty-page.html" class="footer__menu-link">
+                    Мы предлагаем</a
+                  >
                 </li>
                 <li class="footer__menu-item">
                   <a href="/registration.html" class="footer__menu-link">
@@ -1894,14 +1925,14 @@
           <div class="footer__bottom">
             <div class="footer__bottom-links d-flex align-center flex-wrap">
               <div class="footer__copyrights">© 2024 YarKiMa</div>
-              <a href="#" class="footer__bottom-link">
+              <a href="/empty-page.html" class="footer__bottom-link">
                 Политика конфиденциальности
               </a>
-              <a href="#" class="footer__bottom-link">
+              <a href="/empty-page.html" class="footer__bottom-link">
                 Условия использования
               </a>
             </div>
-            <a href="#" class="footer__support-link">
+            <a href="/empty-page.html" class="footer__support-link">
               <span> Поддержка </span>
             </a>
           </div>

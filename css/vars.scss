@@ -7,7 +7,7 @@ $grayLight: #f5f8fa;
 $green: #10c38d;
 $red: #fc3a20;
 .text-gray {
-  color: $textGray;
+  color: $textGray !important;
 }
 .text-center {
   text-align: center;
