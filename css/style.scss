@@ -4107,6 +4107,7 @@ body {
     color: $black;
     padding-right: 16px;
     .icon.arrow-down {
+      pointer-events: none;
       position: absolute;
       right: 0;
       top: 50%;

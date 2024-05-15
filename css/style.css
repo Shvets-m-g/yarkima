@@ -6735,6 +6735,7 @@ body {
   padding-right: 16px;
 }
 .toggle-list__header .icon.arrow-down {
+  pointer-events: none;
   position: absolute;
   right: 0;
   top: 50%;

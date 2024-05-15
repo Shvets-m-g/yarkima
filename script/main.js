@@ -38,28 +38,58 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//collapse
+// //collapse
+// const mainTriggers = Array.from(
+//   document.querySelectorAll('[data-toggle="collapse"]')
+// );
+
+// window.addEventListener(
+//   "click",
+//   (ev) => {
+//     const elm = ev.target;
+//     if (mainTriggers.includes(elm)) {
+//       const selector = elm.getAttribute("data-target");
+//       collapse(selector, elm, "toggle");
+//     }
+//   },
+//   false
+// );
+
+// const fnmap = {
+//   toggle: "toggle",
+//   show: "add",
+//   hide: "remove",
+// };
+// const collapse = (selector, elm, cmd) => {
+//   elm.classList.toggle("show");
+//   const targets = Array.from(document.querySelectorAll(selector));
+//   targets.forEach((target) => {
+//     target.classList[fnmap[cmd]]("show");
+//   });
+// };
+
 const mainTriggers = Array.from(
   document.querySelectorAll('[data-toggle="collapse"]')
 );
 
-window.addEventListener(
-  "click",
-  (ev) => {
-    const elm = ev.target;
-    if (mainTriggers.includes(elm)) {
-      const selector = elm.getAttribute("data-target");
-      collapse(selector, elm, "toggle");
-    }
-  },
-  false
-);
+const handleClickOrTouch = (ev) => {
+  const elm = ev.target;
+  if (mainTriggers.includes(elm)) {
+    const selector = elm.getAttribute("data-target");
+    collapse(selector, elm, "toggle");
+  }
+};
+
+const eventType = "ontouchstart" in window ? "touchstart" : "click";
+
+window.addEventListener(eventType, handleClickOrTouch, false);
 
 const fnmap = {
   toggle: "toggle",
   show: "add",
   hide: "remove",
 };
+
 const collapse = (selector, elm, cmd) => {
   elm.classList.toggle("show");
   const targets = Array.from(document.querySelectorAll(selector));
