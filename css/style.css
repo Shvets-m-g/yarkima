@@ -1160,7 +1160,7 @@
   content: "";
 }
 .icon.link::before {
-  background-image: url(../images/icons/icon-link.svg);
+  content: "";
 }
 .icon.filled-arrow::before {
   background-image: url(../images/icons/icon-filled-arrow.svg);
@@ -1181,10 +1181,10 @@
   background-image: url(../images/icons/icon-down.svg);
 }
 .icon.sort::before {
-  background-image: url(../images/icons/icon-sort.svg);
+  content: "";
 }
 .icon.filter::before {
-  background-image: url(../images/icons/icon-filter.svg);
+  content: "";
 }
 .icon.language::before {
   content: "";
@@ -1324,6 +1324,9 @@
   width: 24px;
   font-size: 24px;
   height: 24px;
+}
+.icon.gray {
+  color: #b9bdcc !important;
 }
 @media (min-width: 767px) and (max-width: 1440px) {
   .icon {
@@ -1748,6 +1751,22 @@ h4 {
 @media (max-width: 766px) {
   .pt-4 {
     padding-top: 8.5333333333vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pt-7 {
+    padding-top: 56px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1440px) {
+  .pt-7 {
+    padding-top: 3.8888888889vw;
+  }
+}
+@media (max-width: 766px) {
+  .pt-7 {
+    padding-top: 14.9333333333vw;
   }
 }
 
@@ -8823,9 +8842,6 @@ body {
 .reviews {
   overflow: hidden;
 }
-.reviews .container {
-  max-width: 1408px;
-}
 .reviews .reviews-slider {
   overflow: visible;
 }
@@ -9105,6 +9121,20 @@ body {
   .list-review-item__text {
     font-size: 4.2666666667vw;
     min-height: 32vw;
+  }
+}
+
+.home-page .reviews .container {
+  max-width: 1408px;
+}
+@media (min-width: 767px) and (max-width: 1440px) {
+  .home-page .reviews .container {
+    font-size: 97.7777777778vw;
+  }
+}
+@media (max-width: 766px) {
+  .home-page .reviews .container {
+    font-size: 375.4666666667vw;
   }
 }
 
@@ -9514,8 +9544,10 @@ body {
   .language-page .language-header {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 12.5vw 1fr 17.2916666667vw;
-    grid-template-columns: 12.5vw 1fr 17.2916666667vw;
+    -ms-grid-columns: 12.5vw 1fr -webkit-max-content;
+    -ms-grid-columns: 12.5vw 1fr max-content;
+    grid-template-columns: 12.5vw 1fr -webkit-max-content;
+    grid-template-columns: 12.5vw 1fr max-content;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
