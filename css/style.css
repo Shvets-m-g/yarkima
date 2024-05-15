@@ -7081,7 +7081,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 100%;
 }
 .footer__socials {
   list-style: none;
@@ -7209,6 +7208,9 @@ body {
   }
   .footer__top {
     margin-bottom: 64px;
+  }
+  .footer__top-left {
+    min-height: 100%;
   }
   .footer__top-right {
     display: -ms-grid;

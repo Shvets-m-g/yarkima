@@ -4427,7 +4427,6 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      min-height: 100%;
     }
   }
   &__socials {
@@ -4547,6 +4546,9 @@ body {
     }
     &__top {
       margin-bottom: 64px;
+      &-left {
+        min-height: 100%;
+      }
       &-right {
         display: grid;
         flex: 1;
