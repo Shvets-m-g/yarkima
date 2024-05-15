@@ -48,7 +48,7 @@
                 class="d-none d-md-block"
                 alt=""
               />
-              <img class="d-md-none" src="images/logo.svg" alt="" />
+              <img class="d-md-none" src="/images/logo.svg" alt="" />
             </a>
             <div class="vertical-divider d-none d-md-block"></div>
             <div
@@ -80,7 +80,7 @@
               </div>
             </div>
           </div>
-          <div class="header__search w-100 d-none d-md-block">
+          <div class="header__search w-100">
             <div class="form-input md with-icon w-100">
               <i class="icon search md"></i>
               <input placeholder="Поиск" type="" />
@@ -99,20 +99,20 @@
               <i class="icon notification md"> </i>
             </button>
             <a href="/profile.html" class="header__user hexagon s-48">
-              <img src="images/people-images/small-pic.jpg" alt="" />
+              <img src="/images/people-images/small-pic.jpg" alt="" />
             </a>
             <!-- <a href="/login.html" class="button outlined d-none d-md-block md">
-        Войти
-      </a>
-      <a
-        href="/registration.html"
-        class="button default d-none d-md-block md"
-      >
-        Зарегистрироваться
-      </a>
-      <a href="/registration.html" class="button default xs d-md-none">
-        Начать
-      </a> -->
+          Войти
+        </a>
+        <a
+          href="/registration.html"
+          class="button default d-none d-md-block md"
+        >
+          Зарегистрироваться
+        </a>
+        <a href="/registration.html" class="button default xs d-md-none">
+          Начать
+        </a> -->
             <button
               class="button header__burger header__desk-burger d-none d-md-block"
               alt=""
@@ -125,7 +125,7 @@
       <div class="menu-header bg-white" id="header-menu">
         <div class="menu-header__top bg-white">
           <div class="menu-header__top-logo">
-            <img src="images/logo-full.svg" alt="" />
+            <img src="/images/logo-full.svg" alt="" />
           </div>
           <button
             class="menu-header__button-close button outlined min-width-5 min-height-5 border-radius-50"
@@ -175,7 +175,7 @@
       <div class="mob-header bg-white" id="header-mob-menu">
         <div class="mob-header__top bg-white">
           <div class="mob-header__top-logo">
-            <img class="d-md-none" src="images/logo.svg" alt="" />
+            <img class="d-md-none" src="/images/logo.svg" alt="" />
           </div>
           <button
             class="mob-header__button-close button outlined min-width-5 min-height-5"
@@ -222,7 +222,7 @@
               data-text="Collapse"
             >
               <div class="hexagon xxs">
-                <img src="images/people-images/small-pic.jpg" alt="" />
+                <img src="/images/people-images/small-pic.jpg" alt="" />
               </div>
               Аккаунт
               <i class="icon arrow-down sm"> </i>
@@ -245,13 +245,104 @@
                 >
                   <i class="icon correct-blank md"> </i> Кабинет партнера
                 </a>
-                <a
-                  href="#"
-                  class="button profile-menu__link profile-menu__link-show-more"
-                >
-                  <i class="icon more md"> </i>
-                  Еще
-                </a>
+
+                <div class="toggle-list">
+                  <div
+                    class="toggle-list__header button profile-menu__link show-disabled"
+                    data-toggle="collapse"
+                    data-target=".collapse.personals-links"
+                    data-text="Collapse"
+                  >
+                    <i class="icon more md"> </i>
+                    Еще
+                    <!-- <i class="icon arrow-down sm"> </i> -->
+                  </div>
+                  <div
+                    class="toggle-list__body mt-0 mob-header__links collapse personals-links"
+                  >
+                    <div class="d-grid gap-1">
+                      <a href="/meeting.html" class="button profile-menu__link">
+                        <i class="icon two-persons md"> </i>
+                        Знакомства
+                      </a>
+
+                      <a href="/chat.html" class="button profile-menu__link">
+                        <i class="icon icon-chat md"> </i>
+                        Чаты
+                      </a>
+                      <a href="/groups.html" class="button profile-menu__link">
+                        <i class="icon group md"> </i>
+                        Группы
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Меню кабинета -->
+                <ul class="personal-account__menu d-none d-md-flex">
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/main-info.html"
+                      class="personal-account__menu-link active"
+                    >
+                      Основная информация
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/additional-info.html"
+                      class="personal-account__menu-link"
+                    >
+                      Дополнительная информация
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/socials.html"
+                      class="personal-account__menu-link"
+                    >
+                      Социальные сети
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/user-id.html"
+                      class="personal-account__menu-link"
+                    >
+                      Идентификатор пользователя
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/personal-account.html"
+                      class="personal-account__menu-link"
+                    >
+                      Лицевой счет
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/order-history.html"
+                      class="personal-account__menu-link"
+                    >
+                      История заказов
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/password.html"
+                      class="personal-account__menu-link"
+                    >
+                      Пароль
+                    </a>
+                  </li>
+
+                  <li class="personal-account__menu-item">
+                    <a href="#" class="personal-account__menu-link text-red">
+                      Выйти</a
+                    >
+                  </li>
+                </ul>
+                <!--  -->
               </div>
             </div>
           </div>
@@ -1126,35 +1217,28 @@
           </div>
         </div>
       </main>
-
       <!-- Футер -->
-      <div class="footer d-none d-md-block">
+      <footer class="footer d-none d-md-block">
         <div class="container footer__container">
           <div class="footer__top">
             <div class="footer__top-left">
               <a href="/" class="footer__logo">
-                <img src="images/logo-full.svg" alt="" />
+                <img src="/images/logo-full.svg" alt="" />
               </a>
-              <ul class="footer__socials">
+              <ul class="footer__socials socials">
                 <li class="footer__social">
-                  <a href="" class="footer__social-link">
-                    <img
-                      src="images/icons/socials/footer-instagram.svg"
-                      alt=""
-                    />
+                  <a href="" class="social-link lg">
+                    <i class="icon instagram md"></i>
                   </a>
                 </li>
                 <li class="footer__social">
-                  <a href="" class="footer__social-link">
-                    <img src="images/icons/socials/footer-vk.svg" alt="" />
+                  <a href="" class="social-link lg">
+                    <i class="icon vk md"></i>
                   </a>
                 </li>
                 <li class="footer__social">
-                  <a href="" class="footer__social-link">
-                    <img
-                      src="images/icons/socials/footer-facebook.svg"
-                      alt=""
-                    />
+                  <a href="" class="social-link lg">
+                    <i class="icon facebook md"></i>
                   </a>
                 </li>
               </ul>
@@ -1162,7 +1246,7 @@
             <div class="footer__top-right">
               <ul class="footer__menu">
                 <li class="footer__menu-item">
-                  <a href="#" class="footer__menu-link"> О сервисе </a>
+                  <div class="footer__menu-title uppercase">О сервисе</div>
                 </li>
                 <li class="footer__menu-item">
                   <a href="#" class="footer__menu-link"> Что такое YarKiMa </a>
@@ -1176,7 +1260,7 @@
               </ul>
               <ul class="footer__menu">
                 <li class="footer__menu-item">
-                  <a href="#" class="footer__menu-link"> Для учеников </a>
+                  <div class="footer__menu-title uppercase">Для учеников</div>
                 </li>
                 <li class="footer__menu-item">
                   <a href="#" class="footer__menu-link"> Подсказки </a>
@@ -1187,23 +1271,27 @@
                   </a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#" class="footer__menu-link"> Заучивание </a>
+                  <a href="/course.html" class="footer__menu-link">
+                    Заучивание
+                  </a>
                 </li>
               </ul>
               <ul class="footer__menu">
                 <li class="footer__menu-item">
-                  <a href="#" class="footer__menu-link"> Для партнеров </a>
+                  <div class="footer__menu-title uppercase">Для партнеров</div>
                 </li>
                 <li class="footer__menu-item">
                   <a href="#" class="footer__menu-link"> Мы предлагаем</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#" class="footer__menu-link">
+                  <a href="/registration.html" class="footer__menu-link">
                     Регистрация партнеров
                   </a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#" class="footer__menu-link"> Личный кабинет </a>
+                  <a href="/partners-cabinet.html" class="footer__menu-link">
+                    Личный кабинет
+                  </a>
                 </li>
               </ul>
             </div>
@@ -1223,7 +1311,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
 
     <!-- Мобильное модальное окно фильтров  -->

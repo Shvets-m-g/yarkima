@@ -3,7 +3,7 @@ let swiper = null;
 function initSwiper() {
   if (window.innerWidth < 768) {
     swiper = new Swiper(".course-form__covers", {
-      slidesPerView: 1,
+      slidesPerView: "auto",
       spaceBetween: 0,
       loop: true,
       centeredSlides: true,

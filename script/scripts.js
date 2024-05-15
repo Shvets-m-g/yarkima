@@ -33,13 +33,13 @@ class Modal {
     document.body.classList.remove("disabled-scroll");
   }
 }
-
 class Tabs {
   constructor(containerId) {
     this.container = document.getElementById(containerId);
-    this.buttons = this.container.querySelectorAll(".tabs__button");
-    this.tabs = this.container.querySelectorAll(".tabs__content");
-    console.log("tabs, this", this);
+    this.tabsHeader = this.container.querySelector(".tabs__header");
+    this.tabsBody = this.container.querySelector(".tabs__body");
+    this.buttons = this.tabsHeader.querySelectorAll(".tabs__button");
+    this.tabs = this.tabsBody.querySelectorAll(".tabs__content");
     this.buttons.forEach((button) => {
       button.addEventListener("click", () => this.openTab(button));
     });
@@ -47,14 +47,23 @@ class Tabs {
 
   openTab(clickedButton) {
     const tabName = clickedButton.dataset.tab;
+    const clickedTab = this.tabsBody.querySelector(
+      `.tabs__content[data-tab="${tabName}"]`
+    );
+    const innerTabs = clickedTab.querySelectorAll(".tabs__button");
+
     this.tabs.forEach((tab) => {
-      console.log("tabs", tab, tab.dataset.tab, tabName);
       if (tab.dataset.tab === tabName) {
         tab.classList.add("active");
       } else {
         tab.classList.remove("active");
       }
     });
+
+    if (innerTabs.length > 0) {
+      innerTabs[0].setAttribute("data-parent-tab", tabName);
+      innerTabs[0].click();
+    }
     this.buttons.forEach((button) => {
       if (button.dataset.tab === tabName) {
         button.classList.add("active");

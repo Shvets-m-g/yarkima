@@ -1,0 +1,675 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Yarkima - вход</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <div class="course-form-page">
+      <!-- Хедеер -->
+      <header class="header full">
+        <div class="header__container pb-2 pt-2 px-2">
+          <div class="header__left">
+            <button
+              class="button header__burger header__mob-burger d-md-none"
+              alt=""
+              aria-label="Кнопка мобильного меню"
+            ></button>
+            <a href="/" class="header__logo">
+              <img
+                src="images/logo-full.svg"
+                class="d-none d-md-block"
+                alt=""
+              />
+              <img class="d-md-none" src="/images/logo.svg" alt="" />
+            </a>
+            <div class="vertical-divider d-none d-md-block"></div>
+            <div
+              class="header__dropdown form-dropdown d-none d-md-block"
+              id="header__dropdown"
+            >
+              <button
+                class="button outlined md dropbtn form-dropdown__button px-2"
+              >
+                Изучить <i class="icon arrow-down sm"> </i>
+              </button>
+              <div class="dropdown-content form-dropdown__content">
+                <a class="form-dropdown__item" href="#">Языки</a>
+                <a class="form-dropdown__item" href="#">Школа</a>
+                <a class="form-dropdown__item" href="#">Университет</a>
+                <a class="form-dropdown__item" href="#">Личностный рост</a>
+                <a class="form-dropdown__item" href="#">Духовный рост</a>
+                <a class="form-dropdown__item" href="#">Бизнес</a>
+                <a class="form-dropdown__item" href="#">Отношения</a>
+                <a class="form-dropdown__item" href="#">Здоровье</a>
+                <a class="form-dropdown__item" href="#">Спорт</a>
+                <a class="form-dropdown__item" href="#">Хобби, увлечения</a>
+                <a class="form-dropdown__item" href="#">Эзотерика</a>
+                <a class="form-dropdown__item" href="#">Кулинария</a>
+                <a class="form-dropdown__item" href="#">Техника, гаджеты</a>
+                <a class="form-dropdown__item" href="#">Финансы</a>
+                <a class="form-dropdown__item" href="#">Инвестиции</a>
+                <a class="form-dropdown__item" href="#">Профессии</a>
+              </div>
+            </div>
+          </div>
+          <div class="header__search w-100">
+            <div class="form-input md with-icon w-100">
+              <i class="icon search md"></i>
+              <input placeholder="Поиск" type="" />
+            </div>
+          </div>
+          <div class="header__actions d-flex align-center gap-2">
+            <a
+              href="/login.html"
+              class="button default min-width-5 min-height-5 min-width-md-6 min-height-md-6 ml-auto p-0"
+            >
+              <i class="icon white-plus"></i>
+            </a>
+            <button
+              class="header__notification button simple min-width-5 min-height-5 min-width-md-6 min-height-md-6"
+            >
+              <i class="icon notification md"> </i>
+            </button>
+            <div class="header__user hexagon s-48">
+              <img src="images/header-pic.jpg" alt="" />
+            </div>
+
+            <button
+              class="button header__burger header__desk-burger d-none d-md-block"
+              alt=""
+              aria-label="Кнопка меню"
+            ></button>
+          </div>
+        </div>
+      </header>
+      <!-- Десктоп меню  -->
+      <div class="menu-header bg-white" id="header-menu">
+        <div class="menu-header__top bg-white">
+          <div class="menu-header__top-logo">
+            <img src="/images/logo-full.svg" alt="" />
+          </div>
+          <button
+            class="menu-header__button-close button outlined min-width-5 min-height-5"
+          >
+            <i class="icon close"></i>
+          </button>
+        </div>
+        <div class="menu-header__body">
+          <ul class="menu-header__menu">
+            <li class="menu-header__menu-item">
+              <a href="/" class="mob-header__menu-link uppercase">
+                <span> Главная </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a href="/catalog.html" class="menu-header__menu-link uppercase">
+                <span> Каталог </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a href="/cases.html" class="menu-header__menu-link uppercase">
+                <span> Кейсы </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a href="/faq.html" class="menu-header__menu-link uppercase">
+                <span> F.a.q </span>
+              </a>
+            </li>
+            <li class="menu-header__menu-item">
+              <a
+                href="/partners-cabinet.html"
+                class="menu-header__menu-link uppercase"
+              >
+                <span> партнерам </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Конец десктоп меню  -->
+
+      <main class="mb-md-15">
+        <div class="course-form__header px-2 pt-2">
+          <div class="">
+            <div class="course-form__header-container">
+              <a href="/create-course.html" class="button outlined md px-0">
+                <i class="icon arrow-left md"> </i>
+              </a>
+              <h1
+                class="course-form__header-title title small text-mob-16 uppercase"
+              >
+                Добавить карточки
+              </h1>
+              <div class="course-form__header-actions">
+                <div class="button outlined d-none d-md-flex lg px-3 disabled">
+                  СОздать
+                </div>
+                <button
+                  class="button outlined min-width-6 min-height-6 button__settings"
+                  data-modal-id="show-more-modal"
+                >
+                  <i class="icon setting"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="course-form__body">
+          <div class="course-form__container container">
+             
+            <!-- Второй блок на мобильном --> 
+            <div class="course-form__cards">
+              <!-- Форма карточки  -->
+              <div class="course-form__card border-light p-3 mt-3">
+                <div class="course-form__card-header">
+                  <div class="course-form__card-number">1</div>
+
+                  <div
+                    class="course-form__card-player border-light ml-auto mr-auto pl-1"
+                  >
+                    <div
+                      class="course-form__audio without-time bg-white audio-player"
+                    >
+                      <div class="audio-player__controls">
+                        <button
+                          class="button px-0 audio-player__button audio-player__button-pause"
+                        >
+                          <i class="icon pause"></i>
+                        </button>
+                        <!-- <div class="audio-player__time">0:15/0:20</div> -->
+                        <button
+                          class="button px-0 audio-player__button audio-player__button-volume"
+                        >
+                          <i class="icon volume-filled"></i>
+                        </button>
+                        <div class="audio-player__progress">
+                          <div
+                            class="audio-player__progress__inner"
+                            style="width: 50%"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      class="mob-header__button-close button basic min-width-5 min-height-5"
+                    >
+                      <i class="icon close"></i>
+                    </button>
+                  </div>
+                  <div class="d-flex align-center gap-1 justify-end">
+                    <div
+                      class="course-form__card-remove button basic min-width-4 min-height-4 min-width-md-6 min-height-md-6"
+                      data-modal-id="show-more-modal"
+                    >
+                      <icon class="icon menu md"></icon>
+                    </div>
+
+                    <div
+                      class="course-form__card-remove button basic min-width-4 min-height-4 min-width-md-6 min-height-md-6"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.25 5.25H3.75"
+                          stroke="#191A26"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.25 2.25H15.75"
+                          stroke="#191A26"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.75 5.25V19.5C18.75 19.6989 18.671 19.8897 18.5303 20.0303C18.3897 20.171 18.1989 20.25 18 20.25H6C5.80109 20.25 5.61032 20.171 5.46967 20.0303C5.32902 19.8897 5.25 19.6989 5.25 19.5V5.25"
+                          stroke="#191A26"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="course-form__card-body mt-3">
+                  <!-- Термин инпут -->
+                  <div class="course-form__card-input">
+                    <div class="form-input with-label">
+                      <input id="form-card-value-1" type="text" value="Milk" />
+                      <label
+                        for="form-card-value-1"
+                        class="form-input__label active"
+                        >Термин</label
+                      >
+                    </div>
+                    <div
+                      class="text-purple subtitle small uppercase text-right mt-1 text-semibold"
+                    >
+                      Английский
+                    </div>
+                  </div>
+
+                  <!-- Определение инпут -->
+                  <div class="course-form__card-input">
+                    <div class="form-input with-label">
+                      <input
+                        id="form-card-value-2"
+                        type="text"
+                        value="Молоко"
+                      />
+                      <label
+                        for="form-card-value-2"
+                        class="form-input__label active"
+                        >Определение</label
+                      >
+                    </div>
+                    <div
+                      class="text-purple subtitle small uppercase text-right mt-1 text-semibold"
+                    >
+                      Русский
+                    </div>
+                  </div>
+
+                  <!-- Картинка -->
+                  <div class="course-form__card-image">
+                    <label for="cover-image" class="form__sm-image filled">
+                      <div class="form__sm-image-preview">
+                        <img src="images/pages/form-image-1.jpg" alt="" />
+                      </div>
+                      <div class="form__sm-image-info">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20.25 5.25H3.75"
+                            stroke="#fff"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M8.25 2.25H15.75"
+                            stroke="#fff"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M18.75 5.25V19.5C18.75 19.6989 18.671 19.8897 18.5303 20.0303C18.3897 20.171 18.1989 20.25 18 20.25H6C5.80109 20.25 5.61032 20.171 5.46967 20.0303C5.32902 19.8897 5.25 19.6989 5.25 19.5V5.25"
+                            stroke="#fff"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                      <input id="cover-image" type="file" class="hidden" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="divider light-gray mb-3 mt-3"></div>
+                <div class="title small mb-5">
+                  Варианты ответов для тестирования
+                </div>
+                <div class="course-form__variants">
+                  <div
+                    class="d-flex align-center gap-1 justify-mob-space-between"
+                  >
+                    <div class="text md text-gray text-semibold">
+                      Кол-во вариантов
+                    </div>
+                    <div
+                      class="form-select"
+                      data-classes="sm simple"
+                      data-id="form-variants-number"
+                    >
+                      <select>
+                        <option value=""></option>
+                        <option value="option-1">1</option>
+                        <option value="option-2">2</option>
+                        <option value="option-3">3</option>
+                        <option value="option-4">4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-1 flex-1 course-form__variants-list">
+                    <div class="detail-course__variant form-variant">
+                      <div
+                        class="detail-course__variant-title form-variant__title"
+                      >
+                        Кофе
+                      </div>
+                      <div
+                        class="detail-course__variant-number form-variant__number"
+                      >
+                        <span> 1 </span>
+                      </div>
+                    </div>
+                    <div class="detail-course__varian form-variant">
+                      <div
+                        class="detail-course__variant-title form-variant__title"
+                      >
+                        Соль
+                      </div>
+                      <div
+                        class="detail-course__variant-number form-variant__number"
+                      >
+                        <span> 2 </span>
+                      </div>
+                    </div>
+                    <div class="detail-course__variant form-variant">
+                      <div
+                        class="detail-course__variant-title form-variant__title"
+                      >
+                        Чай
+                      </div>
+                      <div
+                        class="detail-course__variant-number form-variant__number"
+                      >
+                        <span> 3 </span>
+                      </div>
+                    </div>
+                    <div class="detail-course__variant form-variant">
+                      <div
+                        class="detail-course__variant-title form-variant__title"
+                      >
+                        Сахар
+                      </div>
+                      <div
+                        class="detail-course__variant-number form-variant__number"
+                      >
+                        <span> 4 </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Форма карточки  -->
+              <div class="course-form__card border-light p-3 mt-3">
+                <div class="course-form__card-header">
+                  <div class="course-form__card-number">1</div>
+                  <div class="ml-auto mr-auto pl-1">
+                    <button
+                      class="mob-header__button-close button basic min-width-5 min-height-5"
+                    >
+                      <img src="images/icons/icon-music.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="d-flex align-center gap-1 justify-end">
+                    <div
+                      class="course-form__card-remove button basic min-width-4 min-height-4 min-width-md-6 min-height-md-6"
+                      data-modal-id="show-more-modal"
+                    >
+                      <icon class="icon menu md"></icon>
+                    </div>
+
+                    <div
+                      class="course-form__card-remove button basic min-width-4 min-height-4 min-width-md-6 min-height-md-6"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.25 5.25H3.75"
+                          stroke="#191A26"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.25 2.25H15.75"
+                          stroke="#191A26"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.75 5.25V19.5C18.75 19.6989 18.671 19.8897 18.5303 20.0303C18.3897 20.171 18.1989 20.25 18 20.25H6C5.80109 20.25 5.61032 20.171 5.46967 20.0303C5.32902 19.8897 5.25 19.6989 5.25 19.5V5.25"
+                          stroke="#191A26"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="course-form__card-body mt-3">
+                  <!-- Термин инпут -->
+                  <div class="course-form__card-input">
+                    <div class="form-input with-label">
+                      <input id="form-card-value-1" type="text" />
+                      <label for="form-card-value-1" class="form-input__label"
+                        >Термин</label
+                      >
+                    </div>
+                    <div
+                      class="text-gray subtitle small uppercase text-right mt-1 text-semibold"
+                    >
+                      Язык
+                    </div>
+                  </div>
+
+                  <!-- Определение инпут -->
+                  <div class="course-form__card-input">
+                    <div class="form-input with-label">
+                      <input id="form-card-value-2" type="text" />
+                      <label for="form-card-value-2" class="form-input__label"
+                        >Определение</label
+                      >
+                    </div>
+                    <div
+                      class="text-gray subtitle small uppercase text-right mt-1 text-semibold"
+                    >
+                      Язык
+                    </div>
+                  </div>
+
+                  <!-- Картинка -->
+                  <div class="course-form__card-image">
+                    <label for="cover-image" class="form__sm-image">
+                      <div class="form__sm-image-preview">
+                        <img src="images/pages/form-image-1.jpg" alt="" />
+                      </div>
+                      <div class="form__sm-image-info">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20.25 5.25H3.75"
+                            stroke="#fff"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M8.25 2.25H15.75"
+                            stroke="#fff"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M18.75 5.25V19.5C18.75 19.6989 18.671 19.8897 18.5303 20.0303C18.3897 20.171 18.1989 20.25 18 20.25H6C5.80109 20.25 5.61032 20.171 5.46967 20.0303C5.32902 19.8897 5.25 19.6989 5.25 19.5V5.25"
+                            stroke="#fff"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                      <input id="cover-image" type="file" class="hidden" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="divider light-gray mb-3 mt-3"></div>
+                <button class="button outlined md d-none d-lg-block">
+                  <i class="icon plus"> </i>
+                  Добавить варианты ответа
+                </button>
+                <button class="button basic sm d-md-none">
+                  <i class="icon plus"> </i>
+                  Добавить варианты ответа
+                </button>
+              </div>
+            </div>
+
+            <!-- Кнопки -->
+            <div class="course-form__actions pb-2">
+              <button class="button outlined md w-100">
+                <i class="icon plus"> </i>
+                Добавить карточку
+              </button>
+              <button class="button default lg w-100 disabled bg mt-3 mt-md-8">
+                СОздать
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="course-form__footer">
+          <button class="button outlined px-3 lg mob-sm">Пропустить</button>
+          <button class="button outlined px-3 lg mob-sm">Проверить</button>
+        </div> -->
+      </main>
+    </div>
+
+    <!-- Модальное окно настроек на десктопе -->
+    <div
+      class="chat__more-menu bg-white border-light p-1 d-none"
+      id="chat__more-menu"
+    >
+      <div class="chat__more-menu-images">
+        <div class="hexagon">
+          <img src="/images/people-images/img-2.jpg" alt="" />
+        </div>
+        <div class="hexagon">
+          <img src="/images/people-images/img-3.jpg" alt="" />
+        </div>
+      </div>
+      <div class="chat__more-menu-created mt-2">Чат создан</div>
+      <div class="chat__more-menu-date">20.03.2024</div>
+      <div
+        class="chat__more-menu-btn button basic md text-transform-unset w-100 text-red mt-2"
+      >
+        Выйти из чата
+      </div>
+    </div>
+
+    <!-- Мобильное модальное окно настроек  -->
+    <div
+      class="mob-modal course-form__modal border-radius pb-5 pt-2 text-center slide sort-modal bg-white"
+      id="show-more-modal"
+    >
+      <div class="mob-modal__header">
+        <div class="subtitle md uppercase text-left">Настройки курса</div>
+
+        <button
+          class="menu-header__button-close button outlined min-width-5 min-height-5"
+        >
+          <i class="icon close"></i>
+        </button>
+      </div>
+      <div class="course-form__modal-form px-2">
+        <div class="d-flex justify-space-between align-center">
+          <div class="subtitle lg text-left">
+            Вопросы <span class="text-gray"> (Максимум 20) </span>
+          </div>
+          <div class="form-select" data-id="form-category">
+            <select>
+              <option value=""></option>
+              <option value="option-1">10</option>
+              <option value="option-2">20</option>
+            </select>
+          </div>
+        </div>
+        <label class="form-checkbox-toggler">
+          <span> Верно - неверно </span>
+          <input type="checkbox" checked name="toggle" />
+          <span class="form-checkbox-toggler__el"></span>
+        </label>
+        <label class="form-checkbox-toggler">
+          <span> С выбором ответов </span>
+          <input type="checkbox" checked name="toggle" />
+          <span class="form-checkbox-toggler__el"></span>
+        </label>
+        <label class="form-checkbox-toggler">
+          <span> Подбор</span>
+          <input type="checkbox" name="toggle" />
+          <span class="form-checkbox-toggler__el"></span>
+        </label>
+      </div>
+      <button class="button default md d-none d-md-flex mt-5 ml-auto mr-auto">
+        Сохранить
+      </button>
+    </div>
+  </body>
+  <script src="/script/form.js"></script>
+  <script src="/script/main.js"></script>
+  <script src="/script/scripts.js"></script>
+  <script src="/script/pages/create-form.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log("this.modal ", this.modal, window.innerWidth);
+
+      new Modal("show-more-modal");
+      if (window.innerWidth < 768) {
+      } else {
+        const button = document.querySelector(".button__settings");
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+          this.classList.toggle("show");
+        });
+      }
+    });
+    const formSelects = document.querySelectorAll(".form-select");
+    for (const select of formSelects) {
+      const customSelect = new CustomSelect(select);
+    }
+
+    // const variantSelector = new VariantSelector(".form-variants");
+  </script>
+</html>

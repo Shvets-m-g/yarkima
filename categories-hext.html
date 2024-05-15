@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Yarkima - вход</title>
@@ -6,20 +7,20 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/2.5.4/tippy.css"
-      rel="stylesheet"
-    />
-    <link href="/css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="pesonal-account-page">
+    <div class="categories-page page with-bg">
       <!-- Хедеер -->
       <header class="header full">
         <div class="header__container pb-2 pt-2 px-2">
@@ -89,17 +90,17 @@
               <img src="/images/people-images/small-pic.jpg" alt="" />
             </a>
             <!-- <a href="/login.html" class="button outlined d-none d-md-block md">
-        Войти
-      </a>
-      <a
-        href="/registration.html"
-        class="button default d-none d-md-block md"
-      >
-        Зарегистрироваться
-      </a>
-      <a href="/registration.html" class="button default xs d-md-none">
-        Начать
-      </a> -->
+          Войти
+        </a>
+        <a
+          href="/registration.html"
+          class="button default d-none d-md-block md"
+        >
+          Зарегистрироваться
+        </a>
+        <a href="/registration.html" class="button default xs d-md-none">
+          Начать
+        </a> -->
             <button
               class="button header__burger header__desk-burger d-none d-md-block"
               alt=""
@@ -961,348 +962,648 @@
         </div>
       </div>
       <!--  -->
-
-      <main class="personal-account">
+      <main class="pt-5">
         <div class="container">
-          <div class="personal-account__container">
-            <div>
-              <div class="d-none d-md-block personal-account__header">
-                <ul class="breadcrumbs">
-                  <li>
-                    <a
-                      href="/profile
-                  "
-                      >Публичный профиль</a
-                    >
-                  </li>
-                  <li>Лицевой счет</li>
-                </ul>
-                <div class="d-flex align-center mt-3">
-                  <button
-                    class="menu-header__button-close button outlined min-width-6 min-height-6"
-                  >
-                    <i class="icon arrow-left"></i>
-                  </button>
-                  <div class="title uppercase small ml-5">Лицевой счет</div>
+          <h2 class="title big text-center text-md-unset uppercase">
+            Категории
+          </h2>
+        </div>
+        <div class="categories-list courses-list bg mt-1 mt-md-5 pt-3">
+          <div class="container">
+            <h2
+              class="title medium gradient-text uppercase text-center text-md-unset"
+            >
+              Популярные Категории
+            </h2>
+            <div class="swiper courses-list__slider mt-md-5 mt-5">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- Карточка Категории -->
+                  <div class="card course-item hexagon">
+                    <div class="course-item__inner">
+                      <div class="course-item__content">
+                        <div
+                          class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                        >
+                          <i class="icon language md"></i>
+                        </div>
+                        <div class="course-item__body">
+                          <div
+                            class="course-item__title subtitle lg gradient-text text-bold"
+                          >
+                            Воин
+                          </div>
+                          <div class="course-item__text mt-2_5">
+                            Борьба за смысл, снижение того, во что есть вера,
+                            устойчивость позиций своих и необходимость
+                            переход...
+                          </div>
+                        </div>
+                        <div
+                          class="course-item__add-text align-center d-flex gap-1 mt-1"
+                        >
+                          <span class="icon stack"> </span>
+                          <span>21 курс</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Карточка Категории -->
+                  <div class="card course-item hexagon">
+                    <div class="course-item__inner">
+                      <div class="course-item__content">
+                        <div
+                          class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                        >
+                          <i class="icon language md"></i>
+                        </div>
+                        <div class="course-item__body">
+                          <div
+                            class="course-item__title subtitle lg gradient-text text-bold"
+                          >
+                            Воин
+                          </div>
+                          <div class="course-item__text mt-2_5">
+                            Борьба за смысл, снижение того, во что есть вера,
+                            устойчивость позиций своих и необходимость
+                            переход...
+                          </div>
+                        </div>
+                        <div
+                          class="course-item__add-text align-center d-flex gap-1 mt-1"
+                        >
+                          <span class="icon stack"> </span>
+                          <span>21 курс</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Карточка Категории -->
+                  <div class="card course-item hexagon">
+                    <div class="course-item__inner">
+                      <div class="course-item__content">
+                        <div
+                          class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                        >
+                          <i class="icon language md"></i>
+                        </div>
+                        <div class="course-item__body">
+                          <div
+                            class="course-item__title subtitle lg gradient-text text-bold"
+                          >
+                            Воин
+                          </div>
+                          <div class="course-item__text mt-2_5">
+                            Борьба за смысл, снижение того, во что есть вера,
+                            устойчивость позиций своих и необходимость
+                            переход...
+                          </div>
+                        </div>
+                        <div
+                          class="course-item__add-text align-center d-flex gap-1 mt-1"
+                        >
+                          <span class="icon stack"> </span>
+                          <span>21 курс</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Карточка Категории -->
+                  <div class="card course-item hexagon">
+                    <div class="course-item__inner">
+                      <div class="course-item__content">
+                        <div
+                          class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                        >
+                          <i class="icon language md"></i>
+                        </div>
+                        <div class="course-item__body">
+                          <div
+                            class="course-item__title subtitle lg gradient-text text-bold"
+                          >
+                            Воин
+                          </div>
+                          <div class="course-item__text mt-2_5">
+                            Борьба за смысл, снижение того, во что есть вера,
+                            устойчивость позиций своих и необходимость
+                            переход...
+                          </div>
+                        </div>
+                        <div
+                          class="course-item__add-text align-center d-flex gap-1 mt-1"
+                        >
+                          <span class="icon stack"> </span>
+                          <span>21 курс</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="slider-pagination white"></div>
+          </div>
+        </div>
 
-              <!-- Дропдаун на мобильном -->
-              <div
-                class="form-dropdown w-100 d-md-none"
-                id="personal-account__menu-dropdown"
-              >
-                <button
-                  class="button outlined md text-transform-unset form-dropdown__button justify-space-between px-2 w-100"
-                >
-                  Лицевой счет
-                  <i class="icon arrow-down sm"> </i>
+        <div class="categories-list mt-5">
+          <div class="container">
+            <div class="courser-list__header catalog__header">
+              <div class="d-md-none">
+                <button class="button outlined min-width-6 min-height-6">
+                  <i class="icon sort"></i>
                 </button>
-                <div class="dropdown-content form-dropdown__content">
-                  <ul class="personal-account__menu">
-                    <li class="personal-account__menu-item">
-                      <a
-                        href="/personal-account/main-info.html"
-                        class="personal-account__menu-link"
-                      >
-                        Основная информация
-                      </a>
-                    </li>
-                    <li class="personal-account__menu-item">
-                      <a
-                        href="/personal-account/additional-info.html"
-                        class="personal-account__menu-link"
-                      >
-                        Дополнительная информация
-                      </a>
-                    </li>
-                    <li class="personal-account__menu-item">
-                      <a
-                        href="/personal-account/socials.html"
-                        class="personal-account__menu-link"
-                      >
-                        Социальные сети
-                      </a>
-                    </li>
-                    <li class="personal-account__menu-item">
-                      <a
-                        href="/personal-account/user-id.html"
-                        class="personal-account__menu-link"
-                      >
-                        Идентификатор пользователя
-                      </a>
-                    </li>
-                    <!-- <li class="personal-account__menu-item">
-                      <a
-                        href="/personal-account/personal-account.html"
-                        class="personal-account__menu-link active"
-                      >
-                        Лицевой счет
-                      </a>
-                    </li> -->
-                    <li class="personal-account__menu-item">
-                      <a
-                        href="/personal-account/order-history.html"
-                        class="personal-account__menu-link"
-                      >
-                        История заказов
-                      </a>
-                    </li>
-                    <li class="personal-account__menu-item">
-                      <a
-                        href="/personal-account/password.html"
-                        class="personal-account__menu-link"
-                      >
-                        Пароль
-                      </a>
-                    </li>
-
-                    <li class="personal-account__menu-item">
-                      <a href="#" class="personal-account__menu-link text-red">
-                        Выйти</a
-                      >
-                    </li>
-                  </ul>
+              </div>
+              <div class="d-md-flex gap-2 d-none">
+                <div class="form-dropdown" id="sort__dropdown-1">
+                  <button
+                    class="button outlined md dropbtn form-dropdown__button"
+                  >
+                    Самые популярные <i class="icon arrow-down sm"> </i>
+                  </button>
+                  <div class="dropdown-content form-dropdown__content">
+                    <a class="form-dropdown__item" href="">Самые популярные</a>
+                    <a class="form-dropdown__item" href="">Самые популярные</a>
+                  </div>
+                </div>
+                <div class="form-dropdown" id="sort__dropdown-2">
+                  <button
+                    class="button outlined md dropbtn form-dropdown__button"
+                  >
+                    Тип<i class="icon arrow-down sm"> </i>
+                  </button>
+                  <div class="dropdown-content form-dropdown__content">
+                    <a class="form-dropdown__item" href="">Тип</a>
+                    <a class="form-dropdown__item" href="">Тип</a>
+                  </div>
                 </div>
               </div>
-              <dvi class="personal-account__form mt-5">
-                <div class="personal-account__sm-balance">
-                  <div class="subtitle md">Баланс</div>
-                  <div
-                    class="personal-account__sm-balance-row d-flex align-center justify-space-between gap-2 flex-column flex-md-row"
-                  >
-                    <div
-                      class="personal-account__sm-balance-title gradient-text"
+              <div>
+                <div class="form-toggler">
+                  <a href="/categories.html" class="form-toggler__input">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      4 323 ₽
-                    </div>
-                    <a
-                      href="/personal-account/personal-account-deposit.html"
-                      class="button outlined md"
-                      >Пополнить</a
+                      <path
+                        d="M20.25 5.25V10.875C20.25 10.9745 20.2105 11.0698 20.1402 11.1402C20.0698 11.2105 19.9745 11.25 19.875 11.25H12.75V4.125C12.75 4.02554 12.7895 3.93016 12.8598 3.85984C12.9302 3.78951 13.0255 3.75 13.125 3.75H18.75C19.1478 3.75 19.5294 3.90804 19.8107 4.18934C20.092 4.47064 20.25 4.85218 20.25 5.25ZM10.875 3.75H5.25C4.85218 3.75 4.47064 3.90804 4.18934 4.18934C3.90804 4.47064 3.75 4.85218 3.75 5.25V10.875C3.75 10.9745 3.78951 11.0698 3.85984 11.1402C3.93016 11.2105 4.02554 11.25 4.125 11.25H11.25V4.125C11.25 4.02554 11.2105 3.93016 11.1402 3.85984C11.0698 3.78951 10.9745 3.75 10.875 3.75ZM19.875 12.75H12.75V19.875C12.75 19.9745 12.7895 20.0698 12.8598 20.1402C12.9302 20.2105 13.0255 20.25 13.125 20.25H18.75C19.1478 20.25 19.5294 20.092 19.8107 19.8107C20.092 19.5294 20.25 19.1478 20.25 18.75V13.125C20.25 13.0255 20.2105 12.9302 20.1402 12.8598C20.0698 12.7895 19.9745 12.75 19.875 12.75ZM3.75 13.125V18.75C3.75 19.1478 3.90804 19.5294 4.18934 19.8107C4.47064 20.092 4.85218 20.25 5.25 20.25H10.875C10.9745 20.25 11.0698 20.2105 11.1402 20.1402C11.2105 20.0698 11.25 19.9745 11.25 19.875V12.75H4.125C4.02554 12.75 3.93016 12.7895 3.85984 12.8598C3.78951 12.9302 3.75 13.0255 3.75 13.125Z"
+                        fill="var(--icon-color)"
+                      />
+                    </svg>
+                  </a>
+                  <label class="form-toggler__input">
+                    <input
+                      type="radio"
+                      id="view-2"
+                      name="catalog-view"
+                      class=""
+                      checked
+                    />
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                  </div>
+                      <path
+                        d="M21 8.44278V16.5572C20.9994 16.8003 20.9323 17.0387 20.8057 17.2477C20.679 17.4566 20.4975 17.6284 20.28 17.745L12.6646 21.832C12.4611 21.9422 12.2325 22 12 22C11.7675 22 11.5389 21.9422 11.3354 21.832L3.72 17.745C3.50252 17.6284 3.32097 17.4566 3.19432 17.2477C3.06767 17.0387 3.00056 16.8003 3 16.5572V8.44278C3.00056 8.19973 3.06767 7.96128 3.19432 7.75234C3.32097 7.5434 3.50252 7.37163 3.72 7.25496L11.3354 3.16805C11.5389 3.05782 11.7675 3 12 3C12.2325 3 12.4611 3.05782 12.6646 3.16805L20.28 7.25496C20.4975 7.37163 20.679 7.5434 20.8057 7.75234C20.9323 7.96128 20.9994 8.19973 21 8.44278Z"
+                        fill="var(--icon-color)"
+                      />
+                    </svg>
+                  </label>
                 </div>
-                <div class="divider light-gray"></div>
-                <div class="title uppercase small">История операций</div>
-
-                <!-- Таблица  с историей -->
-                <div class="personal-account__operation-history mt-5">
-                  <div class="personal-account__operation-history-row mb-5">
-                    <div class="personal-account__operation-history-th">
-                      Тип операции
-                    </div>
-                    <div class="personal-account__operation-history-th">
-                      Дата
-                    </div>
-                    <div class="personal-account__operation-history-th">
-                      Карта
-                    </div>
-                    <div class="personal-account__operation-history-th">
-                      Сумма
-                    </div>
-                    <div class="personal-account__operation-history-th"></div>
-                  </div>
-                  <div class="personal-account__operation-history-row">
-                    <div class="personal-account__operation-history-td title">
-                      Подписка на курс
-                    </div>
-                    <div class="personal-account__operation-history-td date">
-                      08.03.2024
-                    </div>
-                    <div
-                      class="personal-account__operation-history-td align-center d-flex gap-1 card"
-                    >
-                      <span class="dots-4"></span> 5542
-                    </div>
-                    <div class="personal-account__operation-history-td price">
-                      <b>-299 ₽</b>
-                    </div>
-
-                    <div class="personal-account__operation-history-td actions">
-                      <button
-                        class="button basic min-width-4 min-height-4 min-width-md-6 min-height-md-6 button__show-more"
-                      >
-                        <i class="icon more md"> </i>
-                      </button>
-                    </div>
-                  </div>
-                  <div
-                    class="divider light-gray mt-3 mb-3 mb-md-5 mt-md-5"
-                  ></div>
-                  <div class="personal-account__operation-history-row">
-                    <div class="personal-account__operation-history-td title">
-                      Идентификатор пользователя
-                    </div>
-                    <div class="personal-account__operation-history-td date">
-                      08.03.2024
-                    </div>
-                    <div
-                      class="personal-account__operation-history-td align-center d-flex gap-1 card"
-                    >
-                      <span class="dots-4"></span> 5542
-                    </div>
-                    <div class="personal-account__operation-history-td price">
-                      <b class="text-green">+2 000 ₽</b>
-                    </div>
-
-                    <div class="personal-account__operation-history-td actions">
-                      <button
-                        class="button basic min-width-4 min-height-4 min-width-md-6 min-height-md-6 button__show-more"
-                      >
-                        <i class="icon more md"> </i>
-                      </button>
-                    </div>
-                  </div>
-                  <div
-                    class="divider light-gray mt-3 mb-3 mb-md-5 mt-md-5"
-                  ></div>
-                  <div class="personal-account__operation-history-row">
-                    <div class="personal-account__operation-history-td title">
-                      Подписка на курс
-                    </div>
-                    <div class="personal-account__operation-history-td date">
-                      08.03.2024
-                    </div>
-                    <div
-                      class="personal-account__operation-history-td align-center d-flex gap-1 card"
-                    >
-                      <span class="dots-4"></span> 5542
-                    </div>
-                    <div class="personal-account__operation-history-td price">
-                      <b>-299 ₽</b>
-                    </div>
-
-                    <div class="personal-account__operation-history-td actions">
-                      <button
-                        class="button basic min-width-4 min-height-4 min-width-md-6 min-height-md-6 button__show-more"
-                      >
-                        <i class="icon more md"> </i>
-                      </button>
-                    </div>
-                  </div>
-                  <div
-                    class="divider light-gray mt-3 mb-3 mb-md-5 mt-md-5"
-                  ></div>
-                  <div class="personal-account__operation-history-row">
-                    <div class="personal-account__operation-history-td title">
-                      Подписка на курс
-                    </div>
-                    <div class="personal-account__operation-history-td date">
-                      08.03.2024
-                    </div>
-                    <div
-                      class="personal-account__operation-history-td align-center d-flex gap-1 card"
-                    >
-                      <span class="dots-4"></span> 5542
-                    </div>
-                    <div class="personal-account__operation-history-td price">
-                      <b>-299 ₽</b>
-                    </div>
-
-                    <div class="personal-account__operation-history-td actions">
-                      <button
-                        class="button basic min-width-4 min-height-4 min-width-md-6 min-height-md-6 button__show-more"
-                      >
-                        <i class="icon more md"> </i>
-                      </button>
-                    </div>
-                  </div>
-                  <div
-                    class="divider light-gray mt-3 mb-3 mb-md-5 mt-md-5"
-                  ></div>
-                  <div class="personal-account__operation-history-row">
-                    <div class="personal-account__operation-history-td title">
-                      Подписка на курс
-                    </div>
-                    <div class="personal-account__operation-history-td date">
-                      08.03.2024
-                    </div>
-                    <div
-                      class="personal-account__operation-history-td align-center d-flex gap-1 card"
-                    >
-                      <span class="dots-4"></span> 5542
-                    </div>
-                    <div class="personal-account__operation-history-td price">
-                      <b>-299 ₽</b>
-                    </div>
-
-                    <div class="personal-account__operation-history-td actions">
-                      <button
-                        class="button basic min-width-4 min-height-4 min-width-md-6 min-height-md-6 button__show-more"
-                      >
-                        <i class="icon more md"> </i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </dvi>
+              </div>
             </div>
 
-            <ul class="personal-account__menu d-none d-md-flex">
-              <li class="personal-account__menu-item">
-                <a
-                  href="/personal-account/main-info.html"
-                  class="personal-account__menu-link"
-                >
-                  Основная информация
-                </a>
-              </li>
-              <li class="personal-account__menu-item">
-                <a
-                  href="/personal-account/additional-info.html"
-                  class="personal-account__menu-link"
-                >
-                  Дополнительная информация
-                </a>
-              </li>
-              <li class="personal-account__menu-item">
-                <a
-                  href="/personal-account/socials.html"
-                  class="personal-account__menu-link"
-                >
-                  Социальные сети
-                </a>
-              </li>
-              <li class="personal-account__menu-item">
-                <a
-                  href="/personal-account/user-id.html"
-                  class="personal-account__menu-link"
-                >
-                  Идентификатор пользователя
-                </a>
-              </li>
-              <li class="personal-account__menu-item">
-                <a
-                  href="/personal-account/personal-account.html"
-                  class="personal-account__menu-link active"
-                >
-                  Лицевой счет
-                </a>
-              </li>
-              <li class="personal-account__menu-item">
-                <a
-                  href="/personal-account/order-history.html"
-                  class="personal-account__menu-link"
-                >
-                  История заказов
-                </a>
-              </li>
-              <li class="personal-account__menu-item">
-                <a
-                  href="/personal-account/password.html"
-                  class="personal-account__menu-link"
-                >
-                  Пароль
-                </a>
-              </li>
+            <div
+              class="catalog__list hexagons categories-list courses-list list mt-5"
+            >
+              <!-- Карточка Категории -->
+              <div class="col card course-item hexagon">
+                <div class="course-item__inner">
+                  <div class="course-item__content">
+                    <div
+                      class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                    >
+                      <i class="icon language md"></i>
+                    </div>
+                    <div class="course-item__body">
+                      <div
+                        class="course-item__title subtitle lg gradient-text text-bold"
+                      >
+                        Воин
+                      </div>
+                      <div class="course-item__text mt-2_5">
+                        Борьба за смысл, снижение того, во что есть вера,
+                        устойчивость позиций своих и необходимость переход...
+                      </div>
+                    </div>
+                    <div
+                      class="course-item__add-text align-center d-flex gap-1 mt-1 mt-1"
+                    >
+                      <span class="icon stack"> </span>
+                      <span>21 курс</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-              <li class="personal-account__menu-item">
-                <a href="#" class="personal-account__menu-link text-red">
-                  Выйти</a
-                >
-              </li>
-            </ul>
+              <!-- Карточка Категории -->
+              <div class="col card course-item hexagon">
+                <div class="course-item__inner">
+                  <div class="course-item__content">
+                    <div
+                      class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                    >
+                      <i class="icon language md"></i>
+                    </div>
+                    <div class="course-item__body">
+                      <div
+                        class="course-item__title subtitle lg gradient-text text-bold"
+                      >
+                        Воин
+                      </div>
+                      <div class="course-item__text mt-2_5">
+                        Борьба за смысл, снижение того, во что есть вера,
+                        устойчивость позиций своих и необходимость переход...
+                      </div>
+                    </div>
+                    <div
+                      class="course-item__add-text align-center d-flex gap-1 mt-1"
+                    >
+                      <span class="icon stack"> </span>
+                      <span>21 курс</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Карточка Категории -->
+              <div class="col card course-item hexagon">
+                <div class="course-item__inner">
+                  <div class="course-item__content">
+                    <div
+                      class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                    >
+                      <i class="icon language md"></i>
+                    </div>
+                    <div class="course-item__body">
+                      <div
+                        class="course-item__title subtitle lg gradient-text text-bold"
+                      >
+                        Воин
+                      </div>
+                      <div class="course-item__text mt-2_5">
+                        Борьба за смысл, снижение того, во что есть вера,
+                        устойчивость позиций своих и необходимость переход...
+                      </div>
+                    </div>
+                    <div
+                      class="course-item__add-text align-center d-flex gap-1 mt-1"
+                    >
+                      <span class="icon stack"> </span>
+                      <span>21 курс</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Карточка Категории -->
+              <div class="col card course-item hexagon">
+                <div class="course-item__inner">
+                  <div class="course-item__content">
+                    <div
+                      class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                    >
+                      <i class="icon language md"></i>
+                    </div>
+                    <div class="course-item__body">
+                      <div
+                        class="course-item__title subtitle lg gradient-text text-bold"
+                      >
+                        Воин
+                      </div>
+                      <div class="course-item__text mt-2_5">
+                        Борьба за смысл, снижение того, во что есть вера,
+                        устойчивость позиций своих и необходимость переход...
+                      </div>
+                    </div>
+                    <div
+                      class="course-item__add-text align-center d-flex gap-1 mt-1"
+                    >
+                      <span class="icon stack"> </span>
+                      <span>21 курс</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Карточка Категории -->
+              <div class="col card course-item hexagon d-none d-md-block">
+                <div class="course-item__inner">
+                  <div class="course-item__content">
+                    <div
+                      class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                    >
+                      <i class="icon language md"></i>
+                    </div>
+                    <div class="course-item__body">
+                      <div
+                        class="course-item__title subtitle lg gradient-text text-bold"
+                      >
+                        Воин
+                      </div>
+                      <div class="course-item__text mt-2_5">
+                        Борьба за смысл, снижение того, во что есть вера,
+                        устойчивость позиций своих и необходимость переход...
+                      </div>
+                    </div>
+                    <div
+                      class="course-item__add-text align-center d-flex gap-1 mt-1"
+                    >
+                      <span class="icon stack"> </span>
+                      <span>21 курс</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Карточка Категории -->
+              <div class="col card course-item hexagon d-none d-md-block">
+                <div class="course-item__inner">
+                  <div class="course-item__content">
+                    <div
+                      class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                    >
+                      <i class="icon language md"></i>
+                    </div>
+                    <div class="course-item__body">
+                      <div
+                        class="course-item__title subtitle lg gradient-text text-bold"
+                      >
+                        Воин
+                      </div>
+                      <div class="course-item__text mt-2_5">
+                        Борьба за смысл, снижение того, во что есть вера,
+                        устойчивость позиций своих и необходимость переход...
+                      </div>
+                    </div>
+                    <div
+                      class="course-item__add-text align-center d-flex gap-1 mt-1"
+                    >
+                      <span class="icon stack"> </span>
+                      <span>21 курс</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Карточка Категории -->
+              <div class="col card course-item hexagon d-none d-md-block">
+                <div class="course-item__inner">
+                  <div class="course-item__content">
+                    <div
+                      class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                    >
+                      <i class="icon language md"></i>
+                    </div>
+                    <div class="course-item__body">
+                      <div
+                        class="course-item__title subtitle lg gradient-text text-bold"
+                      >
+                        Воин
+                      </div>
+                      <div class="course-item__text mt-2_5">
+                        Борьба за смысл, снижение того, во что есть вера,
+                        устойчивость позиций своих и необходимость переход...
+                      </div>
+                    </div>
+                    <div
+                      class="course-item__add-text align-center d-flex gap-1 mt-1"
+                    >
+                      <span class="icon stack"> </span>
+                      <span>21 курс</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Карточка Категории -->
+              <div class="col card course-item hexagon d-none d-md-block">
+                <div class="course-item__inner">
+                  <div class="course-item__content">
+                    <div
+                      class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                    >
+                      <i class="icon language md"></i>
+                    </div>
+                    <div class="course-item__body">
+                      <div
+                        class="course-item__title subtitle lg gradient-text text-bold"
+                      >
+                        Воин
+                      </div>
+                      <div class="course-item__text mt-2_5">
+                        Борьба за смысл, снижение того, во что есть вера,
+                        устойчивость позиций своих и необходимость переход...
+                      </div>
+                    </div>
+                    <div
+                      class="course-item__add-text align-center d-flex gap-1 mt-1"
+                    >
+                      <span class="icon stack"> </span>
+                      <span>21 курс</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Карточка Категории -->
+              <div class="col card course-item hexagon d-none d-md-block">
+                <div class="course-item__inner">
+                  <div class="course-item__content">
+                    <div
+                      class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                    >
+                      <i class="icon language md"></i>
+                    </div>
+                    <div class="course-item__body">
+                      <div
+                        class="course-item__title subtitle lg gradient-text text-bold"
+                      >
+                        Воин
+                      </div>
+                      <div class="course-item__text mt-2_5">
+                        Борьба за смысл, снижение того, во что есть вера,
+                        устойчивость позиций своих и необходимость переход...
+                      </div>
+                    </div>
+                    <div
+                      class="course-item__add-text align-center d-flex gap-1 mt-1"
+                    >
+                      <span class="icon stack"> </span>
+                      <span>21 курс</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Карточка Категории -->
+              <div class="col card course-item hexagon d-none d-md-block">
+                <div class="course-item__inner">
+                  <div class="course-item__content">
+                    <div
+                      class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                    >
+                      <i class="icon language md"></i>
+                    </div>
+                    <div class="course-item__body">
+                      <div
+                        class="course-item__title subtitle lg gradient-text text-bold"
+                      >
+                        Воин
+                      </div>
+                      <div class="course-item__text mt-2_5">
+                        Борьба за смысл, снижение того, во что есть вера,
+                        устойчивость позиций своих и необходимость переход...
+                      </div>
+                    </div>
+                    <div
+                      class="course-item__add-text align-center d-flex gap-1 mt-1"
+                    >
+                      <span class="icon stack"> </span>
+                      <span>21 курс</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Карточка Категории -->
+              <div class="col card course-item hexagon d-none d-md-block">
+                <div class="course-item__inner">
+                  <div class="course-item__content">
+                    <div
+                      class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                    >
+                      <i class="icon language md"></i>
+                    </div>
+                    <div class="course-item__body">
+                      <div
+                        class="course-item__title subtitle lg gradient-text text-bold"
+                      >
+                        Воин
+                      </div>
+                      <div class="course-item__text mt-2_5">
+                        Борьба за смысл, снижение того, во что есть вера,
+                        устойчивость позиций своих и необходимость переход...
+                      </div>
+                    </div>
+                    <div
+                      class="course-item__add-text align-center d-flex gap-1 mt-1"
+                    >
+                      <span class="icon stack"> </span>
+                      <span>21 курс</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Карточка Категории -->
+              <div class="col card course-item hexagon d-none d-md-block">
+                <div class="course-item__inner">
+                  <div class="course-item__content">
+                    <div
+                      class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                    >
+                      <i class="icon language md"></i>
+                    </div>
+                    <div class="course-item__body">
+                      <div
+                        class="course-item__title subtitle lg gradient-text text-bold"
+                      >
+                        Воин
+                      </div>
+                      <div class="course-item__text mt-2_5">
+                        Борьба за смысл, снижение того, во что есть вера,
+                        устойчивость позиций своих и необходимость переход...
+                      </div>
+                    </div>
+                    <div
+                      class="course-item__add-text align-center d-flex gap-1 mt-1"
+                    >
+                      <span class="icon stack"> </span>
+                      <span>21 курс</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Карточка Категории -->
+              <div class="col card course-item hexagon d-none d-md-block">
+                <div class="course-item__inner">
+                  <div class="course-item__content">
+                    <div
+                      class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                    >
+                      <i class="icon language md"></i>
+                    </div>
+                    <div class="course-item__body">
+                      <div
+                        class="course-item__title subtitle lg gradient-text text-bold"
+                      >
+                        Воин
+                      </div>
+                      <div class="course-item__text mt-2_5">
+                        Борьба за смысл, снижение того, во что есть вера,
+                        устойчивость позиций своих и необходимость переход...
+                      </div>
+                    </div>
+                    <div
+                      class="course-item__add-text align-center d-flex gap-1 mt-1"
+                    >
+                      <span class="icon stack"> </span>
+                      <span>21 курс</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Карточка Категории -->
+              <div class="col card course-item hexagon d-none d-md-block">
+                <div class="course-item__inner">
+                  <div class="course-item__content">
+                    <div
+                      class="course-item__image hexagon sm with-border justify-center d-flex align-center"
+                    >
+                      <i class="icon language md"></i>
+                    </div>
+                    <div class="course-item__body">
+                      <div
+                        class="course-item__title subtitle lg gradient-text text-bold"
+                      >
+                        Воин
+                      </div>
+                      <div class="course-item__text mt-2_5">
+                        Борьба за смысл, снижение того, во что есть вера,
+                        устойчивость позиций своих и необходимость переход...
+                      </div>
+                    </div>
+                    <div
+                      class="course-item__add-text align-center d-flex gap-1 mt-1"
+                    >
+                      <span class="icon stack"> </span>
+                      <span>21 курс</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="catalog__bottom d-md-none mt-5 d-flex align-center justify-center"
+            >
+              <button class="button outlined md">Показать еще</button>
+            </div>
           </div>
         </div>
       </main>
@@ -1403,13 +1704,45 @@
       </footer>
     </div>
   </body>
+
   <script src="/script/form.js"></script>
   <script src="/script/main.js"></script>
+  <script src="/script/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/script/pages/categories.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // if (window.innerWidth < 768) {
-      const menu = new Dropdown("personal-account__menu-dropdown");
-      // }
+    let swiper = null;
+
+    function initSwiper() {
+      if (window.innerWidth < 768) {
+        swiper = new Swiper(".courses-list__slider", {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          loop: true,
+          initSlide: 1,
+          centeredSlides: true,
+          pagination: {
+            el: ".slider-pagination",
+            type: "bullets",
+            bulletClass: "slider-pagination-bullet",
+            bulletActiveClass: "slider-pagination-bullet__active",
+          },
+        });
+      } else {
+        if (swiper !== null) {
+          swiper.destroy();
+          swiper = null;
+        }
+      }
+    }
+
+    window.addEventListener("load", initSwiper);
+
+    window.addEventListener("resize", () => {
+      clearTimeout(window.resizeTimeout);
+      window.resizeTimeout = setTimeout(() => {
+        initSwiper();
+      }, 250);
     });
   </script>
 </html>

@@ -31,7 +31,7 @@
             ></button>
             <a href="/" class="header__logo">
               <img
-                src="/images/logo-full.svg"
+                src="images/logo-full.svg"
                 class="d-none d-md-block"
                 alt=""
               />
@@ -48,7 +48,7 @@
                 Изучить <i class="icon arrow-down sm"> </i>
               </button>
               <div class="dropdown-content form-dropdown__content">
-                <a class="form-dropdown__item" href="#">Языки</a>
+                <a class="form-dropdown__item" href="/languages.html">Языки</a>
                 <a class="form-dropdown__item" href="#">Школа</a>
                 <a class="form-dropdown__item" href="#">Университет</a>
                 <a class="form-dropdown__item" href="#">Личностный рост</a>
@@ -68,15 +68,15 @@
             </div>
           </div>
           <div class="header__search w-100">
-            <div class="form-input md with-icon mob-sm w-100">
+            <div class="form-input md with-icon w-100">
               <i class="icon search md"></i>
               <input placeholder="Поиск" type="" />
             </div>
           </div>
-          <div class="header__actions d-flex align-center gap-2">
+          <div class="header__actions d-flex align-center gap-2 ml-auto">
             <a
-              href="/login.html"
-              class="button default min-width-5 min-height-5 min-width-md-6 min-height-md-6 ml-auto p-0"
+              href="/create-course.html"
+              class="button default min-width-5 min-height-5 min-width-md-6 min-height-md-6 p-0"
             >
               <i class="icon white-plus"></i>
             </a>
@@ -85,10 +85,21 @@
             >
               <i class="icon notification md"> </i>
             </button>
-            <div class="header__user hexagon s-48">
-              <img src="/images/header-pic.jpg" alt="" />
-            </div>
-
+            <a href="/profile.html" class="header__user hexagon s-48">
+              <img src="/images/people-images/small-pic.jpg" alt="" />
+            </a>
+            <!-- <a href="/login.html" class="button outlined d-none d-md-block md">
+          Войти
+        </a>
+        <a
+          href="/registration.html"
+          class="button default d-none d-md-block md"
+        >
+          Зарегистрироваться
+        </a>
+        <a href="/registration.html" class="button default xs d-md-none">
+          Начать
+        </a> -->
             <button
               class="button header__burger header__desk-burger d-none d-md-block"
               alt=""
@@ -97,7 +108,6 @@
           </div>
         </div>
       </header>
-
       <!-- Десктоп меню  -->
       <div class="menu-header bg-white" id="header-menu">
         <div class="menu-header__top bg-white">
@@ -105,7 +115,7 @@
             <img src="/images/logo-full.svg" alt="" />
           </div>
           <button
-            class="menu-header__button-close button outlined min-width-5 min-height-5"
+            class="menu-header__button-close button outlined min-width-5 min-height-5 border-radius-50"
           >
             <i class="icon close"></i>
           </button>
@@ -113,12 +123,15 @@
         <div class="menu-header__body">
           <ul class="menu-header__menu">
             <li class="menu-header__menu-item">
-              <a href="/" class="mob-header__menu-link uppercase">
+              <a href="/" class="menu-header__menu-link active uppercase">
                 <span> Главная </span>
               </a>
             </li>
             <li class="menu-header__menu-item">
-              <a href="/catalog.html" class="menu-header__menu-link uppercase">
+              <a
+                href="/categories.html"
+                class="menu-header__menu-link uppercase"
+              >
                 <span> Каталог </span>
               </a>
             </li>
@@ -144,6 +157,810 @@
         </div>
       </div>
       <!-- Конец десктоп меню  -->
+
+      <!-- Мобильное меню  -->
+      <div class="mob-header bg-white" id="header-mob-menu">
+        <div class="mob-header__top bg-white">
+          <div class="mob-header__top-logo">
+            <img class="d-md-none" src="/images/logo.svg" alt="" />
+          </div>
+          <button
+            class="mob-header__button-close button outlined min-width-5 min-height-5"
+          >
+            <i class="icon close"></i>
+          </button>
+        </div>
+        <div class="mob-header__body">
+          <ul class="mob-header__menu">
+            <li class="mob-header__menu-item">
+              <a href="/" class="mob-header__menu-link uppercase">
+                <span> Главная </span>
+              </a>
+            </li>
+            <li class="mob-header__menu-item">
+              <a
+                href="/categories.html"
+                class="mob-header__menu-link uppercase"
+              >
+                <span> Каталог </span>
+              </a>
+            </li>
+            <li class="mob-header__menu-item">
+              <a href="/cases.html" class="mob-header__menu-link uppercase">
+                <span> Кейсы </span>
+              </a>
+            </li>
+            <li class="mob-header__menu-item">
+              <a href="/faq.html" class="mob-header__menu-link uppercase">
+                <span> F.a.q </span>
+              </a>
+            </li>
+            <li class="mob-header__menu-item">
+              <a href="/partners.html" class="mob-header__menu-link uppercase">
+                <span> партнерам </span>
+              </a>
+            </li>
+          </ul>
+          <div class="toggle-list mt-2">
+            <div
+              class="toggle-list__header show"
+              data-toggle="collapse"
+              data-target=".collapse.account-list"
+              data-text="Collapse"
+            >
+              <div class="hexagon xxs">
+                <img src="/images/people-images/small-pic.jpg" alt="" />
+              </div>
+              Аккаунт
+              <i class="icon arrow-down sm"> </i>
+            </div>
+
+            <div
+              class="toggle-list__body mob-header__links collapse show account-list"
+            >
+              <div class="d-grid gap-1">
+                <a
+                  href="/profile.html"
+                  class="button profile-menu__link active"
+                >
+                  <i class="icon profile md"> </i>
+                  Публичный профиль
+                </a>
+                <a
+                  href="/partners-cabinet.html"
+                  class="button profile-menu__link"
+                >
+                  <i class="icon correct-blank md"> </i> Кабинет партнера
+                </a>
+
+                <div class="toggle-list">
+                  <div
+                    class="toggle-list__header button profile-menu__link show-disabled"
+                    data-toggle="collapse"
+                    data-target=".collapse.personals-links"
+                    data-text="Collapse"
+                  >
+                    <i class="icon more md"> </i>
+                    Еще
+                    <!-- <i class="icon arrow-down sm"> </i> -->
+                  </div>
+                  <div
+                    class="toggle-list__body mt-0 mob-header__links collapse personals-links"
+                  >
+                    <div class="d-grid gap-1">
+                      <a href="/meeting.html" class="button profile-menu__link">
+                        <i class="icon two-persons md"> </i>
+                        Знакомства
+                      </a>
+
+                      <a href="/chat.html" class="button profile-menu__link">
+                        <i class="icon icon-chat md"> </i>
+                        Чаты
+                      </a>
+                      <a href="/groups.html" class="button profile-menu__link">
+                        <i class="icon group md"> </i>
+                        Группы
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Меню кабинета -->
+                <ul class="personal-account__menu d-none d-md-flex">
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/main-info.html"
+                      class="personal-account__menu-link active"
+                    >
+                      Основная информация
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/additional-info.html"
+                      class="personal-account__menu-link"
+                    >
+                      Дополнительная информация
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/socials.html"
+                      class="personal-account__menu-link"
+                    >
+                      Социальные сети
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/user-id.html"
+                      class="personal-account__menu-link"
+                    >
+                      Идентификатор пользователя
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/personal-account.html"
+                      class="personal-account__menu-link"
+                    >
+                      Лицевой счет
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/order-history.html"
+                      class="personal-account__menu-link"
+                    >
+                      История заказов
+                    </a>
+                  </li>
+                  <li class="personal-account__menu-item">
+                    <a
+                      href="/personal-account/password.html"
+                      class="personal-account__menu-link"
+                    >
+                      Пароль
+                    </a>
+                  </li>
+
+                  <li class="personal-account__menu-item">
+                    <a href="#" class="personal-account__menu-link text-red">
+                      Выйти</a
+                    >
+                  </li>
+                </ul>
+                <!--  -->
+              </div>
+            </div>
+          </div>
+          <div class="mob-header__divider mt-3 mb-2"></div>
+          <div class="toggle-list">
+            <div
+              class="toggle-list__header show"
+              data-toggle="collapse"
+              data-target=".collapse.groups-list"
+              data-text="Collapse"
+            >
+              <span class="gradient-text">Сообщество</span>
+              <i class="icon arrow-down sm"> </i>
+            </div>
+            <div
+              class="toggle-list__body mob-header__links collapse show groups-list"
+            >
+              <div class="d-grid gap-1">
+                <a href="/meeting.html" class="button profile-menu__link">
+                  <i class="icon two-persons md"> </i>
+                  Знакомства
+                </a>
+
+                <a href="/chat.html" class="button profile-menu__link">
+                  <i class="icon icon-chat md"> </i>
+                  Чаты
+                </a>
+                <a href="/groups.html" class="button profile-menu__link">
+                  <i class="icon group md"> </i>
+                  Группы
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mob-header__divider mt-3 mb-2"></div>
+          <div class="toggle-list">
+            <div
+              class="toggle-list__header show"
+              data-toggle="collapse"
+              data-target=".collapse.learn-list"
+              data-text="Collapse"
+            >
+              Изучить<i class="icon arrow-down sm"> </i>
+            </div>
+            <div
+              class="toggle-list__body mob-header__links collapse show learn-list"
+            >
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-language-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/language.svg" alt="" />
+                  Языки
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-language-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  class="btn btn-primary btn__first"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-school-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/school.svg" alt="" />
+                  Школа
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-school-list"
+                >
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Математика </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Русский язык </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Литература </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> История </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Алгебра </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Геометрия </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-university-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/university.svg" alt="" />
+                  Университет
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-university-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-personal-growth-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/personal-growth.svg" alt="" />
+                  Личностный рост
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-personal-growth-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-spiritual-growth-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/spiritual-growth.svg" alt="" />
+                  Духовный рост
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-spiritual-growth-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-bussiness-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/bussiness.svg" alt="" />
+                  Бизнес
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-bussiness-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-relationships-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/relationships.svg" alt="" />
+                  Отношения
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-relationships-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-health-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/heart.svg" alt="" />
+                  Здоровье
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-health-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-sport-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/sport.svg" alt="" />
+                  Спорт
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-sport-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-hobby-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/hobby.svg" alt="" />
+                  Хобби, увлечения
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-hobby-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-esotericism-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/esotericism.svg" alt="" />
+                  Эзотерика
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-esotericism-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-cooking-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/cooking.svg" alt="" />
+                  Кулинария
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-cooking-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-science-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/science.svg" alt="" />
+                  Наука
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-science-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-technolodgy-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/technolodgy.svg" alt="" />
+                  Техника, гаджеты
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-technolodgy-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-finance-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/finance.svg" alt="" />
+                  Финансы
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-finance-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-investment-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/investment.svg" alt="" />
+                  Инвестиции
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-investment-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-list">
+                <div
+                  class="toggle-list__header"
+                  data-toggle="collapse"
+                  data-target=".collapse.mob-professions-list"
+                  data-text="Collapse"
+                >
+                  <img src="images/icons/menu/professions.svg" alt="" />
+                  Профессии
+                  <i class="icon arrow-down sm"> </i>
+                </div>
+                <ul
+                  class="toggle-list__body toggle-list__list collapse mob-professions-list"
+                >
+                  <li class="toggle-list__list-item">
+                    <a href="#" class="toggle-list__link"> Русский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Английский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Немецкий </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Французский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Китайский </a>
+                  </li>
+                  <li class="toggle-list__item">
+                    <a href="#" class="toggle-list__link"> Японский </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
 
       <main class="personal-account">
         <div class="container">
@@ -398,14 +1215,13 @@
           </div>
         </div>
       </main>
-
       <!-- Футер -->
       <footer class="footer">
         <div class="container footer__container">
           <div class="footer__top">
             <div class="footer__top-left">
               <a href="/" class="footer__logo">
-                <img src="images/logo-full.svg" alt="" />
+                <img src="/images/logo-full.svg" alt="" />
               </a>
               <ul class="footer__socials socials">
                 <li class="footer__social">

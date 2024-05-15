@@ -264,9 +264,14 @@ class CustomSelect {
 
     const customsClasses =
       this.selectElement.getAttribute("data-classes") || "";
-    if (customsClasses) {
-      customSelectContainer.classList.add(customsClasses);
+    if (customsClasses?.length) {
+      for (const className of customsClasses.split(" ")) {
+        if (className !== "") {
+          customSelectContainer.classList.add(className);
+        }
+      }
     }
+    console.log("customsClasses", customsClasses.split(" "));
 
     const selectedInput = document.createElement("input");
     const id = this.selectElement.getAttribute("data-id") || "";
