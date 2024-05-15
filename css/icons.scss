@@ -40,7 +40,8 @@
   }
   &.star {
     &::before {
-      background-image: url(../images/icons/star.svg);
+      content: "\e994";
+      // background-image: url(../images/icons/star.svg);
     }
   }
   &.gray-star {
@@ -56,7 +57,7 @@
   }
   &.link {
     &::before {
-      background-image: url(../images/icons/icon-link.svg);
+      content: "\e984";
     }
   }
   &.filled-arrow {
@@ -91,12 +92,13 @@
   }
   &.sort {
     &::before {
-      background-image: url(../images/icons/icon-sort.svg);
+      content: "\e93f";
+      // background-image: url(../images/icons/icon-sort.svg);
     }
   }
   &.filter {
     &::before {
-      background-image: url(../images/icons/icon-filter.svg);
+      content: "\e933";
     }
   }
   &.language {
@@ -112,11 +114,6 @@
   &.purple-school {
     &::before {
       background-image: url(../images/icons/icon-school.svg);
-    }
-  }
-  &.purple-star {
-    &::before {
-      background-image: url(../images/icons/purple-star.svg);
     }
   }
   &.eye {
@@ -313,7 +310,7 @@
     color: $red;
   }
   &.purple {
-    color: $purple;
+    color: $purple !important;
   }
   &.black {
     color: $black;
@@ -331,6 +328,13 @@
     font-size: 24px;
     height: 24px;
   }
+  &.gray {
+    color: #b9bdcc !important;
+  }
+  &.yellow {
+    color: #fac602 !important;
+  }
+
   @include minMaxBreakpoint(md, lg) {
     width: px-to-vw(20px);
     height: px-to-vw(20px);

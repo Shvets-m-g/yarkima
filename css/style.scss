@@ -2510,6 +2510,19 @@ body {
         min-height: 66px;
       }
     }
+    &__value {
+      top: 50%;
+      transform: translateY(-50%);
+      right: 32px;
+      position: absolute;
+      font-family: "Inter Display";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.5em;
+      letter-spacing: -0.01em;
+      color: #8b8e9a;
+    }
     @include minMaxBreakpoint(md, lg) {
       &__password {
         &-btn {
@@ -2579,6 +2592,10 @@ body {
         input {
           min-height: px-to-vw(66px);
         }
+      }
+      &__value {
+        right: px-to-vw(32px);
+        font-size: px-to-vw(18px);
       }
     }
     @include maxBreakpoint(md) {
@@ -2655,6 +2672,10 @@ body {
         input {
           min-height: px-to-vw-mob(40px);
         }
+      }
+      &__value {
+        right: px-to-vw-mob(32px);
+        font-size: px-to-vw-mob(18px);
       }
     }
   }
@@ -5960,7 +5981,7 @@ body {
 .reviews {
   overflow: hidden;
   .container {
-    max-width: 1376px + 32px;
+    // max-width: 1376px + 32px;
   }
   .reviews-slider {
     overflow: visible;
@@ -6216,6 +6237,24 @@ body {
     &__text {
       font-size: px-to-vw-mob(16px);
       min-height: px-to-vw-mob(120px);
+    }
+  }
+}
+.home-page {
+  .reviews {
+    .container {
+      max-width: 1376px + 32px;
+    }
+
+    @include minMaxBreakpoint(md, lg) {
+      .container {
+        font-size: px-to-vw(1376px + 32px);
+      }
+    }
+    @include maxBreakpoint(md) {
+      .container {
+        font-size: px-to-vw-mob(1376px + 32px);
+      }
     }
   }
 }
@@ -6600,7 +6639,7 @@ body {
     @include minMaxBreakpoint(md, lg) {
       &-header {
         display: grid;
-        grid-template-columns: px-to-vw(180px) 1fr px-to-vw(249px);
+        grid-template-columns: px-to-vw(180px) 1fr max-content;
         align-items: flex-end;
       }
     }

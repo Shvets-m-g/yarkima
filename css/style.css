@@ -1151,7 +1151,7 @@
   content: "";
 }
 .icon.star::before {
-  background-image: url(../images/icons/star.svg);
+  content: "";
 }
 .icon.gray-star::before {
   background-image: url(../images/icons/icon-star-gray.svg);
@@ -1194,9 +1194,6 @@
 }
 .icon.purple-school::before {
   background-image: url(../images/icons/icon-school.svg);
-}
-.icon.purple-star::before {
-  background-image: url(../images/icons/purple-star.svg);
 }
 .icon.eye::before {
   background-image: url(../images/icons/icon-eye.svg);
@@ -1307,7 +1304,7 @@
   color: #fc3a20;
 }
 .icon.purple {
-  color: #8e35ff;
+  color: #8e35ff !important;
 }
 .icon.black {
   color: #191a26;
@@ -1327,6 +1324,9 @@
 }
 .icon.gray {
   color: #b9bdcc !important;
+}
+.icon.yellow {
+  color: #fac602 !important;
 }
 @media (min-width: 767px) and (max-width: 1440px) {
   .icon {
@@ -1751,22 +1751,6 @@ h4 {
 @media (max-width: 766px) {
   .pt-4 {
     padding-top: 8.5333333333vw;
-  }
-}
-
-@media (min-width: 1440px) {
-  .pt-7 {
-    padding-top: 56px;
-  }
-}
-@media (min-width: 767px) and (max-width: 1440px) {
-  .pt-7 {
-    padding-top: 3.8888888889vw;
-  }
-}
-@media (max-width: 766px) {
-  .pt-7 {
-    padding-top: 14.9333333333vw;
   }
 }
 
@@ -5024,6 +5008,20 @@ body {
 .form-input.lg input {
   min-height: 66px;
 }
+.form-input__value {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 32px;
+  position: absolute;
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: -0.01em;
+  color: #8b8e9a;
+}
 @media (min-width: 767px) and (max-width: 1440px) {
   .form-input__password-btn {
     right: 25vw 32px;
@@ -5082,6 +5080,10 @@ body {
   }
   .form-input.lg input {
     min-height: 4.5833333333vw;
+  }
+  .form-input__value {
+    right: 2.2222222222vw;
+    font-size: 1.25vw;
   }
 }
 @media (max-width: 766px) {
@@ -5145,6 +5147,10 @@ body {
   }
   .form-input.mob-sm input {
     min-height: 10.6666666667vw;
+  }
+  .form-input__value {
+    right: 8.5333333333vw;
+    font-size: 4.8vw;
   }
 }
 .form-select {
