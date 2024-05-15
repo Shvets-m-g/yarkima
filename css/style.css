@@ -1755,6 +1755,22 @@ h4 {
 }
 
 @media (min-width: 1440px) {
+  .pt-7 {
+    padding-top: 56px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1440px) {
+  .pt-7 {
+    padding-top: 3.8888888889vw;
+  }
+}
+@media (max-width: 766px) {
+  .pt-7 {
+    padding-top: 14.9333333333vw;
+  }
+}
+
+@media (min-width: 1440px) {
   .pt-5 {
     padding-top: 40px;
   }

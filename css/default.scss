@@ -286,6 +286,17 @@ h4 {
     padding-top: px-to-vw-mob(4 * $STEP);
   }
 }
+.pt-7 {
+  @include minBreakpoint(lg) {
+    padding-top: 7 * $STEP;
+  }
+  @include minMaxBreakpoint(md, lg) {
+    padding-top: px-to-vw(7 * $STEP);
+  }
+  @include maxBreakpoint(md) {
+    padding-top: px-to-vw-mob(7 * $STEP);
+  }
+}
 
 .pt-5 {
   @include minBreakpoint(lg) {
