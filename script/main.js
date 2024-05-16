@@ -68,32 +68,19 @@ const collapse = (selector, elm, cmd) => {
   });
 };
 
-// const mainTriggers = Array.from(
-//   document.querySelectorAll('[data-toggle="collapse"]')
-// );
-
-// const handleClickOrTouch = (ev) => {
-//   const elm = ev.target;
-//   if (mainTriggers.includes(elm)) {
-//     const selector = elm.getAttribute("data-target");
-//     collapse(selector, elm, "toggle");
-//   }
-// };
-
-// const eventType = "ontouchstart" in window ? "touchstart" : "click";
-
-// window.addEventListener(eventType, handleClickOrTouch, false);
-
-// const fnmap = {
-//   toggle: "toggle",
-//   show: "add",
-//   hide: "remove",
-// };
-
-// const collapse = (selector, elm, cmd) => {
-//   elm.classList.toggle("show");
-//   const targets = Array.from(document.querySelectorAll(selector));
-//   targets.forEach((target) => {
-//     target.classList[fnmap[cmd]]("show");
-//   });
-// };
+document.addEventListener("DOMContentLoaded", function () {
+  const favouriteButtons = document.querySelectorAll(".button-favourite");
+  if (favouriteButtons?.length) {
+    favouriteButtons.forEach(function (button) {
+      button.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        if (button.classList.contains("active")) {
+          button.classList.remove("active");
+        } else {
+          button.classList.add("active");
+        }
+      });
+    });
+  }
+});
