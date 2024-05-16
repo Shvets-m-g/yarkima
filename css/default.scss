@@ -239,6 +239,20 @@ h4 {
     padding-right: px-to-vw-mob(2 * $STEP);
   }
 }
+.py-2 {
+  @include minBreakpoint(lg) {
+    padding-top: 2 * $STEP;
+    padding-bottom: 2 * $STEP;
+  }
+  @include minMaxBreakpoint(md, lg) {
+    padding-top: px-to-vw(2 * $STEP);
+    padding-bottom: px-to-vw(2 * $STEP);
+  }
+  @include maxBreakpoint(md) {
+    padding-top: px-to-vw-mob(2 * $STEP);
+    padding-bottom: px-to-vw-mob(2 * $STEP);
+  }
+}
 .px-3 {
   @include minBreakpoint(lg) {
     padding-left: 3 * $STEP !important;
@@ -428,6 +442,17 @@ h4 {
   }
   @include maxBreakpoint(md) {
     margin-top: px-to-vw-mob(0.5 * $STEP) !important;
+  }
+}
+.mt-1_5 {
+  @include minBreakpoint(lg) {
+    margin-top: 1.5 * $STEP !important;
+  }
+  @include minMaxBreakpoint(md, lg) {
+    margin-top: px-to-vw(1.5 * $STEP) !important;
+  }
+  @include maxBreakpoint(md) {
+    margin-top: px-to-vw-mob(1.5 * $STEP) !important;
   }
 }
 .mt-2_5 {

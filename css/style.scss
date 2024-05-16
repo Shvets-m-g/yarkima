@@ -2848,7 +2848,7 @@ body {
           input {
             min-width: 68px;
             width: 68px;
-            min-height: 48px;
+            min-height: 46px;
             text-align: center;
             padding-left: 10px;
             padding-top: 2px;
@@ -2925,7 +2925,7 @@ body {
             input {
               min-width: px-to-vw(68px);
               width: px-to-vw(68px);
-              min-height: px-to-vw(48px);
+              min-height: px-to-vw(46px);
               padding-left: px-to-vw(10px);
               padding-top: px-to-vw(2px);
               font-size: px-to-vw(14px);
@@ -8898,9 +8898,21 @@ div[data-tippy-root] {
   }
   &__card {
     &-header {
-      display: flex;
+      // display: flex;
+      // align-items: center;
+      // justify-content: space-between;
       align-items: center;
-      justify-content: space-between;
+      @include minBreakpoint(lg) {
+        display: grid;
+        grid-template-columns: 104px 1fr 104px;
+      }
+      @include minMaxBreakpoint(md, lg) {
+        display: grid;
+        grid-template-columns: px-to-vw(104px) 1fr px-to-vw(104px);
+      }
+      @include maxBreakpoint(md) {
+        display: flex;
+      }
     }
     &-number {
       font-family: "Inter Display";
@@ -8956,9 +8968,20 @@ div[data-tippy-root] {
         width: 100%;
         height: auto !important;
         justify-content: center;
+        gap: 32px;
       }
       .swiper-slide {
         width: unset !important;
+      }
+    }
+    @include minBreakpoint(lg) {
+      .swiper-wrapper {
+        gap: 32px;
+      }
+    }
+    @include minMaxBreakpoint(md, lg) {
+      .swiper-wrapper {
+        gap: px-to-vw(32px);
       }
     }
   }

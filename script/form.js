@@ -250,12 +250,6 @@ class CustomSelect {
   generateDropdownContent() {
     const customSelectContainer = document.createElement("div");
     customSelectContainer.classList.add("form-select");
-    // console.log(
-    //   "customsClasses",
-    //   customsClasses,
-    //   // String(customsClasses).contains("sm")
-    // );
-    // customSelectContainer.classList.add(customsClasses);
 
     const customSelected = document.createElement("div");
     customSelected.classList.add("form-selected");
@@ -271,7 +265,6 @@ class CustomSelect {
         }
       }
     }
-    console.log("customsClasses", customsClasses.split(" "));
 
     const selectedInput = document.createElement("input");
     const id = this.selectElement.getAttribute("data-id") || "";
@@ -301,11 +294,18 @@ class CustomSelect {
         customOption.textContent = option.textContent;
 
         customOptions.appendChild(customOption);
+
+        if (option.selected) {
+          selectedInput.value = option.textContent;
+          label.classList.add("active");
+          console.log("option", option.value, option.textContent);
+        }
       }
     });
 
     customSelectContainer.appendChild(customSelected);
     customSelectContainer.appendChild(customOptions);
+
     return customSelectContainer;
   }
   toggleDropdown() {
