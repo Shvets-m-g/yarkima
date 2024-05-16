@@ -1117,6 +1117,7 @@
   display: inline-block;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  font-weight: 400;
 }
 .icon svg {
   height: 100%;
@@ -1172,10 +1173,11 @@
   background-image: url(../images/icons/icon-search.svg);
 }
 .icon.white-plus::before {
+  color: #fff;
   background-image: url(../images/icons/white-icon-plus.svg);
 }
 .icon.notification::before {
-  background-image: url(../images/icons/icon-notification.svg);
+  content: "";
 }
 .icon.arrow-down::before {
   background-image: url(../images/icons/icon-down.svg);
@@ -1299,6 +1301,9 @@
 }
 .icon.kid::before {
   content: "";
+}
+.icon.light-gray {
+  color: #b9bdcc;
 }
 .icon.red {
   color: #fc3a20;

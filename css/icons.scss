@@ -11,7 +11,7 @@
   color: #8b8e9a;
   display: inline-block;
   transition: all 0.3s ease;
-
+  font-weight: 400;
   svg {
     height: 100%;
     width: 100%;
@@ -77,12 +77,15 @@
   }
   &.white-plus {
     &::before {
+      color: #fff;
+      // content: "\e99a";
       background-image: url(../images/icons/white-icon-plus.svg);
     }
   }
   &.notification {
     &::before {
-      background-image: url(../images/icons/icon-notification.svg);
+      content: "\e96c";
+      // background-image: url(../images/icons/icon-notification.svg);
     }
   }
   &.arrow-down {
@@ -305,6 +308,9 @@
     &::before {
       content: "\e963";
     }
+  }
+  &.light-gray {
+    color: #b9bdcc;
   }
   &.red {
     color: $red;
