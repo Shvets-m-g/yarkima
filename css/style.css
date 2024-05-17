@@ -12575,6 +12575,21 @@ body {
   .course-form__card-number {
     font-size: 4.8vw;
   }
+  .course-form__card-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .course-form__card-image .form__sm-image {
+    width: 32vw;
+    height: 18.6666666667vw;
+  }
   .course-form__card-player {
     min-width: 80vw;
   }
@@ -12592,7 +12607,7 @@ body {
             flex: 1;
   }
   .course-form__card-player {
-    margin-top: 6.4vw;
+    margin-top: 4.2666666667vw;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;

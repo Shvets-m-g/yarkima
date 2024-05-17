@@ -9173,6 +9173,16 @@ div[data-tippy-root] {
       &-number {
         font-size: px-to-vw-mob(18px);
       }
+      &-image {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        .form__sm-image {
+          width: px-to-vw-mob(120px);
+        height: px-to-vw-mob(70px);
+        }
+      }
     }
     &__card-player {
       min-width: px-to-vw-mob(300px);
@@ -9189,7 +9199,7 @@ div[data-tippy-root] {
         }
       }
       &-player {
-        margin-top: px-to-vw-mob(24px);
+        margin-top: px-to-vw-mob(16px);
         order: 3;
         width: 100%;
       }
