@@ -1117,6 +1117,8 @@
   display: inline-block;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-weight: 400;
 }
 .icon svg {
@@ -1811,6 +1813,17 @@ h4 {
 }
 
 @media (min-width: 1440px) {
+  .pt-md-3 {
+    padding-top: 24px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1440px) {
+  .pt-md-3 {
+    padding-top: 1.6666666667vw;
+  }
+}
+
+@media (min-width: 1440px) {
   .pt-md-5 {
     padding-top: 40px;
   }
@@ -1916,6 +1929,19 @@ h4 {
   .px-mob-0 {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .px-md-3 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1440px) {
+  .px-md-3 {
+    padding-left: 1.6666666667vw;
+    padding-right: 1.6666666667vw;
   }
 }
 
@@ -2354,6 +2380,12 @@ h4 {
 @media (max-width: 766px) {
   .text-mob-16 {
     font-size: 4.2666666667vw !important;
+  }
+}
+
+@media (max-width: 766px) {
+  .text-mob-20 {
+    font-size: 5.3333333333vw !important;
   }
 }
 
@@ -5359,7 +5391,7 @@ body {
   padding-top: 8px;
   padding-bottom: 8px;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 100px;
   overflow: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -12590,11 +12622,8 @@ body {
   .course-form__covers {
     margin-left: -4.2666666667vw;
     margin-right: -4.2666666667vw;
-    overflow-x: auto;
     height: 91.4666666667vw;
-  }
-  .course-form__covers .swiper-wrapper {
-    overflow-x: visible;
+    overflow: visible;
   }
   .course-form__covers .swiper-slide {
     width: 91.4666666667vw !important;

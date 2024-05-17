@@ -254,7 +254,6 @@ class CustomSelect {
     const customSelected = document.createElement("div");
     customSelected.classList.add("form-selected");
     customSelected.classList.add("form-input");
-    customSelected.classList.add("with-label");
 
     const customsClasses =
       this.selectElement.getAttribute("data-classes") || "";
@@ -275,6 +274,9 @@ class CustomSelect {
     const placeholder =
       this.selectElement.getAttribute("data-placeholder") || "";
 
+    if (placeholder?.length) {
+      customSelected.classList.add("with-label");
+    }
     const label = document.createElement("label");
     label.htmlFor = "form-select-input";
     label.innerHTML = placeholder;

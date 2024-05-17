@@ -11,6 +11,7 @@
   color: #8b8e9a;
   display: inline-block;
   transition: all 0.3s ease;
+  flex-shrink: 0;
   font-weight: 400;
   svg {
     height: 100%;

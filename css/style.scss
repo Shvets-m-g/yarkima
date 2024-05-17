@@ -2816,7 +2816,7 @@ body {
       padding-top: 8px;
       padding-bottom: 8px;
       background-color: #f1f1f1;
-      min-width: 160px;
+      min-width: 100px;
       overflow: auto;
       box-sizing: border-box;
       max-height: 288px;
@@ -9218,12 +9218,14 @@ div[data-tippy-root] {
     &__covers {
       margin-left: px-to-vw-mob(-16px);
       margin-right: px-to-vw-mob(-16px);
-      overflow-x: auto;
+      // overflow-x: hidden;
       height: px-to-vw-mob(343px);
+      // margin-right: px-to-vw-mob(-50px);
       // padding-right: px-to-vw-mob(50px);
       // padding-left: px-to-vw-mob(50px);
+      overflow: visible;
       .swiper-wrapper {
-        overflow-x: visible;
+        // overflow-x: auto;
       }
       .swiper-wrapper {
       }

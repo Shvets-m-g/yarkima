@@ -971,10 +971,12 @@
       </div>
       <!-- Конец мобильного меню -->
       <main class="mb-md-5 mt-3">
-        <div class="course-form__header px-2 pt-2">
+        <div class="course-form__header pt-2">
           <div class="container">
             <div class="course-form__header-container">
-              <h1 class="course-form__header-title title medium uppercase">
+              <h1
+                class="course-form__header-title text-mob-20 title medium uppercase"
+              >
                 Создать новый курс
               </h1>
               <div class="course-form__header-actions">
@@ -1496,29 +1498,29 @@
 
     <!-- Мобильное модальное окно настроек  -->
     <div
-      class="mob-modal course-form__modal border-radius pb-5 pt-2 text-center slide sort-modal bg-white"
+      class="mob-modal course-form__modal border-radius pb-5 pt-1 px-3 text-center slide sort-modal bg-white"
       id="show-more-modal"
     >
-      <div class="mob-modal__header">
-        <div class="subtitle md uppercase text-left">Настройки курса</div>
+      <div class="mob-modal__header px-0">
+        <div class="title small uppercase text-left">Настройки курса</div>
 
-        <button
-          class="menu-header__button-close button outlined min-width-5 min-height-5"
-        >
-          <i class="icon close"></i>
+        <button class="menu-header__button-close button outlined md">
+          <i class="icon close md"></i>
         </button>
       </div>
-      <div class="course-form__modal-form px-2">
+      <div class="course-form__modal-form mt-0 mt-md-4">
         <div class="d-flex justify-space-between align-center">
           <div class="subtitle lg text-left">
             Вопросы <span class="text-gray"> (Максимум 20) </span>
           </div>
-          <div class="form-select" data-id="form-category">
-            <select>
-              <option value=""></option>
-              <option value="option-1">10</option>
-              <option value="option-2">20</option>
-            </select>
+          <div style="max-width: 120px">
+            <div class="form-select" data-id="form-category">
+              <select>
+                <option value=""></option>
+                <option value="option-1">10</option>
+                <option value="option-2">20</option>
+              </select>
+            </div>
           </div>
         </div>
         <label class="form-checkbox-toggler">

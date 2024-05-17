@@ -323,6 +323,14 @@ h4 {
     padding-top: px-to-vw-mob(5 * $STEP);
   }
 }
+.pt-md-3 {
+  @include minBreakpoint(lg) {
+    padding-top: 3 * $STEP;
+  }
+  @include minMaxBreakpoint(md, lg) {
+    padding-top: px-to-vw(3 * $STEP);
+  }
+}
 .pt-md-5 {
   @include minBreakpoint(lg) {
     padding-top: 5 * $STEP;
@@ -406,16 +414,16 @@ h4 {
   }
 }
 
-// .px-md-3 {
-//   @include minBreakpoint(lg) {
-//     padding-left: 3 * $STEP;
-//     padding-right: 3 * $STEP;
-//   }
-//   @include minMaxBreakpoint(md, lg) {
-//     padding-left: px-to-vw(3 * $STEP);
-//     padding-right: px-to-vw(3 * $STEP);
-//   }
-// }
+.px-md-3 {
+  @include minBreakpoint(lg) {
+    padding-left: 3 * $STEP;
+    padding-right: 3 * $STEP;
+  }
+  @include minMaxBreakpoint(md, lg) {
+    padding-left: px-to-vw(3 * $STEP);
+    padding-right: px-to-vw(3 * $STEP);
+  }
+}
 
 .show-disabled {
   &.show {
@@ -752,6 +760,11 @@ h4 {
 .text-mob-16 {
   @include maxBreakpoint(md) {
     font-size: px-to-vw-mob(16px) !important;
+  }
+}
+.text-mob-20 {
+  @include maxBreakpoint(md) {
+    font-size: px-to-vw-mob(20px) !important;
   }
 }
 .text-left {
